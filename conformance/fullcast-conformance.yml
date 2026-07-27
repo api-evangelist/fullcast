@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.fullcast.com/security/
+notes: >-
+  Fullcast publishes no public OpenAPI or developer portal, so cross-cutting
+  API standards (rfc9457, pagination, idempotency, oauth2) cannot be asserted
+  from a spec. The compliance program below is taken verbatim from the
+  provider's public security page.
+standards:
+  - id: soc2-type2
+    conforms: true
+    evidence: >-
+      Security page states Fullcast maintains SOC 2 Type 2 and aligns incident
+      response to SOC 2 Type 2 requirements.
+  - id: gdpr
+    conforms: true
+    evidence: Security page states Fullcast complies with GDPR.
+  - id: iso27001
+    conforms: false
+  - id: hipaa
+    conforms: false
+  - id: pci-dss
+    conforms: false
+  - id: fedramp
+    conforms: false

@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.fullcast.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  9 03:59:58 2026 GMT
+  hsts: false
+domains:
+- domain: fullcast.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

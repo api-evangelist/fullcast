@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.fullcast.com/security/
+url: https://www.fullcast.com/security/
+certifications:
+  - SOC 2 Type 2
+  - GDPR
+programs:
+  - responsible disclosure
+  - incident response (SOC 2 Type 2 aligned)
+evidence:
+  - source: https://www.fullcast.com/security/
+    keywords: [soc 2 type 2, gdpr, responsible disclosure, incident response]
+notes: >-
+  Captured from the provider's public security page. No dedicated trust.fullcast.com
+  subdomain or security.txt was found; ISO 27001, HIPAA, PCI DSS and FedRAMP are
+  not claimed.

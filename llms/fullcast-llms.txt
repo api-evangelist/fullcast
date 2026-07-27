@@ -1,0 +1,583 @@
+# Fullcast
+
+> Fullcast is a revenue orchestration platform unifying territory/quota/headcount planning, lead & account routing, and incentive/commission management. This index is captured verbatim from the provider's published knowledge base at https://support.fullcast.com/llms.txt (method: searched).
+
+## Plan & Pay
+
+- [Getting Started](https://support.fullcast.com/docs/educational-resources.md): The Getting Started category quickly orients new users to the initial resources they will need to begin using the Fullcast platform.
+- [Log in to Fullcast for the first time](https://support.fullcast.com/docs/log-in-to-fullcast-for-the-first-time.md): Follow these steps when you log in to Fullcast for the first time.
+- [Video Courses](https://support.fullcast.com/docs/on-demand-training.md)
+- [Fullcast 101](https://support.fullcast.com/docs/fullcast-101.md)
+- [The Plans Screen - Fullcast 101 - Part 2](https://support.fullcast.com/docs/the-plans-screen.md): This article provides information on the different modules within Fullcast, including Territories, Teams, Products, Policies, Roles, and Industry Taxonomy, to help new users understand the platform's capabilities and navigate its features for effective go-to-market planning and execution.
+- [Manage Plans - Fullcast 101 - Part 3](https://support.fullcast.com/docs/manage-plans.md)
+- [Navigating a Territory Plan - Fullcast 101 - Part 4](https://support.fullcast.com/docs/navigating-a-territory-plan.md): This article provides a comprehensive overview of navigating a territory plan in Fullcast, guiding users through the different tabs and functionalities within the plan, including Accounts, Targets, Coverage, Balancer, Map, and Capacity, to facilitate effective territory management analysis.
+- [Managing Territories - Fullcast 101 - Part 5](https://support.fullcast.com/docs/managing-territories.md)
+- [Overview of Settings - Fullcast 101 - Part 6](https://support.fullcast.com/docs/overview-of-settings.md)
+- [Fullcast 102](https://support.fullcast.com/docs/fullcast-102.md)
+- [The Go-to-Market Segmentation Panel - Fullcast 102 - Part 2](https://support.fullcast.com/docs/the-go-to-market-segmentation-panel.md)
+- [Add Node vs Add Hierarchy - Fullcast 102 - Part 3](https://support.fullcast.com/docs/add-node-vs-add-hierarchy.md)
+- [The Four Types of Rules for Creating Hierarchies - Fullcast 102 - Part 4](https://support.fullcast.com/docs/the-four-types-of-rules-for-creating-hierarchies.md)
+- [Treatment of Account Families - Fullcast 102 - Part 5](https://support.fullcast.com/docs/treatment-of-account-families.md)
+- [Making and Finalizing Changes to Territories - Fullcast 102 - Part 6](https://support.fullcast.com/docs/making-and-finalizing-changes-to-territories.md)
+- [Understanding The Unassigned Bucket - Fullcast 102 - Part 7](https://support.fullcast.com/docs/understanding-the-unassigned-bucket-fullcast-102-part-7.md)
+- [Practice territory carving scenarios - Fullcast 102 - Part 8](https://support.fullcast.com/docs/practice-territory-carving-scenarios.md): Learn how to carve territories effectively using Fullcast with this guide and example scenarios. This article provides various territory carving techniques, including SmartPlan and manual allocation, to optimize your sales territories.
+- [Reference Guides](https://support.fullcast.com/docs/reference-guides.md)
+- [Provision Fullcast](https://support.fullcast.com/docs/provision-fullcast.md): Basic process to provision Fullcast.
+- [Tenant admin settings](https://support.fullcast.com/docs/admin-reference-guide.md): Tenant admins can access and update settings to customize the GTM plan in Fullcast. Refer to the following table for a description of each settings tab in Fullcast, common tasks, and links to associated documentation including: plan information, jobs, users, audits, metrics, tenant settings, entities and fields, policies, and export-import processes.
+- [Territory Carving Reference Guide](https://support.fullcast.com/docs/territory-carving-reference-guide.md): Get all the key resources for carving territories in Fullcast!
+- [Fullcast for Revenue Leaders - Seven Key Tasks](https://support.fullcast.com/docs/fullcast-for-revenue-leaders-seven-key-tasks.md): This guide provides an introduction to Fullcast for Revenue Leaders, covering key territory management tasks like navigating plans, viewing accounts, using reports, and proposing changes.
+- [Get started with routing](https://support.fullcast.com/docs/get-started-with-routing-1.md): Implement territory-based routing in Fullcast for lead, account, and opportunity management in Salesforce. Optimize your routing policies effectively.
+- [Get started with scenario and capacity planning](https://support.fullcast.com/docs/get-started-with-scenario-and-capacity-planning-1.md): Streamline capacity planning with Fullcast's unified data approach, enabling strategic RevOps, scenario modeling, and effective resource allocation.
+- [Platform Tips](https://support.fullcast.com/docs/platform.md)
+- [Customize your view](https://support.fullcast.com/docs/customizing-your-view.md)
+- [Account Data Grid Actions](https://support.fullcast.com/docs/platform-actions.md)
+- [About the Details Grid](https://support.fullcast.com/docs/about-the-details-grid.md): This article provides information and directions for utilizing the Details Grid in Fullcast, detailing its components, navigation, and functionalities such as accessing metrics, filtering data, managing notes, moving accounts, viewing family hierarchies, and utilizing the action bar for various operations.
+- [Manage saved views in a territory plan](https://support.fullcast.com/docs/manage-saved-views-in-territory-plan.md): Create, edit, or delete saved views in a territory plan.
+- [Grid Action Menu](https://support.fullcast.com/docs/grid-action-menu.md)
+- [Configure and Use Account Note Notifications](https://support.fullcast.com/docs/configure-and-use-account-note-notifications.md): This article provides full instructions on configuring and using notes and notifications on Accounts in Fullcast.
+- [Managing Notes in Fullcast](https://support.fullcast.com/docs/managing-notes-in-fullcast.md): This article provides instructions for adding and managing notes in Fullcast for accounts, territory targets, and team targets, enabling users to document important information, context, and updates related to specific records for better communication and collaboration.
+- [Sorting in the Grid](https://support.fullcast.com/docs/sorting-in-the-grid.md)
+- [Grouping Data in the Grid](https://support.fullcast.com/docs/grouping-data-in-the-grid.md)
+- [How to use Column Chooser](https://support.fullcast.com/docs/how-to-use-column-chooser.md)
+- [Filtering in the Grid](https://support.fullcast.com/docs/filtering-in-the-grid.md): The purpose of this article is to provide direction in adding and removing filters in the Grid view.
+- [Export Grid Data](https://support.fullcast.com/docs/territories-export-grid-data.md): This article aims to provide direction in exporting Grid Data from Fullcast.
+- [AI assistant](https://support.fullcast.com/docs/ai-assistant.md)
+- [Enable AI features](https://support.fullcast.com/docs/enable-ai-features.md): Enable AI-powered features for your Fullcast tenant, including the in-platform assistant, MCP server access for external AI clients, and AI-assisted audit log interpretation.
+- [Set up the model context protocol (MCP)](https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md): Set up the Fullcast MCP server with Claude.
+- [Fullcast MCP tool reference](https://support.fullcast.com/docs/fullcast-mcp-tool-reference.md): Review the tools available through Fullcast MCP server.
+- [Chat with the Fullcast AI assistant](https://support.fullcast.com/docs/fullcast-ai-assistant.md): Set up and chat with the Fullcast AI assistant in Fullcast and Slack and use the Explain this log feature in the Audit Log.
+- [Use workflow agent mode](https://support.fullcast.com/docs/use-the-workflow-agent.md): Switch to workflow agent mode in the assistant to quickly move people, products, and accounts within Fullcast from the chat window.
+- [Interpret audit log events and error traces](https://support.fullcast.com/docs/interpret-audit-events-and-error-traces.md): Use the built in assistant to explain audit log events, schedule job error traces, and provide troubleshooting steps.
+- [Territories](https://support.fullcast.com/docs/territories.md)
+- [Use the filter builder](https://support.fullcast.com/docs/using-filter-builder-to-create-criteria.md): Use the filter builder to create filter criteria throughout Fullcast where the filter builder is available including tables, territory carving with Smart Plan and Bucket rules, filter records at the plan level, and more.
+- [Territory Hierarchy Management](https://support.fullcast.com/docs/territory-management.md)
+- [About the Territory Designer](https://support.fullcast.com/docs/about-the-territory-designer.md)
+- [Create and Manage Territories](https://support.fullcast.com/docs/create-and-manage-territories.md): This article provides directions for creating and managing territories in Fullcast, covering hierarchy creation, rule configuration, custom node creation, territory editing, renaming, deleting, and understanding the implications of these actions on territory structure and data organization.
+- [Setting Order of Precedence in Hybrid Territories](https://support.fullcast.com/docs/setting-order-of-precedence-in-hybrid-territories.md)
+- [How to Delete Custom Nodes](https://support.fullcast.com/docs/how-to-delete-custom-nodes.md): This article provides directions for deleting custom nodes in Fullcast.
+- [How to View Territories by Role Assigned](https://support.fullcast.com/docs/how-to-view-territories-by-role-assigned.md): This article provides information and direction for viewing territories by role assigned.
+- [Rerun rules](https://support.fullcast.com/docs/how-to-rerun-rules.md)
+- [Move and Name Accounts](https://support.fullcast.com/docs/moving-accounts.md)
+- [Use account IDs pin multiple accounts](https://support.fullcast.com/docs/pinning-multiple-accounts-using-account-ids.md): This video outlines a quick and simple process for pinning or naming accounts to territories using their account IDs
+- [Move accounts from node to node](https://support.fullcast.com/docs/how-to-move-accounts-from-node-to-node.md): Move accounts from one node to another node with the move option or the drag and drop method if in a proposed state.
+- [Move accounts from file](https://support.fullcast.com/docs/move-accounts-from-file.md): Bulk move accounts to territory nodes by uploading a CSV file. Easily manage account states and track results with our guided wizard.
+- [How does Proposed View work while moving accounts](https://support.fullcast.com/docs/how-does-proposed-view-work-while-moving-accounts.md)
+- [Undo account moves](https://support.fullcast.com/docs/undo-account-moves.md)
+- [How to use Named Accounts and Named Exceptions](https://support.fullcast.com/docs/how-to-use-named-accounts-and-named-exceptions.md)
+- [Geographic Territories](https://support.fullcast.com/docs/maps.md)
+- [Create a geographic hierarchy](https://support.fullcast.com/docs/create-a-geographic-hierarchy.md): Set up map-based territory rules, define segments, assign specific geographic areas (like countries, states, or postal codes).
+- [Define territory segments](https://support.fullcast.com/docs/define-territory-segments.md): Set up map-based territory criteria to define segments.
+- [Define segments](https://support.fullcast.com/docs/define-segments.md)
+- [Use Buckets to define territory segments](https://support.fullcast.com/docs/use-buckets-to-define-territory-segments.md): Use the bucket option to manually create empty segments (territories) and populate them by assigning geographic data.
+- [Use Smart Map to define territory segments](https://support.fullcast.com/docs/use-smart-map-to-define-territory-segments.md): Use Smart Map to automatically generate a specified number of territories, balanced based on your criteria.
+- [Use a template to define territory segments](https://support.fullcast.com/docs/use-a-template-to-define-territory-segments.md): Use the Template option to select pre-defined, commonly used geographic territory structures. This will create territories based on the template's design.
+- [Assign geographic areas to territories](https://support.fullcast.com/docs/assign-geographic-areas-to-territories.md): Use the interactive map to assign or modify geographic territories.
+- [Access geographic territories](https://support.fullcast.com/docs/access-geographic-territories.md): Use the Map tab to visualize territories created with the map hierarchy, enable users to see the geographical distribution of their territories and gain insights into their sales regions.
+- [Use additional map options](https://support.fullcast.com/docs/use-additional-map-options.md): Use the menu on the map interface to export map data, apply metrics, show unassigned accounts, and set the zoom level.
+- [Bucket Rule Territories](https://support.fullcast.com/docs/buckets.md)
+- [Create Territories Using Unique Field Values](https://support.fullcast.com/docs/create-territories-using-unique-field-values.md)
+- [How to create territories using bucket values?](https://support.fullcast.com/docs/how-to-create-territories-using-bucket-values.md)
+- [Smart Plan](https://support.fullcast.com/docs/smart-plan.md): Smart Plan has flexible criteria options that automatically balance your territories.
+- [Create a Smart Plan](https://support.fullcast.com/docs/create-a-smart-plan.md): Automate territory balancing based on selected criteria when you create a hierarchy from a node.
+- [Troubleshoot: Accidental account reassignment](https://support.fullcast.com/docs/troubleshoot-accidental-account-reassignment.md): Troubleshoot when accounts are accidentally reassigned to the unassigned node or another territory.
+- [Smart Plan balancing criteria](https://support.fullcast.com/docs/balancing-criteria.md)
+- [Smart Plan: account mix](https://support.fullcast.com/docs/smart-plan-balance-by-account-mix.md): Evenly distribute territories based on the number of available records that match the criteria.
+- [Smart Plan: balance by field value](https://support.fullcast.com/docs/smart-plan-balance-by-field-value.md): Evenly distribute territories based on a specific value to ensure all records from the parent node are distributed equally among territories based on the chosen field value.
+- [Smart Plan: balance by metric](https://support.fullcast.com/docs/smart-plan-balance-by-metrics.md): Evenly distribute territories based on specified metric value.
+- [Smart Plan: balance by number of accounts](https://support.fullcast.com/docs/smart-plan-balance-by-number-of-accounts.md): Evenly distribute territories based on the number of available records that match the criteria.
+- [Smart Plan: group by field value](https://support.fullcast.com/docs/smart-plan-group-by-field-value.md): Organize records based on a specific data in a specific field.
+- [Smart Plan: maximize](https://support.fullcast.com/docs/smart-plan-maximize.md): Set a maximum limit for a certain criterion that can be assigned to each territory. Territories cannot have more records assigned to it than the maximum limit specified.
+- [Smart Plan: minimize](https://support.fullcast.com/docs/smart-plan-minimize.md): Set a minimum limit for a certain criterion that each territory must have.
+- [Smart Plan: minimize disruption](https://support.fullcast.com/docs/smart-plan-minimize-disruption.md): When you assign new records to sales representatives, minimize any disruption to existing records for those individuals.
+- [Smart Plan: weight by field value](https://support.fullcast.com/docs/smart-plan-weight-by-field-value.md): Distribute records by weighted values within the selected field.
+- [Smart Plan: weight by metric](https://support.fullcast.com/docs/smart-plan-weight-by-metrics.md): Records are weighted based on its significance, and then combined to calculate the overall metric by these weighted values to distribute across territories.
+- [Smart Plan: weight by number of accounts](https://support.fullcast.com/docs/smart-plan-weight-by-number-of-accounts.md): Distribute records by weighted and the number of accounts is the sum of these weighted values for each account.
+- [Account Families](https://support.fullcast.com/docs/account-families.md)
+- [Treatment of account families](https://support.fullcast.com/docs/handle-account-families.md): When you create territories or move accounts from one node to another node, there are four options to select how account families are treated.
+- [View Account Families in the Grid](https://support.fullcast.com/docs/view-account-families-in-the-grid.md)
+- [Salesforce Lightning Actions](https://support.fullcast.com/docs/salesforce-integration.md): Learn more about the requirements to configure the Fullcast change owner lightning action in Salesforce.
+- [Configure the change owner lightning action in Salesforce](https://support.fullcast.com/docs/configure-the-change-owner-action-in-salesforce.md): Configure the change owner button in Salesforce lightning to effectively transfer account ownership, manage child accounts, and optimize record status.
+- [Use the change owner lightning action](https://support.fullcast.com/docs/use-and-troubleshoot-the-change-owner-salesforce-lightning-action.md): Use the Fullcast change owner lightning action in Salesforce.
+- [FAQ: Change owner in Salesforce Lighting action](https://support.fullcast.com/docs/faq-change-owner-in-salesforce-lighting-action.md): FAQs regarding the change owner lightning action configuration.
+- [Troubleshooting: Fullcast change owner action](https://support.fullcast.com/docs/troubleshoot-change-owner.md): Troubleshoot common errors and issues with Fullcast change owner lightning action.
+- [Balancer Chart in Territory Plan](https://support.fullcast.com/docs/balancer-chart-in-territory-plan.md)
+- [Territory Balancer Chart](https://support.fullcast.com/docs/configure-reporting-in-the-balancer-chart.md): This article explains how to use the Balancer tool in Fullcast to create balanced sales territories, ensuring fairness in performance evaluation and compensation by equalizing opportunities and resources across territories. It covers configuring the Balancer, visualizing data with charts and tables, and understanding the metrics for effective territory balancing.
+- [Configure Reporting in the Balancer Tab](https://support.fullcast.com/docs/configure-reporting-in-the-balancer-tab.md): This article explains how to use the Balancer tool in Fullcast to create balanced sales territories, ensuring fairness in performance evaluation and compensation by equalizing opportunities and resources across territories. It covers configuring the Balancer, visualizing data with charts and tables, and understanding the metrics for effective territory balancing.
+- [Roles and Coverage](https://support.fullcast.com/docs/roles-and-coverage.md)
+- [Roles](https://support.fullcast.com/docs/roles.md)
+- [Manage roles](https://support.fullcast.com/docs/viewing-and-managing-roles.md): Configure roles, ramp profiles, and productivity profiles.
+- [Manage ramp profiles](https://support.fullcast.com/docs/manage-ramp-profiles.md): Add ramp profiles to roles.
+- [Manage productivity profiles](https://support.fullcast.com/docs/manage-productivity-profiles.md): This article outlines the steps to create, edit, or delete a productivity profile within Fullcast.
+- [FAQ: Roles](https://support.fullcast.com/docs/faq-roles.md)
+- [Coverage assignments](https://support.fullcast.com/docs/coverage-assignments.md)
+- [Create coverage assignment](https://support.fullcast.com/docs/create-coverage-assignment.md): This article provides a comprehensive guide to creating both normal and temporary employee assignments in Fullcast for territories and teams. It emphasizes the importance of predefined roles and accurate start and end dates for effective productivity tracking and target setting.
+- [End coverage for an employee](https://support.fullcast.com/docs/end-coverage-for-an-employee.md): Use the end coverage workflow to end or replace coverage assignments.
+- [View coverage and capacity](https://support.fullcast.com/docs/viewing-coverage-and-capacity.md): This article explains how to view coverage and capacity in Fullcast, highlighting the differences between the Coverage and Capacity tabs,
+- [Change an employee role](https://support.fullcast.com/docs/change-an-employee-role.md): Update employee's role and manage related assignments and targets.
+- [Confirm new hire for TBH placeholder](https://support.fullcast.com/docs/confirm-new-hire-for-tbh-placeholder.md): This article provides a video for assigning new hires to territories and teams. This is done by using the Confirm New Hire workflow.
+- [Mass update assignments](https://support.fullcast.com/docs/mass-update-assignments.md): This article provides information and direction regarding updating assignemtns in mass in Fullcast.
+- [Troubleshoot mass update or clone assignments error](https://support.fullcast.com/docs/troubleshoot-mass-update-or-clone-assignments-error.md): Troubleshoot when cloning or mass updating coverage assignments fails and you receive an error.
+- [Clone assignments](https://support.fullcast.com/docs/clone-assignments.md): This article provides information and directions for cloning assignments in Fullcast.
+- [Filter for active and current assignments](https://support.fullcast.com/docs/filter-for-active-and-current-assignments.md): Filter out inactive or future assignments when you mass update or clone assignments.
+- [Edit or delete coverage assignments](https://support.fullcast.com/docs/edit-or-delete-coverage-assignments.md)
+- [Video: Create a flow on standard jobs](https://support.fullcast.com/docs/create-a-flow-on-a-standard-job.md)
+- [Targets](https://support.fullcast.com/docs/targets.md): Set and define targets for teams, territories, and products.
+- [Get started with targets](https://support.fullcast.com/docs/get-started-with-targets.md)
+- [Configure and edit targets](https://support.fullcast.com/docs/manage-targets-v2.md)
+- [Create a target](https://support.fullcast.com/docs/create-a-target.md): Create a top down target.
+- [Export and import targets](https://support.fullcast.com/docs/export-and-import-targets.md): Export and import to update existing team targets.
+- [Edit a target](https://support.fullcast.com/docs/edit-a-target.md): Edit target settings, goals, schedules, and adjustments for single or multiple nodes easily in the Manage Targets module. Optimize your targets today!
+- [Use formulas for target goals](https://support.fullcast.com/docs/use-formulas-for-target-goals.md): Build dynamic goals using the formula editor by combining metrics and math operators for real-time data updates and accurate performance tracking.
+- [Select a group of nodes for a target](https://support.fullcast.com/docs/select-a-group-of-nodes-for-a-target.md): Select a group of nodes or multiple nodes for a target.
+- [Recalculate a target](https://support.fullcast.com/docs/recalculate-a-target.md)
+- [Distribute targets top-down](https://support.fullcast.com/docs/distribute-targets-top-down.md): Learn how to distribute targets down a hierarchy using various methods like Forced Distribution and Ratio on Field for effective target management.
+- [View targets in detail](https://support.fullcast.com/docs/view-targets-in-detail.md): Explore the Targets Detail View in Fullcast Plan for a complete hierarchy of targets, enabling easy verification and management of allocations. Get a spreadsheet-like view.
+- [Roll up a bottom-up target](https://support.fullcast.com/docs/roll-up-a-bottom-up-target.md): Roll up targets to reflect sum of adjusted targets at a parent node.
+- [Delete a target](https://support.fullcast.com/docs/delete-a-target-v2.md): Delete a target only if you want to completely remove a given node's target.
+- [Build a target report](https://support.fullcast.com/docs/build-a-target-report.md): Create comprehensive Target Reports in Fullcast Plan to audit territories, assignments, and quotas efficiently without external spreadsheets.
+- [Schedule profiles](https://support.fullcast.com/docs/schedule-profiles.md)
+- [Create a schedule profile](https://support.fullcast.com/docs/create-a-schedule-profile.md): Create a schedule template profile.
+- [Manage a schedule profile](https://support.fullcast.com/docs/manage-a-schedule-profile-template.md): Edit or delete a schedule template profile.
+- [Adjust and schedule targets](https://support.fullcast.com/docs/adjust-and-schedule-targets.md)
+- [Apply a schedule](https://support.fullcast.com/docs/apply-a-schedule.md): Applying schedules let you efficiently allocate a target across a time period using a saved template or manual edits.
+- [Adjust a target](https://support.fullcast.com/docs/adjust-a-target.md): Learn how to manually adjust targets for specific nodes, including percentage changes and ending targets, without altering the overall goal or schedule.
+- [Apply a ramp](https://support.fullcast.com/docs/apply-a-ramp.md): Learn how to apply ramp profiles to adjust quotas for new reps.
+- [Set a target minimum](https://support.fullcast.com/docs/set-a-target-minimum.md): Set target minimums to ensure every node meets compensation standards, preventing low targets from affecting your published plans.
+- [Add target relief](https://support.fullcast.com/docs/add-target-relief.md): Adjust target relief for timeseries and scalar targets.
+- [Preserve monthly values in combined targets](https://support.fullcast.com/docs/preserve-monthly-values-in-combined-targets.md): Combine targets with Preserve Monthly Values to maintain exact monthly distributions from source targets, ensuring accurate ramp schedules and seasonal spikes.
+- [Team-specific target options](https://support.fullcast.com/docs/team-specific-target-options.md)
+- [Add a TBx placeholder role to a team target](https://support.fullcast.com/docs/add-a-tbx-placeholder-role-to-a-team-target.md): Add a TBx placeholder to a person level team target.
+- [Create territory-based targets in teams](https://support.fullcast.com/docs/create-territory-based-targets-in-teams.md): Create a team target that uses an assignment-based metric to automatically calculate each person's total quota based on the territories they are assigned to.
+- [Scenario and Capacity Planning](https://support.fullcast.com/docs/scenario-and-capacity-planning.md): Overview of capacity planning resources for the Fullcast platform.
+- [Get started with scenario and capacity planning](https://support.fullcast.com/docs/get-started-with-scenario-and-capacity-planning.md): Streamline capacity planning with Fullcast's unified data approach, enabling strategic RevOps, scenario modeling, and effective resource allocation.
+- [Video: Introduction to capacity planning](https://support.fullcast.com/docs/introduction-to-capacity-planning-in-fullcast.md): Short video introduction to capacity planning.
+- [Create a scenario](https://support.fullcast.com/docs/create-a-scenario.md): This article provides a comprehensive guide to using Scenario Planner in Fullcast, enabling revenue organizations to model different go-to-market strategies, optimize capacity allocation, and analyze potential outcomes by defining revenue and expense models, setting goals, and creating schedules for effective financial planning.
+- [Duplicate a Scenario](https://support.fullcast.com/docs/duplicate-a-scenario.md)
+- [Edit a Scenario's Title and Location](https://support.fullcast.com/docs/edit-a-scenarios-title-and-location.md)
+- [View and Update a Scenario](https://support.fullcast.com/docs/view-and-update-a-scenario.md): This article provides direction on editing an existing scenario title and description.
+- [Add Revenue Expenses to a Scenario](https://support.fullcast.com/docs/add-revenue-expenses-to-a-scenario.md)
+- [Add a Model to a Scenario Plan](https://support.fullcast.com/docs/add-a-model-to-a-scenario-plan.md): This article provides instructions for adding and configuring revenue operations (RevOps) models in Fullcast, allowing users to integrate various models into their go-to-market plans for comprehensive revenue generation and operational efficiency. It covers accessing the Scenarios module, adding models, providing inputs, and saving configurations for effective financial planning and analysis.
+- [Delete a Scenario](https://support.fullcast.com/docs/delete-a-scenario.md)
+- [Routing & Other Policies](https://support.fullcast.com/docs/policies.md): Fullcast policies handle complex go-to-market strategies such as  lead routing, data hierarchies, holdouts and more.
+- [General Policy Management](https://support.fullcast.com/docs/policies-general.md)
+- [Activate and deactivate policies](https://support.fullcast.com/docs/activating-and-deactivating-policies.md)
+- [Configure Object Manager for Policy Status and Policy Error Logs](https://support.fullcast.com/docs/object-manager-setup-for-policy-status-and-policy-error-logs.md): Learn how to set up the object manager in salesforce so that you can easily review the fullcast policy status and policy error logs for troubleshooting policy execution, such as for lead routing and account routing.
+- [Understand the Policy Status page in Salesforce](https://support.fullcast.com/docs/understand-the-policy-status-page-in-salesforce.md): The Fullcast Policy Status in Salesforce provides insights into how a policy was executed. It shows the input values used, the process execution steps, and the final outcome. This article provides details on what information is contained in each part of the Policy Status and how you can use it.
+- [Troubleshoot policy issues with Fullcast policy error logs](https://support.fullcast.com/docs/troubleshoot-policy-issues-with-fullcast-policy-error-logs.md): Learn to access and interpret Fullcast Policy Error Logs in Salesforce to diagnose policy execution problems, understand failures, and identify when debug mode impacts logging. This applies to all policies, including troubleshooting lead routing, account routing, holdouts, etc.
+- [Editing Policies](https://support.fullcast.com/docs/editing-policies.md)
+- [Configuring Duplicate rules and Matching rules in Salesforce](https://support.fullcast.com/docs/configuring-duplicate-rules-and-matching-rules-in-salesforce.md)
+- [Retaining Motion Package Debug/Error Logs](https://support.fullcast.com/docs/retaining-motion-package-debugerror-logs.md): This article provides directions for retaining motion package debug or error logs.
+- [Routing Policies](https://support.fullcast.com/docs/assignments.md): Fullcast routing interacts with both standard and custom objects in Salesforce where automated routing enables the flow of information from Salesforce to Fullcast and back to Salesforce.
+- [Get started with routing](https://support.fullcast.com/docs/configure-territory-based-routing.md): Implement territory-based routing in Fullcast for lead, account, and opportunity management in Salesforce. Optimize your routing policies effectively.
+- [Routing Policies Planning](https://support.fullcast.com/docs/routing-policies-setup.md)
+- [Best practice: routing policies in multiple exporting plans](https://support.fullcast.com/docs/best-practices-for-routing-policies-in-multiple-exporting-plans.md): Key considerations and best practices for implementing Fullcast routing for multiple go-to-market plans.
+- [Plan your routing policies](https://support.fullcast.com/docs/plan-your-routing-policies.md): Use this routing policy planning worksheet to map out record types, entry conditions, scenarios, and territory nodes before system configuration for greater accuracy.
+- [Review territory rules and coverage for routing preparation](https://support.fullcast.com/docs/review-territory-rules-and-coverage-for-routing-preparation.md): Prepare for territory-based routing: Learn how to review your Fullcast territory rules, address mapping, and coverage assignments before configuration.
+- [Create & Test Routing Policies](https://support.fullcast.com/docs/create-test-routing-policies.md)
+- [Create a routing policy](https://support.fullcast.com/docs/routing-policy-stages.md): Build effective Fullcast routing policies. Configure each stage: BMA, Duplicates, Auto Convert, Role-Based, Round Robin and more.
+- [Create policy tags](https://support.fullcast.com/docs/create-policy-tags.md): Learn to use Fullcast Policy Tags for advanced routing. Combine Salesforce field values in Flow (Tag String) and match with Tag Expressions for conditional logic.
+- [Test Fullcast routing policies](https://support.fullcast.com/docs/test-fullcast-routing-policies.md): Learn how to effectively test your Fullcast routing policies using test records and the Policy Status page to ensure leads are assigned correctly before deployment.
+- [Best Match Accounts (BMA)](https://support.fullcast.com/docs/best-match-accounts-bma.md)
+- [Setup best matched account (BMA) filter](https://support.fullcast.com/docs/how-does-best-match-account-work.md): The  functionality helps match the right Leads to the right  accounts for effective sales planning. When a lead enters a system, it is essential to check the lead with already existing accounts to eliminate all invalid leads.
+- [Create policy rules for best matched accounts (BMA) with fuzzy logic](https://support.fullcast.com/docs/introduction-to-best-match-account-functionality-and-rules-for-fuzzy-matching.md): Create policy rules for BMA with fuzzy logic.
+- [Best matched account (BMA) functionality with fuzzy logic](https://support.fullcast.com/docs/best-match-account-functionality-with-fuzzy-logic.md): Fuzzy logic is a way to model logical reasoning where the truth of a statement is not a binary true or false, but rather it is with the degree of truth that ranges from 0 (false) to 1 (true).
+- [Round Robin](https://support.fullcast.com/docs/round-robin.md)
+- [Round robin functionality](https://support.fullcast.com/docs/round-robin-functionality.md): Optimize lead distribution with round robin functionality, ensuring fair workload among sales reps based on weightage, skills, and availability.
+- [Manage exceptions in round robin](https://support.fullcast.com/docs/manage-exceptions-in-round-robin.md): Manage your round-robin exception list with skip and redo features in Salesforce. Customize lead routing based on participant expertise and tags.
+- [Round-robin functionality for package version 2.160 and above](https://support.fullcast.com/docs/round-robin-functionality-for-package-version-2160-and-above.md): Optimize your sales team's workload with round-robin distribution, ensuring equal case assignments and efficient routing based on skills and limits.
+- [Salesforce Configuration](https://support.fullcast.com/docs/salesforce-configuration.md)
+- [Configure Salesforce custom metadata for Fullcast routing](https://support.fullcast.com/docs/configure-salesforce-custom-metadata-for-fullcast-routing.md): Configure Fullcast settings and policies in Salesforce for accurate data routing, ensuring effective lead and account management.
+- [Configure Lead Routing Policy in Salesforce - Best Matched Account](https://support.fullcast.com/docs/configuring-lead-routing-policy-in-salesforce-best-matched-account.md)
+- [Configure Salesforce flows for Fullcast routing policies](https://support.fullcast.com/docs/configure-salesforce-flows-for-fullcast-routing-policies.md): This article provides directions for configuring Flows in Salesforce to trigger and execute Fullcast policies, enabling automation and streamlining various business processes related to account routing, data deduplication, and other policy-driven actions.
+- [Configure Tenant ID in Routing Policies](https://support.fullcast.com/docs/configuring-tenant-id-in-routing-policies.md)
+- [Configure Contact Routing in Salesforce](https://support.fullcast.com/docs/configuring-contact-routing-in-salesforce.md)
+- [Routing Videos](https://support.fullcast.com/docs/video-tutorials.md)
+- [Video: Territory-Based Lead Routing](https://support.fullcast.com/docs/video-territory-based-lead-routing.md)
+- [Video: Account Routing](https://support.fullcast.com/docs/video-account-routing.md)
+- [FAQs: Routing](https://support.fullcast.com/docs/routing-faqs.md): Find answers to common questions about configuring and using Fullcast's routing capabilities to automatically assign records like leads and accounts based on your go-to-market strategy.
+- [Compliance Policies](https://support.fullcast.com/docs/compliance.md)
+- [How to configure US trade Embargo policy?](https://support.fullcast.com/docs/how-to-configure-us-trade-embargo-policy.md)
+- [Data Policies](https://support.fullcast.com/docs/data.md)
+- [Account Hierarchy](https://support.fullcast.com/docs/account-hierarchy.md)
+- [About the Account Hierarchy Policy](https://support.fullcast.com/docs/about-the-account-hierarchy-policy.md)
+- [Configuring the Account Hierarchy Policy in Salesforce](https://support.fullcast.com/docs/configuring-the-account-hierarchy-policy-in-salesforce.md): Learn how to configure the Account Hierarchy policy in Salesforce to manage parent-child relationships between accounts. This article provides directions for setting up the necessary fields and flows for effective data hierarchy management.
+- [Account Hierarchy UAT](https://support.fullcast.com/docs/account-hierarchy-uat.md)
+- [Industry Taxonomy](https://support.fullcast.com/docs/industry-taxonomy.md)
+- [Data Policy - Configuring Flow in Salesforce for Industry Taxonomy](https://support.fullcast.com/docs/data-policy-configuring-flow-in-salesforce-for-industry-taxonomy.md): Learn how to configure Flow Builder in Salesforce to automate Fullcast policies such as the Account Dedupe policy. This article provides directions for setting up Flow Builder and integrating it with Fullcast for efficient data management.
+- [Data policy- Configuring Industry Taxonomy Policy in Fullcast](https://support.fullcast.com/docs/data-policy-configuring-industry-taxonomy-policy-in-fullcast.md)
+- [Using Industry Taxonomy in Fullcast](https://support.fullcast.com/docs/using-industry-taxonomy-in-fullcast.md)
+- [Build your Industry taxonomy?](https://support.fullcast.com/docs/build-your-industry-taxonomy.md): Add, edit, and delete industry nodes for your industry taxonomy.
+- [Understanding Industry codes](https://support.fullcast.com/docs/understanding-industry-codes.md)
+- [Account Dedupe ](https://support.fullcast.com/docs/account-dedupe.md)
+- [Creating Best Match Account Rules in Salesforce](https://support.fullcast.com/docs/creating-best-match-account-rules-in-salesforce.md)
+- [Data Policy - Configuring Flow in Salesforce for Account Dedupe Policy](https://support.fullcast.com/docs/data-policy-configuring-flow-in-salesforce-for-account-dedupe-policy.md): Configure a salesforce flow to trigger the Fullcast account dedupe policy.
+- [Data Policy- Configuring Account Dedupe Policy in Fullcast](https://support.fullcast.com/docs/data-policy-configuring-account-dedupe-policy-in-fullcast.md)
+- [Dedupe Policy Configuration in Salesforce](https://support.fullcast.com/docs/dedupe-policy-configuration-in-salesforce.md)
+- [Sales Process Policies](https://support.fullcast.com/docs/sales-process.md)
+- [Holdouts](https://support.fullcast.com/docs/holdouts.md)
+- [Create a holdout policy](https://support.fullcast.com/docs/create-a-holdout-policy.md): Create a holdout policy in Fullcast to ensure smooth account transitions and maintain sales momentum.
+- [Create a Salesforce flow for a holdout policy](https://support.fullcast.com/docs/create-a-salesforce-flow-for-a-holdout-policy.md): Create a Salesforce flow for a holdout policy.
+- [Create a Salesforce schedule-triggered flow to cleanup holdouts](https://support.fullcast.com/docs/create-a-salesforce-schedule-triggered-flow-for-holdout-policies.md): Create a schedule-triggered flow in Salesforce to clean up expired holdouts with open opportunities on a scheduled frequency. The schedule-triggered flow transfers open opportunities with an expired holdout to the new account owner.
+- [Service Level](https://support.fullcast.com/docs/service-level.md)
+- [Create a service level policy](https://support.fullcast.com/docs/create-a-service-level-policy.md)
+- [Video: Speed to Lead - Automating Service Level Agreements](https://support.fullcast.com/docs/video-speed-to-lead-automating-service-level-agreements.md)
+- [Co-Pilot Policies](https://support.fullcast.com/docs/co-pilot-policies.md)
+- [Create a New Hire Policy](https://support.fullcast.com/docs/create-a-new-hire-policy.md)
+- [Terminate Employee Policy Overview](https://support.fullcast.com/docs/terminate-employee-policy-overview.md)
+- [New Hire Policy Overview](https://support.fullcast.com/docs/new-hire-policy-overview.md)
+- [Configure Terminate Employee Policy](https://support.fullcast.com/docs/configure-terminate-employee-policy.md): This article provides information and direction on using Fullcast Co-Pilot for employee terminations
+- [Teams](https://support.fullcast.com/docs/teams.md): Learn how to create and manage teams in Fullcast which feed into robust functionality in our targets and scenarios modules.
+- [Create Teams Using Bucket Values](https://support.fullcast.com/docs/create-teams-using-bucket-values.md): The purpose of this article is to provide directions for creating teams using Bucket Values.
+- [Create Teams Using Unique Field Values](https://support.fullcast.com/docs/create-teams-using-unique-field-values.md): This article provides directions for creating teams using unique field values in Fullcast.
+- [Edit Hierarchy Rules in Teams](https://support.fullcast.com/docs/edit-hierarchy-rules-in-teams.md): This article provides instructions for editing team nodes in Fullcast by creating new nodes and ensuring they adhere to the latest rules, highlighting the process of accessing the Territories module, locating the node to be edited, and configuring the new node with the appropriate settings.
+- [Move People in Teams](https://support.fullcast.com/docs/move-people-in-teams.md): This article provides directions in moving people from one team to another.
+- [Rename Teams](https://support.fullcast.com/docs/rename-teams.md)
+- [Delete a Team](https://support.fullcast.com/docs/delete-a-team.md)
+- [Org Charts](https://support.fullcast.com/docs/org-charts.md): This article explains how to use the Org Chart in Fullcast to visualize and analyze team hierarchy, allowing users to create charts, customize dimensions and metrics, and gain insights into team structure and organization.
+- [Deleting Parent Children Teams](https://support.fullcast.com/docs/deleting-parent-children-teams.md): This article provides directions for deleting a parent team and related children from Fullcast.
+- [Off-board people in teams](https://support.fullcast.com/docs/off-board-people-in-teams.md): Offboard people from Teams.
+- [Commissions](https://support.fullcast.com/docs/commissions.md): Commissions powered by Fullcast Pay is a flexible commission management system designed to help businesses accurately calculate, track, and pay sales commissions. It integrates seamlessly within the Fullcast platform to provide a comprehensive solution that automates commission workflows, ensures transparency, and motivates sales teams.
+- [Custom tables](https://support.fullcast.com/docs/custom-tables-1.md): Use custom tables the same way as VLOOKUP tables in a spreadsheet to match specific data values to associated information which enhances data managements and calculations for commissions. Define and store specific data that is referenced and applied to transactions to enable accurate commission calculations for sales representatives.
+- [Create custom tables](https://support.fullcast.com/docs/custom-tables.md): Create a custom table that you can reference in a transaction table for a crediting rule. Custom tables add qualification criteria for commissionable events that can be used in calculations for commissions.
+- [Edit custom table details](https://support.fullcast.com/docs/edit-custom-table-data.md): Custom table details is where you manage and create the column headers that are referenced for the transactions and used in commissions calculations in addition to managing other configurations for the custom table.
+- [Manage custom table data](https://support.fullcast.com/docs/edit-custom-tables.md): Add and delete rows, import and export data from the Table Editor screen, and manage multiple rows in a custom table.
+- [Manage custom tables](https://support.fullcast.com/docs/manage-custom-tables.md): Edit custom table details, configure columns, change the custom table status, and delete a custom table.
+- [Crediting rules](https://support.fullcast.com/docs/crediting-rules.md): Understand how crediting rules work, what is a commissionable event and what is required to configure crediting rules.
+- [Create crediting rules](https://support.fullcast.com/docs/create-crediting-rules.md): Create new crediting rules, configure commissionable event details, add credit and payee details, and add targets for crediting rules.
+- [Manage crediting rules](https://support.fullcast.com/docs/manage-crediting-rules.md): Edit rule details and rule configurations, manually run rules, archive or unarchive rules, activate or deactivate rules, and delete rules.
+- [Manage lookup fields in a crediting rule](https://support.fullcast.com/docs/manage-lookup-fields-in-a-crediting-rule.md): When you add a lookup field in a crediting rule, it compares data from the selected extracted field to the matching field and pulls in the value from the selected column.
+- [Manage calculated fields in a crediting rule](https://support.fullcast.com/docs/manage-calculated-fields-in-a-crediting-rule.md): Add calculated fields to apply fees, deductions, or commission percentages to transaction records.
+- [Calculated fields syntax](https://support.fullcast.com/docs/calculated-fields-syntax.md): Description of operators, syntax examples, and syntax descriptions including DATE( ) formulas, to help create formulaic expressions for calculated fields in a crediting rule.
+- [Transactions](https://support.fullcast.com/docs/transactions.md)
+- [View transactions for a crediting rule](https://support.fullcast.com/docs/view-transactions-for-a-crediting-rule.md): View the transactions table from a crediting rule in the commissions module.
+- [Manage individual transactions for a crediting rule](https://support.fullcast.com/docs/manage-individual-transactions.md): Exclude or include, and lock or unlock individual transactions on a crediting rule to prepare commissionable events for compensation.
+- [Manage multiple transactions for a crediting rule](https://support.fullcast.com/docs/manage-multiple-transactions.md): Export, and lock or unlock a group of transactions on a crediting rule simultaneously to prepare commissionable events for compensation.
+- [Filter and search on the transactions table](https://support.fullcast.com/docs/filter-and-search-on-the-transactions-table.md): Use the different search and filter options available to filter transaction data on the transactions table.
+- [Edit custom fields in a crediting transaction](https://support.fullcast.com/docs/edit-custom-fields-in-a-crediting-transaction.md): Edit a single custom field or mass edit multiple custom fields simultaneously from the transactions table of a crediting rule.
+- [Manage payees on a crediting transaction](https://support.fullcast.com/docs/manage-payees-on-a-crediting-transaction.md): Add, remove, exclude, or include payees to an individual transaction or multiple transactions. Update the split or quota percentages.
+- [Compensation plans](https://support.fullcast.com/docs/compensation-plans.md)
+- [Create a compensation plan](https://support.fullcast.com/docs/create-compensation-plans.md)
+- [Configure compensation plan components](https://support.fullcast.com/docs/configure-compensation-plan-components.md): Create the components, configure commission details, add attributes, create formulas, and configure commission tiers on those attributes.
+- [Manage compensation plans](https://support.fullcast.com/docs/manage-compensation-plans.md)
+- [Compensation periods](https://support.fullcast.com/docs/commission-periods.md)
+- [Create commission periods](https://support.fullcast.com/docs/create-commission-periods.md): Create commission periods to group and track transactions during a specified timeframe for the compensation plan.
+- [Manage commission periods](https://support.fullcast.com/docs/mange-commission-periods.md): Edit, delete, or lock and unlock commission periods in a compensation plan.
+- [Adjustments](https://support.fullcast.com/docs/adjustments.md): Adjustments encompass manual corrections, system-driven true-ups, corrections for changes in underlying business events, and compensation actions like bonuses, draws, or clawbacks.
+- [Adjustment scenarios and ledger results](https://support.fullcast.com/docs/adjustment-scenarios-and-ledger-results.md): The following are common scenarios when you adjust transaction data in Salesforce and Fullcast and their impact on the commissions ledger for committed and uncommitted ledger entries.
+- [Transaction adjustments](https://support.fullcast.com/docs/transaction-adjustments.md): Create adjusted transactions and edit adjusted transactions.
+- [Commissions ledger adjustments](https://support.fullcast.com/docs/commissions-ledger-adjustments.md): Add a new ledger entry, adjust an existing ledger entry, edit or delete an adjusted ledger entry.
+- [Multiple Currencies](https://support.fullcast.com/docs/multiple-currencies.md): Multi-currency provides access to import and manage multiple currencies within Fullcast.
+- [Import multiple currencies](https://support.fullcast.com/docs/import-multiple-currencies.md): Import, add, edit, or delete active currencies in Fullcast.
+- [Commissions ledger](https://support.fullcast.com/docs/commissions-ledger.md)
+- [View the commissions ledger](https://support.fullcast.com/docs/view-the-commissions-ledger.md)
+- [Edit custom fields in the commissions ledger](https://support.fullcast.com/docs/manage-transactions-from-the-commissions-ledger.md): Edit multiple custom columns for multiple transactions in the commissions ledger.
+- [Commit commissions](https://support.fullcast.com/docs/commit-commissions.md): Commit individual or multiple ledger entries. Once a ledger entry is committed, it is immutable and cannot be edited or deleted.
+- [Documents](https://support.fullcast.com/docs/documents.md): Streamline document management with e-signatures for employment agreements, NDAs, and compensation plans, all tracked via Adobe Sign's dashboard.
+- [Manage document groups](https://support.fullcast.com/docs/manage-document-groups.md): Create, archive, and unarchive document groups.
+- [Add a document](https://support.fullcast.com/docs/add-a-document.md): Create and personalize documents like employment agreements and NDAs for e-signature with Fullcast. Use lookup tables and merge entities to define what data can be added to document templates.
+- [Manage documents](https://support.fullcast.com/docs/manage-documents.md): Edit, send, and track documents for e-signatures. Download signed copies and manage document details.
+- [Manage document recipients](https://support.fullcast.com/docs/manage-document-recipients.md): Manage e-signature recipients, track their status, and view documents.
+- [Manage an approver route](https://support.fullcast.com/docs/manage-an-approver-route.md): Configure an approver route for document approval, adding up to 11 reviewers in sequence. Learn how to manage and replace approvers effectively.
+- [Add CC recipients to a document](https://support.fullcast.com/docs/add-cc-recipients.md): CC recipients receive documents for visibility, not approval. Learn how to add or remove CC recipients easily in document management.
+- [Cancel a sent document](https://support.fullcast.com/docs/cancel-a-sent-document.md): Cancel sent documents to completely cancel the signing process.
+- [View signing status for a document](https://support.fullcast.com/docs/view-signing-status.md): Manage document signing efficiently with the Multiple Signers Status Modal, tracking recipient statuses and replacing approvers seamlessly.
+- [View document audit logs](https://support.fullcast.com/docs/view-document-audit-logs.md): View audit logs to see activity for document management, creation, and more.
+- [Reports](https://support.fullcast.com/docs/reports.md): Fullcast reports make it easy to monitor your go-to-market strategy and execution.
+- [Create and review custom metrics](https://support.fullcast.com/docs/create-and-review-custom-metrics-1.md): Create and customize metrics in Fullcast for effective data analysis and reporting. Add and configure metrics for different entities, enable data-driven insights and informed decision-making.
+- [Folders](https://support.fullcast.com/docs/folders.md)
+- [Create folders](https://support.fullcast.com/docs/create-folders.md): Create folders to organize dashboards, reports, and metrics.
+- [Manage folders](https://support.fullcast.com/docs/manage-folders.md): Delete or edit folders from the folders menu.
+- [Dashboards](https://support.fullcast.com/docs/dashboards.md)
+- [Create a dashboard](https://support.fullcast.com/docs/create-a-dashboard.md): Create folders to organize dashboards, reports, and metrics.
+- [Manage dashboards](https://support.fullcast.com/docs/manage-dashboards.md): Edit the layout of reports on dashboard, update dashboard details, refresh reports, duplicate, delete, and share dashboards from the dashboard menu ⋮.
+- [Filter reports on a dashboard](https://support.fullcast.com/docs/filter-reports-on-a-dashboard.md): Filter reports by timeseries, on a person, or product. Sort and filter on report tables.
+- [Reports](https://support.fullcast.com/docs/types-of-reports.md)
+- [Dashboard reports](https://support.fullcast.com/docs/dashboard-reports.md)
+- [Create reports in a dashboard](https://support.fullcast.com/docs/create-reports-in-a-dashboard.md): Create multiple reports in a dashboard.
+- [Manage reports in a dashboard](https://support.fullcast.com/docs/manage-reports-in-a-dashboard.md): Edit, share, and manage reports on a dashboard.
+- [Standalone reports](https://support.fullcast.com/docs/stand-alone-reports.md)
+- [Create a standalone report](https://support.fullcast.com/docs/create-a-standalone-report.md): Create a standalone report that is independent from dashboards.
+- [Manage standalone reports](https://support.fullcast.com/docs/manage-standalone-reports.md): Edit, save, and manage standalone (individual) reports.
+- [Save a new report](https://support.fullcast.com/docs/save-a-new-report.md): Use an existing standalone report to create and save a new report.
+- [Temporary reports](https://support.fullcast.com/docs/temporary-reports.md)
+- [Create a temporary report](https://support.fullcast.com/docs/create-a-temporary-report.md): Create temporary reports from a module.
+- [Save a temporary report](https://support.fullcast.com/docs/save-a-temporary-report.md): Save a temporary report as a standalone report in a folder.
+- [Select a chart to design](https://support.fullcast.com/docs/select-a-chart-to-design.md): Select the chart type you want to design for your report.
+- [Customize measures for a report](https://support.fullcast.com/docs/customize-measures-for-a-report.md): Customize and configure measures on a report.
+- [Pin reports to a dashboard](https://support.fullcast.com/docs/pin-charts-to-the-dashboard.md): Once you have plotted the report from a module, you have the option to pin the report to a dashboard where its configuration will be saved.
+- [Report types](https://support.fullcast.com/docs/report-types.md)
+- [Basic Charts](https://support.fullcast.com/docs/basic-chart.md): Design a basic chart.
+- [GTM Chart](https://support.fullcast.com/docs/gtm-charts.md): Create a GTM chart.
+- [Coverage Report](https://support.fullcast.com/docs/coverage-report.md): Create a coverage report.
+- [Portfolio Report](https://support.fullcast.com/docs/portfolio-report.md): Create a portfolio report.
+- [Commissions Report](https://support.fullcast.com/docs/commissions-report.md): Create a commissions report.
+- [Disruption Report](https://support.fullcast.com/docs/disruption-report.md): Create a disruption report.
+- [Comparison Chart](https://support.fullcast.com/docs/comparison-chart.md): Create a comparison chart.
+- [Attainment Chart](https://support.fullcast.com/docs/attainment-chart.md): Create an attainment chart.
+- [Data Quality Chart](https://support.fullcast.com/docs/data-quality-chart.md): Create a data quality chart.
+- [Map Chart](https://support.fullcast.com/docs/map-chart.md): Create a map chart.
+- [Scenario Basic Chart](https://support.fullcast.com/docs/scenario-basic-chart.md): Create a scenario basic chart.
+- [Raw Table Chart](https://support.fullcast.com/docs/raw-table-chart.md): Create Raw Table charts to extract and audit CRM data easily. Configure your report layout and filters for precise data visualization.
+- [Admin & Settings](https://support.fullcast.com/docs/admin.md)
+- [Resource Limits](https://support.fullcast.com/docs/resource-limits.md)
+- [Provision Fullcast](https://support.fullcast.com/docs/provisioning-fullcast-1.md): Basic process to provision Fullcast.
+- [Tenant admin settings](https://support.fullcast.com/docs/admin-reference-guide-1.md): Tenant admins can access and update settings to customize the GTM plan in Fullcast. Refer to the following table for a description of each settings tab in Fullcast, common tasks, and links to associated documentation including: plan information, jobs, users, audits, metrics, tenant settings, entities and fields, policies, and export-import processes.
+- [Integration](https://support.fullcast.com/docs/integration-and-provisioning.md)
+- [Connect a Human Resources Information System (HRIS)](https://support.fullcast.com/docs/connect-hris.md): Connect to an HRIS system to bring people records into Fullcast.
+- [Salesforce Integration](https://support.fullcast.com/docs/salesforce-integration-1.md)
+- [Salesforce integration requirements](https://support.fullcast.com/docs/salesforce-integration-requirements.md): The object and field access required for each of the integration types necessary to access data used for GTM planning in the Fullcast, migrate planned data, and execute policies within Salesforce.
+- [Connected App Setup](https://support.fullcast.com/docs/connected-app-setup.md)
+- [Create a Connected App](https://support.fullcast.com/docs/create-a-connected-app.md): Create a connected app in Salesforce and update the OAuth policies. Connected app for new connections is no longer supported. Refer to external client app for new connections.
+- [Connect Fullcast to Salesforce](https://support.fullcast.com/docs/connect-fullcast-to-salesforce.md): Connected app for new connections is no longer supported. Refer to external client app for new connections.
+- [Reconfigure Salesforce connection after sandbox refresh](https://support.fullcast.com/docs/reconfigure-salesforce-connection-after-sandbox-refresh.md): How to reconfigure the Salesforce connection after a sandbox refresh.
+- [External Client App Setup](https://support.fullcast.com/docs/external-client-app-setup.md)
+- [Create an external client app](https://support.fullcast.com/docs/connect-an-external-client-app.md): Create an external client app to connect your Fullcast instance to Salesforce.
+- [Connect Fullcast to Salesforce with external client app](https://support.fullcast.com/docs/connect-fullcast-to-salesforce-with-external-client-app.md): Connect and authenticate Salesforce with the Fullcast External Client App.
+- [Reconfigure Salesforce external client app after sandbox refresh](https://support.fullcast.com/docs/reconfigure-salesforce-external-client-app-after-sandbox-refresh.md): How to reconfigure the Salesforce connection after a sandbox refresh.
+- [Create an integration user](https://support.fullcast.com/docs/create-an-integration-user.md): This article provides instructions for creating an API integration user in Salesforce to enable authentication and data exchange between Fullcast and Salesforce imports, exports, and REST API-based app integrations.
+- [Adding a Fullcast Tenant ID to Salesforce Custom Metadata](https://support.fullcast.com/docs/adding-a-fullcast-tenant-id-to-salesforce-custom-metadata.md)
+- [Import roll-up summary field](https://support.fullcast.com/docs/import-roll-up-summary-field.md): Complete the steps for an import roll-up summary field.
+- [Managed Package](https://support.fullcast.com/docs/managed-package.md)
+- [Managed package components](https://support.fullcast.com/docs/draft-managed-package-objects-and-fields.md): Review details about the Fullcast managed package components, including custom objects and fields.
+- [Managed Package Field List](https://support.fullcast.com/docs/managed-package-field-list.md): This article provides information regarding fields that were deprecated or deleted.
+- [Remove fields installed by the Managed Package](https://support.fullcast.com/docs/remove-fields-installed-by-the-managed-package.md)
+- [Install or upgrade the managed package](https://support.fullcast.com/docs/installing-the-managedpackage.md): This article provides directions for installing the managed package in Salesforce.
+- [Upgrade to Managed Package 2.180 or later](https://support.fullcast.com/docs/upgrade-to-managed-package-2180-or-later.md)
+- [Configure a Scheduled Job in Salesforce](https://support.fullcast.com/docs/configure-a-scheduled-job-in-salesforce.md): Fullcast scheduler is a custom scheduler job that updates a field on a Salesforce object. This scheduler job is not related to the Fullcast's standard import or export jobs.
+- [Regenerate Salesforce credentials](https://support.fullcast.com/docs/regenerate-salesforce-credentials.md): Regenerate your Salesforce Consumer Key and Secret securely, update Fullcast, and confirm with support to ensure your app's safety.
+- [Fullcast and Salesforce Integration FAQs](https://support.fullcast.com/docs/fullcast-and-salesforce-integration-faqs.md)
+- [ServiceNow Integration](https://support.fullcast.com/docs/servicenow-integration.md): The ServiceNow integration is a scoped application (equivalent to a Salesforce Managed Package) and focuses on core planning and compensation features. It does not yet support policies like routing and holdouts.
+- [Tenant & Plan Settings](https://support.fullcast.com/docs/tenant-plan-settings.md)
+- [Tenant settings](https://support.fullcast.com/docs/tenant-settings.md): Configure licenses, people search, and clone options, fiscal year configuration, details panel fields, grid display preferences, and account family visibility.
+- [Production v. Pre-Production Environments](https://support.fullcast.com/docs/production-v-pre-production-environments.md): This article outlines the distinctions between Fullcast's production and preproduction environments.
+- [Plan settings](https://support.fullcast.com/docs/plan-settings.md)
+- [Create a plan](https://support.fullcast.com/docs/create-a-plan.md): Create a plan in Fullcast.
+- [Manage plans](https://support.fullcast.com/docs/manage-plans-2.md): Edit, duplicate, and delete plans in Fullcast.
+- [Configure plan settings](https://support.fullcast.com/docs/configure-plan-settings.md): Configure a plans settings including data filters, rerun rules, export configurations, and notification alerts.
+- [Configure auto rerun rules for fields](https://support.fullcast.com/docs/configure-auto-rerun-rules-for-fields.md): Configure auto rerun rules to run when specific fields are enabled.
+- [Fullcast plan cutover go-live run list](https://support.fullcast.com/docs/fullcast-plan-cutover-go-live-run-list.md): A step by step checklist to coordinate tasks for a seamless transition of territory coverage and account team member assignments between Fullcast and Salesforce when you cutover or switch to a new plan.
+- [FAQs: Duplicated plans](https://support.fullcast.com/docs/faqs-duplicated-plans.md): FAQs for duplicating and cloning plans.
+- [Entities & Fields](https://support.fullcast.com/docs/entities-fields.md)
+- [Configure basic entities and fields](https://support.fullcast.com/docs/configure-basic-entities-and-fields.md): The Fullcast standard package includes default entities pre-populated with mandatory fields necessary for maintaining the integration. You can customize your entities and fields for your GTM plan.
+- [Object and field permission sets](https://support.fullcast.com/docs/permission-sets.md): The following permission sets must be assigned, at minimum, to the relevant user or integration profile. The permissions are broken down by functionality: Import, Motion (for automated policies, such as routing), and Export.
+- [Override field label created by managed packages in Salesforce](https://support.fullcast.com/docs/how-to-change-field-label-created-by-managed-packages.md): You can override field labels created by the managed package in Salesforce if needed.
+- [Fields](https://support.fullcast.com/docs/fields.md)
+- [Create fields in Fullcast](https://support.fullcast.com/docs/create-fields-in-fullcast.md): Add a CRM field or create custom fields in Fullcast from the Entities & Fields settings.
+- [Create a reference field](https://support.fullcast.com/docs/create-a-reference-field.md): Create a reference field to access data from a related object on a primary record within the Fullcast platform.
+- [Format a field as a hyperlink in the data grid](https://support.fullcast.com/docs/format-a-field-as-a-hyperlink-in-the-data-grid.md): Configure a field in Fullcast as a hyperlink that redirects users from a record in a Fullcast data grid to an external web page, such as a record in Salesforce
+- [Field data types and formatting options in Fullcast](https://support.fullcast.com/docs/field-data-types-and-formatting-options-in-fullcast.md): Data formatting enhances grid readability by customizing how data is displayed without changing the data. Each field's data type (numeric, date, string, integer) defines its formatting options.
+- [Manage fields in Fullcast](https://support.fullcast.com/docs/manage-fields-in-fullcast.md): Edit or delete fields from the Entities in Fullcast.
+- [Entities](https://support.fullcast.com/docs/entities.md)
+- [Create entities in Fullcast](https://support.fullcast.com/docs/create-entities-in-fullcast.md): Create new entities in Fullcast.
+- [Manage entities in Fullcast](https://support.fullcast.com/docs/manage-entities-in-fullcast.md): Edit filters for entities or delete entities from Fullcast.
+- [Export-Import](https://support.fullcast.com/docs/export-import.md): Fullcast has an automated data import and export process that is managed within the application. From the Export-Import tab in the Settings you can specify fields for import and export, monitor job statuses and details, and review error files generated during the process.
+- [Review import and export job status](https://support.fullcast.com/docs/review-job-status.md)
+- [Manage schedule jobs in Fullcast](https://support.fullcast.com/docs/manage-schedule-jobs-in-fullcast.md): When you integrate your  in Fullcast, there are only two job packages you can schedule to run: Standard Import and Standard Export. Create, edit, or delete a job schedule in Fullcast.
+- [Run an ad hoc import or export job](https://support.fullcast.com/docs/run-an-ad-hoc-import-or-export-job.md): Complete an ad-hoc import or export job.
+- [Export process](https://support.fullcast.com/docs/export-process-overview.md): The process, settings, and configurations that impact the content of the export from Fullcast GTM plan data into your CRM.
+- [Simulate an export job](https://support.fullcast.com/docs/simulate-an-export-job.md): Simulate an export job to confirm the results that would happen if the export was run at that point.
+- [Import process](https://support.fullcast.com/docs/import-process.md): The import of CRM data from Salesforce into Fullcast is controlled by the configuration of entities and fields. This is where you can control which objects and fields are imported into Fullcast. The import process is the same for all standard integrations.
+- [Standard and custom jobs](https://support.fullcast.com/docs/standard-and-custom-jobs.md)
+- [Standard and custom jobs](https://support.fullcast.com/docs/standard-vs-custom-jobs.md): Standard jobs versus custom jobs in Fullcast.
+- [Automate account updates from standard jobs](https://support.fullcast.com/docs/automate-account-updates-from-standard-jobs.md): Learn how Fullcast updates territory and assignment data in Salesforce. This article provides a video walkthrough of using Salesforce flow builder to automate account record updates based on Fullcast data.
+- [Metrics](https://support.fullcast.com/docs/metrics.md): Metrics are the data points that power your  plan. Whether you balance territories in plan or calculate commissions in pay, accurate metrics ensures your strategy is balanced, your forecasts are reliable, and your sales team is incentivized to reach their full potential.
+- [Create and review custom metrics](https://support.fullcast.com/docs/create-and-review-metrics.md): Create and customize metrics in Fullcast for effective data analysis and reporting. Add and configure metrics for different entities, enable data-driven insights and informed decision-making.
+- [Use metrics](https://support.fullcast.com/docs/summary-metrics.md): Manage metrics on the summary panel and pin metrics to a dashboard.
+- [Troubleshoot: Metric discrepancies](https://support.fullcast.com/docs/troubleshooting-metric-discrepancies.md): Troubleshoot metric discrepancies in Fullcast, understand mismatches, address parent-child account relationships, navigate metric creation challenges, and validate time series metrics for accurate data analysis and reporting.
+- [User and Login Management](https://support.fullcast.com/docs/user-and-login-management.md)
+- [Configure Just-in-Time (JIT) provisioning](https://support.fullcast.com/docs/configure-just-in-time-jit-provisioning.md)
+- [Configure IP and country restrictions](https://support.fullcast.com/docs/configure-ip-and-country-restrictions.md): How to configure your Fullcast tenant to allow or deny specific IP addresses or country addresses where users may log in.
+- [Forgot Password](https://support.fullcast.com/docs/forgot-password.md)
+- [Configure SCIM](https://support.fullcast.com/docs/configure-scim.md)
+- [Configure Okta SSO Express Configuration](https://support.fullcast.com/docs/configure-okta-sso-express-configuration.md)
+- [Configure SSO](https://support.fullcast.com/docs/configure-sso.md): This article provides directions for configuring Single Sign-On (SSO) with Fullcast using a SAML v2 Identity Provider (IdP), outlining the supported features, required settings for both Fullcast and IdP, and the necessary steps to complete the SSO setup.
+- [Multifactor Authentication (MFA)](https://support.fullcast.com/docs/multifactor-authentication-mfa.md)
+- [Enable Multifactor Authentication (MFA)](https://support.fullcast.com/docs/enable-multifactor-authentication.md)
+- [Complete Multifactor Authentication (MFA) configuration](https://support.fullcast.com/docs/complete-mfa-configuration.md)
+- [Reset Multifactor Authentication (MFA)](https://support.fullcast.com/docs/resetting-mfa.md)
+- [User management](https://support.fullcast.com/docs/user-management.md)
+- [Get started with user permission types](https://support.fullcast.com/docs/get-started-with-user-permission-types.md): Understand the basic levers for managing user access and permissions.
+- [Invite new users](https://support.fullcast.com/docs/roles-and-coverage-inviting-new-users.md): How to invite users to Fullcast.
+- [Configure user permissions](https://support.fullcast.com/docs/configure-user-permissions.md): This article provides instructions for Tenant Admins in Fullcast to elevate a standard user's permissions to admin, enabling them with broader access and control over platform settings and user management. It highlights the process of accessing User Management, enabling or disabling the Tenant Admin option, and provides links to relevant resources for further information on roles and permissions.
+- [Manage existing users](https://support.fullcast.com/docs/manage-users.md): Edit, delete, and block existing users from the User Management settings in Fullcast.
+- [Track licenses](https://support.fullcast.com/docs/track-licensed-and-unlicensed-people.md)
+- [Deleting users](https://support.fullcast.com/docs/deleting-users.md)
+- [Notification Preferences](https://support.fullcast.com/docs/notifications.md): Notifications are in-app and email messages you can opt in to receive based on events in Fullcast. Notifications give you information on what is happening in your Fullcast instance so you can keep track of changes and spot problems quicker.
+- [Opt in to notifications in Fullcast](https://support.fullcast.com/docs/opt-in-to-notifications-in-fullcast.md): Opt in to receive notifications for various events, including target updates, note additions, job status, and more. Notifications are sent via email and within the Fullcast application. Customize your notification preferences through the user menu.
+- [Data Hygiene ](https://support.fullcast.com/docs/data-hygiene.md)
+- [Introduction to Data Quality](https://support.fullcast.com/docs/introduction-to-data-quality.md)
+- [Clean Domain Functionality](https://support.fullcast.com/docs/clean-domain-functionality-1.md): This article provides information regarding the concept of Clean Domain in Fullcast and the importance of maintaining data accuracy within the CRM.
+- [Audit and Security](https://support.fullcast.com/docs/general.md)
+- [Review Audit Logs](https://support.fullcast.com/docs/review-audit-logs.md): Access the audit log, filter events, export the audit log details, and use the audit log interpreter to understand audit log details.
+- [Vendors and sub-processors](https://support.fullcast.com/docs/vendors-and-sub-processors.md): third-party vendors, sub-processors, and advertising partners to assist it in providing the services.
+- [Fullcast Security Enhancements](https://support.fullcast.com/docs/fullcast-security-enhancements.md)
+- [Create an event subscription](https://support.fullcast.com/docs/create-an-event-subscription.md): Subscribe to specific events in Fullcast to keep track of changes, spot problems, and automate tasks.
+- [Troubleshooting](https://support.fullcast.com/docs/troubleshooting.md)
+- [Troubleshoot account merge error in Salesforce](https://support.fullcast.com/docs/troubleshooting-merging-records-conflict-in-salesforce.md)
+- [Troubleshooting: Export issues](https://support.fullcast.com/docs/troubleshooting-export-issues.md)
+- [Changes made in Salesforce not updated in Fullcast](https://support.fullcast.com/docs/changes-made-in-salesforce-not-updated-in-fullcast.md)
+- [Troubleshooting Import-Issues](https://support.fullcast.com/docs/troubleshooting-import-issues.md): This article provides a comprehensive guide to troubleshooting errors in Fullcast, encompassing reviewing error logs, verifying Fullcast configurations, assessing Salesforce permissions, and implementing remediation steps to ensure smooth data integration and job completion.
+- [Troubleshooting Routing Issues](https://support.fullcast.com/docs/troubleshooting-routing-issues.md): This article provides a comprehensive troubleshooting guide for addressing routing issues within the Salesforce integration, guiding users through verifying flow triggers, checking for policy status records, reviewing error logs, validating data mapping, testing territory routing, and ensuring correct input variables and processing modes for seamless integration and functionality.
+- [Troubleshooting Smart Plans in Fullcast](https://support.fullcast.com/docs/troubleshooting-smart-plans-in-fullcast.md): This article provides troubleshooting guidance for Fullcast Smart Plans, focusing on isolating criteria, testing individually, analyzing overlap, simplifying complex plans, verifying metrics, and addressing parent-child relationships, account limits, and distribution logic for effective territory balancing.
+- [Change Your Password](https://support.fullcast.com/docs/change-your-password.md): This article provides directions for changing a password in Fullcast.
+- [Checking Current Version of Installed Packages](https://support.fullcast.com/docs/checking-current-version-of-installed-packages.md): This article provides directions for identifying which version of the installed package in Salesforce.
+- [FAQ: Login issues](https://support.fullcast.com/docs/faq-login-issues.md): This article provides information and directions for troubleshooting login issues in Fullcast.
+- [Troubleshooting Why an Account is in the Unassigned Node](https://support.fullcast.com/docs/troubleshooting-why-an-account-is-in-the-unassigned-node.md): This article provides information and directions for troubleshooting why an account ends up in the unassigned territory.
+- [Workflow Access Denied Error](https://support.fullcast.com/docs/workflow-access-denied-error.md): This article provides directions for troubleshooting an "Access Denied" error message.
+- [Provide Support with Temporary Access](https://support.fullcast.com/docs/provide-support-with-temporary-access.md)
+- [How to Clear Browser Cache for Fullcast](https://support.fullcast.com/docs/how-to-clear-browser-cache-for-fullcast.md)
+- [Fullcast Learning Hub](https://support.fullcast.com/docs/fullcast-learning-hub.md): Learn best practices for using Fullcast functionality to optimize your go-to-market strategy and execution.
+- [Smart Plan for Territory Management and Resource Alignment](https://support.fullcast.com/docs/smartplan-for-territory-management-and-resource-alignment.md): Learn how to apply Smart Plan rules to achieve specific territory management scenarios.
+- [Smart Plan - Advanced Strategies and Automation](https://support.fullcast.com/docs/smartplan-advanced-strategies-and-automation.md): Get realistic descriptions and examples of advanced use cases for the Fullcast Smart Plan
+- [Territory Planning Best Practices](https://support.fullcast.com/docs/territory-planning-best-practices.md): Learn the best practices for territory planning, leveraging the Fullcast platform.
+- [Customer Success Territories](https://support.fullcast.com/docs/customer-success-territories.md): Learn how to use Fullcast to build optimized books of business (territories) for Customer Success Managers.
+- [Manage territory coverage transitions](https://support.fullcast.com/docs/manage-territory-coverage-transitions.md): Master the End Coverage workflow in Fullcast. Learn best practices for managing employee transitions, assigning temporary backfills, and preserving historical data.
+- [Reports: Insights, tips, and blueprints](https://support.fullcast.com/docs/insights-and-tips-for-optimizing-fullcast-reports.md): Learn specific use cases for Fullcast reports and tips for optimizing them.
+- [Build Prescriptive Territory Books with Smart Plan Account Mixes](https://support.fullcast.com/docs/build-prescriptive-territory-books-with-smart-plan-account-mixes.md): Master Account Mix for precise territory control, ensuring optimal account distribution based on industry specialization and rep seniority.
+- [Territory-driven routing with Fullcast](https://support.fullcast.com/docs/territory-driven-routing-with-fullcast.md): Optimize your territory-driven routing with Fullcast, ensuring real-time updates and seamless integration with Salesforce for efficient account and lead management.
+- [Automate Account Transitions with Fullcast Holdouts](https://support.fullcast.com/docs/automate-account-transitions-with-fullcast-holdouts.md): Streamline your Go-To-Market execution with the Fullcast Holdouts Policy. This guide covers best practices for configuring Exempt vs. Eligible opportunities, automating rep selection periods, and setting up Salesforce flows to ensure smooth account transitions.
+- [Optimize your quota planning process](https://support.fullcast.com/docs/optimize-your-quota-planning-process.md): Struggling with a rigid or time-consuming quota planning process? This guide for RevOps and sales leaders outlines a modern framework for optimizing how you set targets. Learn how to build a more flexible, efficient, and data-driven plan for faster and fairer results.
+- [Inside Targets: A Practical Look at the Fullcast Quota Framework](https://support.fullcast.com/docs/inside-targets-a-practical-look-at-the-fullcast-quota-framework.md): Manage quotas and performance goals with Fullcast's Targets module, featuring dynamic, interconnected goals for your Go-To-Market organization.
+- [Video: Setting Individual Quotas Based on Territory Targets](https://support.fullcast.com/docs/video-setting-individual-quotas-based-on-territory-targets.md): Learn how to set dynamic, realistic quotas for reps by leveraging their territory assignments and territory data.
+- [Annual Planning Playbook: From Kickoff to Cutover](https://support.fullcast.com/docs/annual-planning-playbook-from-kickoff-to-cutover.md)
+- [Best practices for executing fiscal year cutovers](https://support.fullcast.com/docs/best-practices-for-executing-fiscal-year-cutovers.md): Learn best practices for cutting over or transitioning between gtm territory plans in Fullcast, from both the Fullcast and Salesforce sides.
+- [RevOps + Sales Collaboration in Fullcast](https://support.fullcast.com/docs/revops-sales-collaboration-in-fullcast.md): This article provides information regarding key strategies to streamline collaboration between RevOps and sales teams during annual planning, leveraging Fullcast.
+- [Get started with capacity planning - Office Hours session](https://support.fullcast.com/docs/get-started-with-capacity-planning-office-hours-session.md): This document provides a summary of the "Getting Started with Capacity Planning" Office Hours session, with timestamps to help you navigate to specific segments in the recording.
+- [Best practice: handle high volume exports in Fullcast](https://support.fullcast.com/docs/best-practices-for-handling-high-volume-exports-in-fullcast.md): Learn best practices for managing large data exports from Fullcast to your CRM. This guide helps administrators understand factors affecting export volume, implement strategies like staged exports and filtering, and avoid common pitfalls to ensure optimal performance and data integrity.
+- [Considerations for Salesforce Flows triggered by Fullcast Account Team exports](https://support.fullcast.com/docs/considerations-for-salesforce-flows-triggered-by-fullcast-account-team-exports.md): Learn how to use Salesforce Asynchronous Paths in Record-Triggered Flows to reliably automate actions triggered by Fullcast Account Team exports. This guide explains how to avoid governor limits and prevent recursion when handling high-volume data, complete with key considerations and an example flow.
+- [Prevent recursion related to Fullcast data exported to account team](https://support.fullcast.com/docs/prevent-recursion-related-to-fullcast-data-exported-to-account-team.md): Prevent Salesforce flow recursion triggered by Fullcast Account Team data exports. Understand the causes of recursion and implement strategies like control fields, asynchronous processing, and careful owner updates for reliable automation.
+- [Why Fullcast uses account teams & best practices for your Salesforce org](https://support.fullcast.com/docs/why-fullcast-uses-account-teams-best-practices-for-your-salesforce-org.md): Understand why Fullcast populates Salesforce Account Teams and learn best practices for leveraging this data as the primary source for assignments, reporting, and collaboration within your Salesforce org.
+- [Integration FAQs](https://support.fullcast.com/docs/integration-faqs.md)
+- [FAQ: Fullcast managed package](https://support.fullcast.com/docs/faq-fullcast-managed-package.md): Get answers to common questions about the Fullcast managed package, its contents, and how it works.
+- [FAQ: Salesforce connection and data flow](https://support.fullcast.com/docs/faq-salesforce-connection-and-data-flow.md): Get answers to common questions about how Salesforce connects with Fullcast, and how information is exchanged between the two systems.
+- [FAQ: Fullcast automation in Salesforce (routing, other policies, and lightning actions)](https://support.fullcast.com/docs/faq-fullcast-automation-in-salesforce-policies-and-lightning-actions.md): Learn the mechanics of automation that executes in Salesforce but is triggered by or involves logic driven by Fullcast.
+- [Release Notes](https://support.fullcast.com/docs/release-notes.md)
+- [Managed Package Release Notes](https://support.fullcast.com/docs/managed-package-release-notes-1.md)
+- [Managed Package release notes v2.20x](https://support.fullcast.com/docs/managed-package-release-notes-v2-20x.md): Managed Package v2.20x releases are for enhancements and various minor bug fixes that integrate with Salesforce. You can manually install Managed Package updates to your instance of Fullcast.
+- [Managed Package release notes v2.19x](https://support.fullcast.com/docs/managed-package-release-notes-v2-19x.md): Managed Package v2.19x releases for enhancements and various minor bug fixes that integrate with Salesforce. You can manually install Managed Package updates to your instance of Fullcast.
+- [Managed Package release notes v2.18x](https://support.fullcast.com/docs/managed-package-release-notes-v2-18x.md): Managed Package releases for enhancements and various minor bug fixes that integrate with Salesforce with versions 2.18x. You can manually install Managed Package updates to your instance of Fullcast.
+- [Managed Package release notes v2.17x](https://support.fullcast.com/docs/managed-package-release-notes-v2-17x.md): Managed Package v2.17x releases for enhancements and various minor bug fixes that integrate with Salesforce. You can manually install Managed Package updates to your instance of Fullcast.
+- [Managed Package release notes v2.16x](https://support.fullcast.com/docs/managed-package-release-notes-v2-16x.md): Managed Package v2.16x releases for enhancements and various minor bug fixes that integrate with Salesforce with versions 2.16x. You can manually install Managed Package updates to your instance of Fullcast.
+- [Managed Package release notes v2.15x](https://support.fullcast.com/docs/managed-package-release-notes-v2-15x.md): Managed Package v2.15x releases are for enhancements and various minor bug fixes that integrate with Salesforce. You can manually install Managed Package updates to your instance of Fullcast.
+- [Platform Release Notes](https://support.fullcast.com/docs/platform-release-notes-1.md)
+- [Platform release notes 2026](https://support.fullcast.com/docs/platform-release-notes-2026.md): Platform release notes provide information on enhancements and various minor bug fixes to the Fullcast UI in 2026.
+- [Platform release notes 2025](https://support.fullcast.com/docs/platform-release-notes-2025.md): Platform release notes provide information on enhancements and various minor bug fixes to the Fullcast UI for 2025.
+- [Platform release notes 2024](https://support.fullcast.com/docs/platform-release-notes-2024.md): Platform release notes provide information on enhancements and various minor bug fixes to the Fullcast UI in 2024.
+- [Platform release notes 2022](https://support.fullcast.com/docs/platform-release-notes-2022.md): Platform release notes provide information on enhancements and various minor bug fixes to the Fullcast UI in 2022.
+- [Glossary](https://support.fullcast.com/docs/glossary.md): A list of terms used in Fullcast and their definitions.
+
+## API docs (API Reference)
+
+- [Quick Start Guide](https://support.fullcast.com/apidocs/quick-start-guide.md)
+- [Recipes: Run a workflow via API (Polling)](https://support.fullcast.com/apidocs/recipes.md)
+- [API References](https://support.fullcast.com/apidocs/api-references.md)
+- [Register Webhook](https://support.fullcast.com/apidocs/register-webhook-2.md)
+- [Get Webhook](https://support.fullcast.com/apidocs/get-webhook-2.md)
+- [Get All Webhooks](https://support.fullcast.com/apidocs/get-all-webhooks-2.md)
+- [Remove Webhook](https://support.fullcast.com/apidocs/remove-webhook-2.md)
+- [Start a Workflow Run](https://support.fullcast.com/apidocs/start-a-workflow-run-2.md)
+- [Get Workflow Run](https://support.fullcast.com/apidocs/get-workflow-run-2.md)
+- [Get All Workflow Runs](https://support.fullcast.com/apidocs/get-all-workflow-runs-2.md)
+
+## copy.ai
+
+- [Getting Started](https://support.fullcast.com/copy-ai/docs/getting-started.md)
+- [Platform Overview](https://support.fullcast.com/copy-ai/docs/platform-overview.md)
+- [Getting Started With Chat](https://support.fullcast.com/copy-ai/docs/getting-started-with-chat.md)
+- [Get Started with Content Agent Studio](https://support.fullcast.com/copy-ai/docs/getting-started-with-content-agent-studio.md): Create consistent, brand-aligned content at scale with Copy.ai's Content Agent Studio. Learn to set up and optimize your content creation workflows.
+- [Getting Started With Workflows](https://support.fullcast.com/copy-ai/docs/getting-started-with-workflows.md)
+- [Getting Started With Infobase](https://support.fullcast.com/copy-ai/docs/getting-started-with-infobase.md)
+- [Getting Started with Brand Voice](https://support.fullcast.com/copy-ai/docs/getting-started-with-brand-voice.md)
+- [Copy.ai Salesforce Integration](https://support.fullcast.com/copy-ai/docs/copy-ai-salesforce-integration.md)
+- [Simplified Navigation and Improved Folders](https://support.fullcast.com/copy-ai/docs/simplified-navigation-and-improved-folders.md)
+- [Workflows](https://support.fullcast.com/copy-ai/docs/workflows.md)
+- [Workflow Credits](https://support.fullcast.com/copy-ai/docs/workflow-credits.md)
+- [General Questions on Workflows](https://support.fullcast.com/copy-ai/docs/general-questions-on-workflows.md)
+- [Webinars](https://support.fullcast.com/copy-ai/docs/webinars.md)
+- [Do you have an API?](https://support.fullcast.com/copy-ai/docs/do-you-have-an-api.md)
+- [Splitting Up Workflows for Efficient Workflow Development](https://support.fullcast.com/copy-ai/docs/splitting-up-workflows-for-efficient-workflow-development.md)
+- [What are Platinum Actions?](https://support.fullcast.com/copy-ai/docs/what-are-platinum-actions.md)
+- [How to Choose the Right AI Model for Your Workflow](https://support.fullcast.com/copy-ai/docs/how-to-choose-the-right-ai-model-for-your-workflow.md)
+- [API Key Management](https://support.fullcast.com/copy-ai/docs/api-key-management.md)
+- [Action Guides](https://support.fullcast.com/copy-ai/docs/action-guides-ml00cxeu.md)
+- [Action: Analyze Job Openings](https://support.fullcast.com/copy-ai/docs/action-analyze-job-openings.md)
+- [Action: Analyze Latest Earnings Call](https://support.fullcast.com/copy-ai/docs/action-analyze-latest-earnings-call.md)
+- [Action: Categorize Text](https://support.fullcast.com/copy-ai/docs/action-categorize-text.md)
+- [Action: Check Text for Plagiarism (Copyscape)](https://support.fullcast.com/copy-ai/docs/action-check-text-for-plagiarism-copyscape.md)
+- [Action: Create Content Brief](https://support.fullcast.com/copy-ai/docs/action-create-content-brief.md)
+- [Action: Create Marketing Campaign Asset](https://support.fullcast.com/copy-ai/docs/action-create-marketing-campaign-asset.md)
+- [Action: Describe Image Content](https://support.fullcast.com/copy-ai/docs/action-describe-image-content.md)
+- [Action: Enrich Contact](https://support.fullcast.com/copy-ai/docs/action-enrich-contact.md)
+- [Action: Enrich Contact with Waterfall.io](https://support.fullcast.com/copy-ai/docs/action-enrich-contact-with-waterfall-io.md)
+- [Action: Extract Data From Text](https://support.fullcast.com/copy-ai/docs/action-extract-data-from-text.md)
+- [Action: Extract Domain](https://support.fullcast.com/copy-ai/docs/action-extract-domain.md)
+- [Action: Extract Info From Text](https://support.fullcast.com/copy-ai/docs/action-extract-info-from-text.md)
+- [Action: Find Email Address](https://support.fullcast.com/copy-ai/docs/action-find-email-address.md)
+- [Action: Find LinkedIn Profile from Email](https://support.fullcast.com/copy-ai/docs/action-find-linkedin-profile-from-email.md)
+- [Action: Find LinkedIn Profile from Name and Company](https://support.fullcast.com/copy-ai/docs/action-find-linkedin-profile-from-name-and-company.md)
+- [Action: Format Output](https://support.fullcast.com/copy-ai/docs/action-format-output.md)
+- [Action: Format Output with Liquid](https://support.fullcast.com/copy-ai/docs/action-format-output-with-liquid.md)
+- [Action: Format Structured Output](https://support.fullcast.com/copy-ai/docs/action-format-structured-output.md)
+- [Action: Generate Text](https://support.fullcast.com/copy-ai/docs/action-generate-text.md)
+- [Action: Get Company News](https://support.fullcast.com/copy-ai/docs/action-get-company-news.md)
+- [Action: Get Earnings Call](https://support.fullcast.com/copy-ai/docs/action-get-earnings-call.md)
+- [Action: Get Job Openings](https://support.fullcast.com/copy-ai/docs/action-get-job-openings.md)
+- [Action: Get Ticker Symbol](https://support.fullcast.com/copy-ai/docs/action-get-ticker-symbol.md)
+- [Action: Load Config](https://support.fullcast.com/copy-ai/docs/action-load-config.md)
+- [Action: Only Continue If](https://support.fullcast.com/copy-ai/docs/action-only-continue-if.md)
+- [Action: Perform Internet Search](https://support.fullcast.com/copy-ai/docs/action-perform-internet-search.md)
+- [Action: Prospect Finder Agent](https://support.fullcast.com/copy-ai/docs/action-prospect-finder-agent.md)
+- [Action: Query Google Search Console](https://support.fullcast.com/copy-ai/docs/action-query-google-search-console.md)
+- [Action: Research A Topic with AI](https://support.fullcast.com/copy-ai/docs/action-research-a-topic-with-ai.md)
+- [Action: Rewrite with Brand Voice](https://support.fullcast.com/copy-ai/docs/action-rewrite-with-brand-voice.md)
+- [Action: Run Workflow](https://support.fullcast.com/copy-ai/docs/action-run-workflow.md)
+- [Action: Run Workflow (Inline)](https://support.fullcast.com/copy-ai/docs/action-run-workflow-inline.md)
+- [Action: Scrape Webpage](https://support.fullcast.com/copy-ai/docs/action-scrape-webpage.md)
+- [Action: Search Infobase](https://support.fullcast.com/copy-ai/docs/action-search-infobase.md)
+- [Action: Search SEC Filings](https://support.fullcast.com/copy-ai/docs/action-search-sec-filings.md)
+- [Action: Send Notification Email](https://support.fullcast.com/copy-ai/docs/action-send-notification-email.md)
+- [Action: Transform Text](https://support.fullcast.com/copy-ai/docs/action-transform-text.md)
+- [Action: Translate Text (DeepL)](https://support.fullcast.com/copy-ai/docs/action-translate-text-deepl.md)
+- [Action: Translate Text with AI](https://support.fullcast.com/copy-ai/docs/action-translate-text-with-ai.md)
+- [Action: Verify Email Address](https://support.fullcast.com/copy-ai/docs/action-verify-email-address.md)
+- [Action: Write Sales Email](https://support.fullcast.com/copy-ai/docs/action-write-sales-email.md)
+- [Trigger: Trigger On A Schedule](https://support.fullcast.com/copy-ai/docs/trigger-trigger-on-a-schedule.md)
+- [Action: Create Google Doc](https://support.fullcast.com/copy-ai/docs/action-create-google-doc.md)
+- [Action: Analyze Annual Report](https://support.fullcast.com/copy-ai/docs/action-analyze-annual-report.md)
+- [Action: Analyze Industry Trends](https://support.fullcast.com/copy-ai/docs/action-analyze-industry-trends.md)
+- [Action: Find Lookalike Companies with Ocean.io](https://support.fullcast.com/copy-ai/docs/action-find-lookalike-companies-with-ocean-io.md)
+- [Infobase](https://support.fullcast.com/copy-ai/docs/infobase.md)
+- [Infobase Tags User Guide](https://support.fullcast.com/copy-ai/docs/infobase-tags-user-guide.md)
+- [Brand Voice](https://support.fullcast.com/copy-ai/docs/brand-voice.md)
+- [How do I add Brand Voice to my Workflows?](https://support.fullcast.com/copy-ai/docs/how-do-i-add-brand-voice-to-my-workflows.md)
+- [Chat](https://support.fullcast.com/copy-ai/docs/chat.md)
+- [YouTube Help](https://support.fullcast.com/copy-ai/docs/youtube-help.md)
+- [Chat Prompt Library](https://support.fullcast.com/copy-ai/docs/chat-prompt-library.md)
+- [How to change the language in Chat and Workflows](https://support.fullcast.com/copy-ai/docs/how-to-change-the-language-in-chat-and-workflows.md)
+- [Workspaces, Teamspaces, & Admin](https://support.fullcast.com/copy-ai/docs/workspaces-teamspaces-admin.md)
+- [What are Teamspaces?](https://support.fullcast.com/copy-ai/docs/what-are-teamspaces.md)
+- [Inviting Users to Teamspaces and Managing Roles](https://support.fullcast.com/copy-ai/docs/inviting-users-to-teamspaces-and-managing-roles.md)
+- [Moving Things From One Teamspace to Another](https://support.fullcast.com/copy-ai/docs/moving-things-from-one-teamspace-to-another.md)
+- [Leaving a Teamspace](https://support.fullcast.com/copy-ai/docs/leaving-a-teamspace.md)
+- [Deleting a Teamspace](https://support.fullcast.com/docs/deleting-a-teamspace.md)
+- [User Roles for Workspace and Teamspace](https://support.fullcast.com/copy-ai/docs/user-roles-for-workspace-and-teamspace.md)
+- [Teamspace Update: Changes to Accessing Previous Projects](https://support.fullcast.com/copy-ai/docs/teamspace-update-changes-to-accessing-previous-projects.md)
+- [Teamspaces FAQ](https://support.fullcast.com/copy-ai/docs/teamspaces-faq.md)
+- [Billing & Pricing](https://support.fullcast.com/copy-ai/docs/billing-pricing.md)
+- [Additional Pricing Questions](https://support.fullcast.com/copy-ai/docs/additional-pricing-questions.md)
+- [What is your refund policy?](https://support.fullcast.com/copy-ai/docs/what-is-your-refund-policy.md)
+- [Pricing](https://support.fullcast.com/copy-ai/docs/pricing.md)
+- [Manage subscription and billing](https://support.fullcast.com/copy-ai/docs/manage-subscription-and-billing.md)
+- [Are Credits used when testing a Workflow while building it?](https://support.fullcast.com/copy-ai/docs/are-credits-used-when-testing-a-workflow-while-building-it.md)
+- [Do you offer a non profile discount?](https://support.fullcast.com/copy-ai/docs/do-you-offer-a-non-profile-discount.md)
+- [Account Settings](https://support.fullcast.com/copy-ai/docs/account-settings.md)
+- [How to Permanently Delete Your Copy.ai Account](https://support.fullcast.com/copy-ai/docs/how-to-permanently-delete-your-copyai-account.md): Delete your copy.ai account
+- [How can I invite members to my Workspace?](https://support.fullcast.com/copy-ai/docs/how-can-i-invite-members-to-my-workspace.md)
+- [Frequently Asked Questions](https://support.fullcast.com/copy-ai/docs/frequently-asked-questions.md)
+- [Comparative Analysis of Leading LLM Models](https://support.fullcast.com/copy-ai/docs/comparative-analysis-of-leading-llm-models.md)
+- [How do I find other Workspaces I am a part of?](https://support.fullcast.com/copy-ai/docs/how-do-i-find-other-workspaces-i-am-a-part-of.md)
+- [How can I optimize my article for SEO using Copy.ai?](https://support.fullcast.com/copy-ai/docs/how-can-i-optimize-my-article-for-seo-using-copy-ai.md)
+- [How do I manage the Workspace settings?](https://support.fullcast.com/copy-ai/docs/how-do-i-manage-the-workspace-settings.md)
+- [Can I recover deleted data?](https://support.fullcast.com/copy-ai/docs/can-i-recover-deleted-data.md)
+- [How can I rename projects?](https://support.fullcast.com/copy-ai/docs/how-can-i-rename-projects.md)
+- [How do I know that this content is n[Content truncated in source]
