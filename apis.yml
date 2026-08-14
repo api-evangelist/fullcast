@@ -15,23 +15,29 @@ x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - cowboy-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: live-openapi-and-remote-mcp-server-verified
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: sales-gated
+  onboarding: sales-gated
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Enterprise sales-gated
+  confidence: high
+  source:
+  - https://www.fullcast.com/plans-and-pricing-2/
+  - https://support.fullcast.com/docs/enable-ai-features.md
+  generated: '2026-08-13'
+  method: searched
+  note: >-
+    Three named product lines each priced on a stated metric, all routed to Request Pricing
+    with no published figure. No self-serve signup, no free tier, no trial. MCP access is a
+    tenant-admin toggle on an existing contract, not a developer signup.
 image: https://www.fullcast.com/wp-content/uploads/2026/07/Fullcast-plan-to-pay-1024x576.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-13'
 tags:
 - Company
 - Enterprise
@@ -42,13 +48,89 @@ tags:
 - Incentive Compensation
 - Forecasting
 - Lead Routing
-apis: []
+- MCP
+- AI Agents
+- Model Context Protocol
+- Sales Compensation
+apis:
+- name: Fullcast Assistant API
+  description: >-
+    The HTTP API behind the in-platform Fullcast Assistant (copilot) and the assistant-hosted
+    Fullcast MCP Server. Covers chat sessions, message history, feedback, assistant
+    configuration lifecycle, and a full OAuth 2.1 authorization-server surface
+    (dynamic client registration, authorize, token, userinfo) used by external AI clients.
+    Discovered as a live OpenAPI 3.1.0 document served at the API host root.
+  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
+  baseURL: https://assistant.fullcast.io
+  tags:
+  - AI Assistant
+  - Chat
+  - OAuth
+  - MCP
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-assistant-openapi-original.json
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
+  - type: Overlay
+    url: overlays/fullcast-assistant-overlay.yaml
+- name: Fullcast MCP Server
+  description: >-
+    Fullcast's remote Model Context Protocol server, exposing go-to-market planning,
+    territory and team hierarchy, coverage, targets, reporting, commissions and document
+    operations to external AI clients (Claude, ChatGPT, Agentforce, Cursor). Streamable
+    HTTP transport, OAuth 2.1 with PKCE and dynamic client registration. Enabled per tenant
+    under Settings > Application Settings > AI & Agents.
+  humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
+  baseURL: https://app.fullcast.io/mcp
+  tags:
+  - MCP
+  - Agents
+  - Revenue Operations
+  properties:
+  - type: MCPServer
+    url: mcp/fullcast-mcp.yml
+  - type: ToolCrosswalk
+    url: mcp/fullcast-tool-crosswalk.yml
+  - type: Documentation
+    url: https://support.fullcast.com/docs/fullcast-mcp-tool-reference.md
+  - type: WellKnown
+    url: well-known/fullcast-well-known.yml
+- name: Fullcast Copy.ai Workflows API
+  description: >-
+    The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on
+    Fullcast's own support host as Fullcast Copy.ai. Programmatically starts GTM workflow
+    runs, polls run status, and registers webhooks for workflow lifecycle events. Authenticated
+    with a workspace API key sent in the x-copy-ai-api-key header.
+  humanURL: https://support.fullcast.com/apidocs/quick-start-guide.md
+  baseURL: https://api.copy.ai/api
+  tags:
+  - Workflows
+  - Generative AI
+  - Webhooks
+  properties:
+  - type: APIReference
+    url: https://support.fullcast.com/apidocs/api-references.md
+  - type: GettingStarted
+    url: https://support.fullcast.com/apidocs/quick-start-guide.md
+  - type: Webhooks
+    url: asyncapi/fullcast-copy-ai-webhooks.yml
+  - type: Authentication
+    url: https://support.fullcast.com/copy-ai/docs/api-key-management.md
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Authentication
+  url: authentication/fullcast-authentication.yml
 - type: Website
   url: https://www.fullcast.com
 - type: Documentation
@@ -77,8 +159,56 @@ common:
   url: security/fullcast-domain-security.yml
 - type: LLMsTxt
   url: llms/fullcast-llms.txt
+- type: MCPServer
+  url: mcp/fullcast-mcp.yml
+- type: ToolCrosswalk
+  url: mcp/fullcast-tool-crosswalk.yml
+- type: OpenAPI
+  url: openapi/fullcast-assistant-openapi-original.json
+- type: WellKnown
+  url: well-known/fullcast-well-known.yml
+- type: Conventions
+  url: conventions/fullcast-conventions.yml
+- type: ErrorCatalog
+  url: errors/fullcast-problem-types.yml
+- type: DataModel
+  url: data-model/fullcast-data-model.yml
+- type: Lifecycle
+  url: lifecycle/fullcast-lifecycle.yml
+- type: StatusPage
+  url: https://status.fullcast.io
+- type: ChangeLog
+  url: changelog/fullcast-changelog.yml
+- type: Webhooks
+  url: asyncapi/fullcast-copy-ai-webhooks.yml
+- type: Packages
+  url: packages/fullcast-packages.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Overlay
+  url: overlays/fullcast-assistant-overlay.yaml
+- type: Plans
+  url: plans/fullcast-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/fullcast-rate-limits.yml
+- type: Sandbox
+  url: sandbox/fullcast-sandbox.yml
+- type: APIReference
+  url: https://assistant.fullcast.io/docs
+- type: DeveloperPortal
+  url: https://support.fullcast.com/apidocs/quick-start-guide.md
+- type: TermsOfService
+  url: https://www.fullcast.com/others/terms-of-service/
+- type: GitHubOrganization
+  url: https://github.com/copy-ai
+- type: OAuthScopes
+  url: scopes/fullcast-scopes.yml
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: enriched
+  artifacts_added: 27
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Contract discovery beat the round-1 "no public OpenAPI" finding. A live OpenAPI 3.1.0
+    (24 operations) was captured at the API host root, two OAuth 2.1 MCP servers were probed,
+    and five real /.well-known documents were saved.
