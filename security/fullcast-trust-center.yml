@@ -1,17 +1,53 @@
-generated: '2026-07-19'
+generated: '2026-08-13'
 method: searched
-source: https://www.fullcast.com/security/
-url: https://www.fullcast.com/security/
+probe: true
+url: https://trust.fullcast.io/
+aliases:
+- https://trust.fullcast.com
+platform: Vanta
+note: >-
+  trust.fullcast.com 301-redirects to trust.fullcast.io, a Vanta-hosted trust center. The
+  page is fully client-rendered -- the served HTML carries only the title
+  "Fullcast.com Trust Center" (25 characters of text), so the certification list, control
+  categories and subprocessors are not machine-readable and could not be captured. The
+  certifications below are therefore taken from the provider's own security page, which is
+  server-rendered, and NOT from the trust center itself. The prior pass recorded a
+  "responsible disclosure" program; a re-read of the security page on 2026-08-13 found a
+  dedicated security team and incident response but no published disclosure process, security
+  contact address or bug-bounty program, and no security.txt on any host -- so that claim is
+  downgraded here and no Security pointer is emitted in apis.yml.
 certifications:
-  - SOC 2 Type 2
-  - GDPR
+- SOC 2 Type 2
+- GDPR
 programs:
-  - responsible disclosure
-  - incident response (SOC 2 Type 2 aligned)
+- incident response (SOC 2 Type 2 aligned)
+security_controls_published:
+- data sovereignty / customer-controlled hosting location
+- encryption at every stage
+- multi-factor authentication
+- role-based access control with granular permissions
+- audit trails with SIEM integration
+disclosure:
+  policy_url: null
+  security_contact: null
+  bug_bounty: false
+  security_txt: false
+  evidence: >-
+    /.well-known/security.txt returned 404 on www.fullcast.com, app.fullcast.io,
+    support.fullcast.com, assistant.fullcast.io and api.copy.ai on 2026-08-13.
 evidence:
-  - source: https://www.fullcast.com/security/
-    keywords: [soc 2 type 2, gdpr, responsible disclosure, incident response]
-notes: >-
-  Captured from the provider's public security page. No dedicated trust.fullcast.com
-  subdomain or security.txt was found; ISO 27001, HIPAA, PCI DSS and FedRAMP are
-  not claimed.
+- source: https://www.fullcast.com/security/
+  status: 200
+  keywords: [soc 2 type 2, gdpr, encryption, mfa, rbac, audit trail, incident response]
+- source: https://trust.fullcast.io/
+  status: 200
+  keywords: [trust center]
+  machine_readable: false
+  reason: js-rendered (Vanta); 25 characters of server-rendered text
+- source: https://trust.fullcast.com
+  status: 301
+  redirects_to: https://trust.fullcast.io/
+gaps:
+- No ISO 27001, HIPAA, PCI DSS or FedRAMP certification is claimed.
+- No security.txt, no published vulnerability disclosure policy, no security contact address.
+- Trust center content is not machine-readable, so certifications cannot be verified at the source.

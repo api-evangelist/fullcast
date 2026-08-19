@@ -1,6 +1,6 @@
 # Fullcast
 
-> Fullcast is a revenue orchestration platform unifying territory/quota/headcount planning, lead & account routing, and incentive/commission management. This index is captured verbatim from the provider's published knowledge base at https://support.fullcast.com/llms.txt (method: searched).
+> Knowledge base documentation for Fullcast.
 
 ## Plan & Pay
 
@@ -41,6 +41,31 @@
 - [How to use Column Chooser](https://support.fullcast.com/docs/how-to-use-column-chooser.md)
 - [Filtering in the Grid](https://support.fullcast.com/docs/filtering-in-the-grid.md): The purpose of this article is to provide direction in adding and removing filters in the Grid view.
 - [Export Grid Data](https://support.fullcast.com/docs/territories-export-grid-data.md): This article aims to provide direction in exporting Grid Data from Fullcast.
+- [Fullcast Learning Hub](https://support.fullcast.com/docs/fullcast-learning-hub.md): Learn best practices for using Fullcast functionality to optimize your go-to-market strategy and execution.
+- [Smart Plan for Territory Management and Resource Alignment](https://support.fullcast.com/docs/smartplan-for-territory-management-and-resource-alignment.md): Learn how to apply Smart Plan rules to achieve specific territory management scenarios.
+- [Smart Plan - Advanced Strategies and Automation](https://support.fullcast.com/docs/smartplan-advanced-strategies-and-automation.md): Get realistic descriptions and examples of advanced use cases for the Fullcast Smart Plan
+- [Territory Planning Best Practices](https://support.fullcast.com/docs/territory-planning-best-practices.md): Learn the best practices for territory planning, leveraging the Fullcast platform.
+- [Customer Success Territories](https://support.fullcast.com/docs/customer-success-territories.md): Learn how to use Fullcast to build optimized books of business (territories) for Customer Success Managers.
+- [Manage territory coverage transitions](https://support.fullcast.com/docs/manage-territory-coverage-transitions.md): Master the End Coverage workflow in Fullcast. Learn best practices for managing employee transitions, assigning temporary backfills, and preserving historical data.
+- [Reports: Insights, tips, and blueprints](https://support.fullcast.com/docs/insights-and-tips-for-optimizing-fullcast-reports.md): Learn specific use cases for Fullcast reports and tips for optimizing them.
+- [Build Prescriptive Territory Books with Smart Plan Account Mixes](https://support.fullcast.com/docs/build-prescriptive-territory-books-with-smart-plan-account-mixes.md): Master Account Mix for precise territory control, ensuring optimal account distribution based on industry specialization and rep seniority.
+- [Territory-driven routing with Fullcast](https://support.fullcast.com/docs/territory-driven-routing-with-fullcast.md): Optimize your territory-driven routing with Fullcast, ensuring real-time updates and seamless integration with Salesforce for efficient account and lead management.
+- [Automate Account Transitions with Fullcast Holdouts](https://support.fullcast.com/docs/automate-account-transitions-with-fullcast-holdouts.md): Streamline your Go-To-Market execution with the Fullcast Holdouts Policy. This guide covers best practices for configuring Exempt vs. Eligible opportunities, automating rep selection periods, and setting up Salesforce flows to ensure smooth account transitions.
+- [Optimize your quota planning process](https://support.fullcast.com/docs/optimize-your-quota-planning-process.md): Struggling with a rigid or time-consuming quota planning process? This guide for RevOps and sales leaders outlines a modern framework for optimizing how you set targets. Learn how to build a more flexible, efficient, and data-driven plan for faster and fairer results.
+- [Inside Targets: A Practical Look at the Fullcast Quota Framework](https://support.fullcast.com/docs/inside-targets-a-practical-look-at-the-fullcast-quota-framework.md): Manage quotas and performance goals with Fullcast's Targets module, featuring dynamic, interconnected goals for your Go-To-Market organization.
+- [Video: Setting Individual Quotas Based on Territory Targets](https://support.fullcast.com/docs/video-setting-individual-quotas-based-on-territory-targets.md): Learn how to set dynamic, realistic quotas for reps by leveraging their territory assignments and territory data.
+- [Annual Planning Playbook: From Kickoff to Cutover](https://support.fullcast.com/docs/annual-planning-playbook-from-kickoff-to-cutover.md)
+- [Best practices for executing fiscal year cutovers](https://support.fullcast.com/docs/best-practices-for-executing-fiscal-year-cutovers.md): Learn best practices for cutting over or transitioning between gtm territory plans in Fullcast, from both the Fullcast and Salesforce sides.
+- [RevOps + Sales Collaboration in Fullcast](https://support.fullcast.com/docs/revops-sales-collaboration-in-fullcast.md): This article provides information regarding key strategies to streamline collaboration between RevOps and sales teams during annual planning, leveraging Fullcast.
+- [Get started with capacity planning - Office Hours session](https://support.fullcast.com/docs/get-started-with-capacity-planning-office-hours-session.md): This document provides a summary of the "Getting Started with Capacity Planning" Office Hours session, with timestamps to help you navigate to specific segments in the recording.
+- [Best practice: handle high volume exports in Fullcast](https://support.fullcast.com/docs/best-practices-for-handling-high-volume-exports-in-fullcast.md): Learn best practices for managing large data exports from Fullcast to your CRM. This guide helps administrators understand factors affecting export volume, implement strategies like staged exports and filtering, and avoid common pitfalls to ensure optimal performance and data integrity.
+- [Considerations for Salesforce Flows triggered by Fullcast Account Team exports](https://support.fullcast.com/docs/considerations-for-salesforce-flows-triggered-by-fullcast-account-team-exports.md): Learn how to use Salesforce Asynchronous Paths in Record-Triggered Flows to reliably automate actions triggered by Fullcast Account Team exports. This guide explains how to avoid governor limits and prevent recursion when handling high-volume data, complete with key considerations and an example flow.
+- [Prevent recursion related to Fullcast data exported to account team](https://support.fullcast.com/docs/prevent-recursion-related-to-fullcast-data-exported-to-account-team.md): Prevent Salesforce flow recursion triggered by Fullcast Account Team data exports. Understand the causes of recursion and implement strategies like control fields, asynchronous processing, and careful owner updates for reliable automation.
+- [Why Fullcast uses account teams & best practices for your Salesforce org](https://support.fullcast.com/docs/why-fullcast-uses-account-teams-best-practices-for-your-salesforce-org.md): Understand why Fullcast populates Salesforce Account Teams and learn best practices for leveraging this data as the primary source for assignments, reporting, and collaboration within your Salesforce org.
+- [Fullcast MCP office hours recording guide](https://support.fullcast.com/docs/fullcast-mcp-office-hours-recording-guide.md): What was covered in the July 2026 Fullcast MCP customer office hours, and which part of the recording to watch for each topic
+- [Fullcast MCP prompt library](https://support.fullcast.com/docs/fullcast-mcp-prompt-library.md)
+- [Set up your AI client for Fullcast](https://support.fullcast.com/docs/set-up-your-ai-client-for-fullcast.md): Learn how to set persistent instructions for AI clients like Claude and ChatGPT to enhance context and streamline your workflow effectively.
+- [Skills to build for the Fullcast MCP](https://support.fullcast.com/docs/skills-to-build-for-the-fullcast-mcp.md): Learn how to create reusable AI skills in Fullcast for consistent task execution, enhancing workflows and decision-making across your organization.
 - [AI assistant](https://support.fullcast.com/docs/ai-assistant.md)
 - [Enable AI features](https://support.fullcast.com/docs/enable-ai-features.md): Enable AI-powered features for your Fullcast tenant, including the in-platform assistant, MCP server access for external AI clients, and AI-assisted audit log interpretation.
 - [Set up the model context protocol (MCP)](https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md): Set up the Fullcast MCP server with Claude.
@@ -55,8 +80,11 @@
 - [Create and Manage Territories](https://support.fullcast.com/docs/create-and-manage-territories.md): This article provides directions for creating and managing territories in Fullcast, covering hierarchy creation, rule configuration, custom node creation, territory editing, renaming, deleting, and understanding the implications of these actions on territory structure and data organization.
 - [Setting Order of Precedence in Hybrid Territories](https://support.fullcast.com/docs/setting-order-of-precedence-in-hybrid-territories.md)
 - [How to Delete Custom Nodes](https://support.fullcast.com/docs/how-to-delete-custom-nodes.md): This article provides directions for deleting custom nodes in Fullcast.
+- [Commit territory changes](https://support.fullcast.com/docs/commit-territory-changes.md): How do you commit territory changes in Fullcast so they export to your CRM, and how do you confirm a change committed?
 - [How to View Territories by Role Assigned](https://support.fullcast.com/docs/how-to-view-territories-by-role-assigned.md): This article provides information and direction for viewing territories by role assigned.
 - [Rerun rules](https://support.fullcast.com/docs/how-to-rerun-rules.md)
+- [See an account's territory history](https://support.fullcast.com/docs/see-an-account-s-territory-history.md): How to view an account's placement history in the territory hierarchy using the History tab on the account details page — its columns, time range, Current and Proposed rows, and audit detail.
+- [Fullcast account system fields reference](https://support.fullcast.com/docs/fullcast-account-system-fields-reference.md): Use Fullcast system fields to see territory hierarchy levels and change details within the account data grid.
 - [Move and Name Accounts](https://support.fullcast.com/docs/moving-accounts.md)
 - [Use account IDs pin multiple accounts](https://support.fullcast.com/docs/pinning-multiple-accounts-using-account-ids.md): This video outlines a quick and simple process for pinning or naming accounts to territories using their account IDs
 - [Move accounts from node to node](https://support.fullcast.com/docs/how-to-move-accounts-from-node-to-node.md): Move accounts from one node to another node with the move option or the drag and drop method if in a proposed state.
@@ -64,6 +92,7 @@
 - [How does Proposed View work while moving accounts](https://support.fullcast.com/docs/how-does-proposed-view-work-while-moving-accounts.md)
 - [Undo account moves](https://support.fullcast.com/docs/undo-account-moves.md)
 - [How to use Named Accounts and Named Exceptions](https://support.fullcast.com/docs/how-to-use-named-accounts-and-named-exceptions.md)
+- [Current, Proposed, and Difference views](https://support.fullcast.com/docs/current-proposed-and-difference-views.md): Understand the difference between proposed and committed changes in Fullcast to ensure accurate CRM exports and effective territory management.
 - [Geographic Territories](https://support.fullcast.com/docs/maps.md)
 - [Create a geographic hierarchy](https://support.fullcast.com/docs/create-a-geographic-hierarchy.md): Set up map-based territory rules, define segments, assign specific geographic areas (like countries, states, or postal codes).
 - [Define territory segments](https://support.fullcast.com/docs/define-territory-segments.md): Set up map-based territory criteria to define segments.
@@ -80,7 +109,6 @@
 - [Smart Plan](https://support.fullcast.com/docs/smart-plan.md): Smart Plan has flexible criteria options that automatically balance your territories.
 - [Create a Smart Plan](https://support.fullcast.com/docs/create-a-smart-plan.md): Automate territory balancing based on selected criteria when you create a hierarchy from a node.
 - [Troubleshoot: Accidental account reassignment](https://support.fullcast.com/docs/troubleshoot-accidental-account-reassignment.md): Troubleshoot when accounts are accidentally reassigned to the unassigned node or another territory.
-- [Smart Plan balancing criteria](https://support.fullcast.com/docs/balancing-criteria.md)
 - [Smart Plan: account mix](https://support.fullcast.com/docs/smart-plan-balance-by-account-mix.md): Evenly distribute territories based on the number of available records that match the criteria.
 - [Smart Plan: balance by field value](https://support.fullcast.com/docs/smart-plan-balance-by-field-value.md): Evenly distribute territories based on a specific value to ensure all records from the parent node are distributed equally among territories based on the chosen field value.
 - [Smart Plan: balance by metric](https://support.fullcast.com/docs/smart-plan-balance-by-metrics.md): Evenly distribute territories based on specified metric value.
@@ -104,6 +132,7 @@
 - [Territory Balancer Chart](https://support.fullcast.com/docs/configure-reporting-in-the-balancer-chart.md): This article explains how to use the Balancer tool in Fullcast to create balanced sales territories, ensuring fairness in performance evaluation and compensation by equalizing opportunities and resources across territories. It covers configuring the Balancer, visualizing data with charts and tables, and understanding the metrics for effective territory balancing.
 - [Configure Reporting in the Balancer Tab](https://support.fullcast.com/docs/configure-reporting-in-the-balancer-tab.md): This article explains how to use the Balancer tool in Fullcast to create balanced sales territories, ensuring fairness in performance evaluation and compensation by equalizing opportunities and resources across territories. It covers configuring the Balancer, visualizing data with charts and tables, and understanding the metrics for effective territory balancing.
 - [Roles and Coverage](https://support.fullcast.com/docs/roles-and-coverage.md)
+- [Roles and positions: when to use each](https://support.fullcast.com/docs/roles-and-positions-when-to-use-each.md): What is the difference between roles and positions in Fullcast, and when should you use each for targets, ramp, coverage, and commissions?
 - [Roles](https://support.fullcast.com/docs/roles.md)
 - [Manage roles](https://support.fullcast.com/docs/viewing-and-managing-roles.md): Configure roles, ramp profiles, and productivity profiles.
 - [Manage ramp profiles](https://support.fullcast.com/docs/manage-ramp-profiles.md): Add ramp profiles to roles.
@@ -184,7 +213,7 @@
 - [Round Robin](https://support.fullcast.com/docs/round-robin.md)
 - [Round robin functionality](https://support.fullcast.com/docs/round-robin-functionality.md): Optimize lead distribution with round robin functionality, ensuring fair workload among sales reps based on weightage, skills, and availability.
 - [Manage exceptions in round robin](https://support.fullcast.com/docs/manage-exceptions-in-round-robin.md): Manage your round-robin exception list with skip and redo features in Salesforce. Customize lead routing based on participant expertise and tags.
-- [Round-robin functionality for package version 2.160 and above](https://support.fullcast.com/docs/round-robin-functionality-for-package-version-2160-and-above.md): Optimize your sales team's workload with round-robin distribution, ensuring equal case assignments and efficient routing based on skills and limits.
+- [Round-robin functionality for package version 2.160 and above](https://support.fullcast.com/docs/round-robin-functionality-for-package-version-2160-and-above.md): Optimize your sales team’s workload with round-robin distribution, ensuring equal case assignments and efficient routing based on skills and limits.
 - [Salesforce Configuration](https://support.fullcast.com/docs/salesforce-configuration.md)
 - [Configure Salesforce custom metadata for Fullcast routing](https://support.fullcast.com/docs/configure-salesforce-custom-metadata-for-fullcast-routing.md): Configure Fullcast settings and policies in Salesforce for accurate data routing, ensuring effective lead and account management.
 - [Configure Lead Routing Policy in Salesforce - Best Matched Account](https://support.fullcast.com/docs/configuring-lead-routing-policy-in-salesforce-best-matched-account.md)
@@ -236,6 +265,7 @@
 - [Org Charts](https://support.fullcast.com/docs/org-charts.md): This article explains how to use the Org Chart in Fullcast to visualize and analyze team hierarchy, allowing users to create charts, customize dimensions and metrics, and gain insights into team structure and organization.
 - [Deleting Parent Children Teams](https://support.fullcast.com/docs/deleting-parent-children-teams.md): This article provides directions for deleting a parent team and related children from Fullcast.
 - [Off-board people in teams](https://support.fullcast.com/docs/off-board-people-in-teams.md): Offboard people from Teams.
+- [See a person's team history](https://support.fullcast.com/docs/see-a-person-s-team-history.md): How to view a person's placement history in the team hierarchy using the History tab on the employee details page, and how the History tab differs from the Positions tab.
 - [Commissions](https://support.fullcast.com/docs/commissions.md): Commissions powered by Fullcast Pay is a flexible commission management system designed to help businesses accurately calculate, track, and pay sales commissions. It integrates seamlessly within the Fullcast platform to provide a comprehensive solution that automates commission workflows, ensures transparency, and motivates sales teams.
 - [Custom tables](https://support.fullcast.com/docs/custom-tables-1.md): Use custom tables the same way as VLOOKUP tables in a spreadsheet to match specific data values to associated information which enhances data managements and calculations for commissions. Define and store specific data that is referenced and applied to transactions to enable accurate commission calculations for sales representatives.
 - [Create custom tables](https://support.fullcast.com/docs/custom-tables.md): Create a custom table that you can reference in a transaction table for a crediting rule. Custom tables add qualification criteria for commissionable events that can be used in calculations for commissions.
@@ -259,13 +289,18 @@
 - [Create a compensation plan](https://support.fullcast.com/docs/create-compensation-plans.md)
 - [Configure compensation plan components](https://support.fullcast.com/docs/configure-compensation-plan-components.md): Create the components, configure commission details, add attributes, create formulas, and configure commission tiers on those attributes.
 - [Manage compensation plans](https://support.fullcast.com/docs/manage-compensation-plans.md)
-- [Compensation periods](https://support.fullcast.com/docs/commission-periods.md)
+- [Commission periods](https://support.fullcast.com/docs/commission-periods.md)
 - [Create commission periods](https://support.fullcast.com/docs/create-commission-periods.md): Create commission periods to group and track transactions during a specified timeframe for the compensation plan.
-- [Manage commission periods](https://support.fullcast.com/docs/mange-commission-periods.md): Edit, delete, or lock and unlock commission periods in a compensation plan.
+- [Manage commission periods](https://support.fullcast.com/docs/manage-commission-periods.md): Edit, delete, or lock and unlock commission periods in a compensation plan.
 - [Adjustments](https://support.fullcast.com/docs/adjustments.md): Adjustments encompass manual corrections, system-driven true-ups, corrections for changes in underlying business events, and compensation actions like bonuses, draws, or clawbacks.
 - [Adjustment scenarios and ledger results](https://support.fullcast.com/docs/adjustment-scenarios-and-ledger-results.md): The following are common scenarios when you adjust transaction data in Salesforce and Fullcast and their impact on the commissions ledger for committed and uncommitted ledger entries.
 - [Transaction adjustments](https://support.fullcast.com/docs/transaction-adjustments.md): Create adjusted transactions and edit adjusted transactions.
 - [Commissions ledger adjustments](https://support.fullcast.com/docs/commissions-ledger-adjustments.md): Add a new ledger entry, adjust an existing ledger entry, edit or delete an adjusted ledger entry.
+- [Draws](https://support.fullcast.com/docs/draws.md): An overview of the draws features/functionality in Fullcast Pay. Understand at a high level what the capabilities are.
+- [Draw advances and recovery](https://support.fullcast.com/docs/draw-advances-and-recovery.md): Learn how draw advances work for sales reps, including recoverable vs. non-recoverable draws, and how to manage outstanding balances effectively.
+- [Configure draw compensation plans](https://support.fullcast.com/docs/configure-draw-compensation-plans.md): How to configure a recoverable or non-recoverable draw compensation plan in Fullcast Pay — the Draw Advance, Guaranteed Commission, Draw Recovery, and Non-Negative Commission components and their fields.
+- [Commission periods for draws](https://support.fullcast.com/docs/commission-periods-for-draws.md): Learn about commission periods in draw compensation plans, including flexible date ranges, independent processing, and how to run and lock periods effectively.
+- [Review draws in the ledger](https://support.fullcast.com/docs/review-draws-in-the-ledger.md): Understand how to review draws in the commission ledger to track advances, recovery, balances, and more.
 - [Multiple Currencies](https://support.fullcast.com/docs/multiple-currencies.md): Multi-currency provides access to import and manage multiple currencies within Fullcast.
 - [Import multiple currencies](https://support.fullcast.com/docs/import-multiple-currencies.md): Import, add, edit, or delete active currencies in Fullcast.
 - [Commissions ledger](https://support.fullcast.com/docs/commissions-ledger.md)
@@ -273,7 +308,7 @@
 - [Edit custom fields in the commissions ledger](https://support.fullcast.com/docs/manage-transactions-from-the-commissions-ledger.md): Edit multiple custom columns for multiple transactions in the commissions ledger.
 - [Commit commissions](https://support.fullcast.com/docs/commit-commissions.md): Commit individual or multiple ledger entries. Once a ledger entry is committed, it is immutable and cannot be edited or deleted.
 - [Documents](https://support.fullcast.com/docs/documents.md): Streamline document management with e-signatures for employment agreements, NDAs, and compensation plans, all tracked via Adobe Sign's dashboard.
-- [Manage document groups](https://support.fullcast.com/docs/manage-document-groups.md): Create, archive, and unarchive document groups.
+- [Manage document groups](https://support.fullcast.com/docs/manage-document-groups.md): Create, edit, archive, and unarchive document groups.
 - [Add a document](https://support.fullcast.com/docs/add-a-document.md): Create and personalize documents like employment agreements and NDAs for e-signature with Fullcast. Use lookup tables and merge entities to define what data can be added to document templates.
 - [Manage documents](https://support.fullcast.com/docs/manage-documents.md): Edit, send, and track documents for e-signatures. Download signed copies and manage document details.
 - [Manage document recipients](https://support.fullcast.com/docs/manage-document-recipients.md): Manage e-signature recipients, track their status, and view documents.
@@ -334,6 +369,7 @@
 - [Create an external client app](https://support.fullcast.com/docs/connect-an-external-client-app.md): Create an external client app to connect your Fullcast instance to Salesforce.
 - [Connect Fullcast to Salesforce with external client app](https://support.fullcast.com/docs/connect-fullcast-to-salesforce-with-external-client-app.md): Connect and authenticate Salesforce with the Fullcast External Client App.
 - [Reconfigure Salesforce external client app after sandbox refresh](https://support.fullcast.com/docs/reconfigure-salesforce-external-client-app-after-sandbox-refresh.md): How to reconfigure the Salesforce connection after a sandbox refresh.
+- [Migrate from connected app to external client app](https://support.fullcast.com/docs/migrate-from-connected-app-to-external-client-app.md): Migrate from connected apps to external client apps in Salesforce for API integrations. Follow our guide for a seamless transition and troubleshooting tips.
 - [Create an integration user](https://support.fullcast.com/docs/create-an-integration-user.md): This article provides instructions for creating an API integration user in Salesforce to enable authentication and data exchange between Fullcast and Salesforce imports, exports, and REST API-based app integrations.
 - [Adding a Fullcast Tenant ID to Salesforce Custom Metadata](https://support.fullcast.com/docs/adding-a-fullcast-tenant-id-to-salesforce-custom-metadata.md)
 - [Import roll-up summary field](https://support.fullcast.com/docs/import-roll-up-summary-field.md): Complete the steps for an import roll-up summary field.
@@ -343,7 +379,7 @@
 - [Remove fields installed by the Managed Package](https://support.fullcast.com/docs/remove-fields-installed-by-the-managed-package.md)
 - [Install or upgrade the managed package](https://support.fullcast.com/docs/installing-the-managedpackage.md): This article provides directions for installing the managed package in Salesforce.
 - [Upgrade to Managed Package 2.180 or later](https://support.fullcast.com/docs/upgrade-to-managed-package-2180-or-later.md)
-- [Configure a Scheduled Job in Salesforce](https://support.fullcast.com/docs/configure-a-scheduled-job-in-salesforce.md): Fullcast scheduler is a custom scheduler job that updates a field on a Salesforce object. This scheduler job is not related to the Fullcast's standard import or export jobs.
+- [Configure a Scheduled Job in Salesforce](https://support.fullcast.com/docs/configure-a-scheduled-job-in-salesforce.md): Fullcast scheduler is a custom scheduler job that updates a field on a Salesforce object. This scheduler job is not related to the Fullcast’s standard import or export jobs.
 - [Regenerate Salesforce credentials](https://support.fullcast.com/docs/regenerate-salesforce-credentials.md): Regenerate your Salesforce Consumer Key and Secret securely, update Fullcast, and confirm with support to ensure your app's safety.
 - [Fullcast and Salesforce Integration FAQs](https://support.fullcast.com/docs/fullcast-and-salesforce-integration-faqs.md)
 - [ServiceNow Integration](https://support.fullcast.com/docs/servicenow-integration.md): The ServiceNow integration is a scoped application (equivalent to a Salesforce Managed Package) and focuses on core planning and compensation features. It does not yet support policies like routing and holdouts.
@@ -365,7 +401,7 @@
 - [Create fields in Fullcast](https://support.fullcast.com/docs/create-fields-in-fullcast.md): Add a CRM field or create custom fields in Fullcast from the Entities & Fields settings.
 - [Create a reference field](https://support.fullcast.com/docs/create-a-reference-field.md): Create a reference field to access data from a related object on a primary record within the Fullcast platform.
 - [Format a field as a hyperlink in the data grid](https://support.fullcast.com/docs/format-a-field-as-a-hyperlink-in-the-data-grid.md): Configure a field in Fullcast as a hyperlink that redirects users from a record in a Fullcast data grid to an external web page, such as a record in Salesforce
-- [Field data types and formatting options in Fullcast](https://support.fullcast.com/docs/field-data-types-and-formatting-options-in-fullcast.md): Data formatting enhances grid readability by customizing how data is displayed without changing the data. Each field's data type (numeric, date, string, integer) defines its formatting options.
+- [Field data types and formatting options in Fullcast](https://support.fullcast.com/docs/field-data-types-and-formatting-options-in-fullcast.md): Data formatting enhances grid readability by customizing how data is displayed without changing the data. Each field’s data type (numeric, date, string, integer) defines its formatting options.
 - [Manage fields in Fullcast](https://support.fullcast.com/docs/manage-fields-in-fullcast.md): Edit or delete fields from the Entities in Fullcast.
 - [Entities](https://support.fullcast.com/docs/entities.md)
 - [Create entities in Fullcast](https://support.fullcast.com/docs/create-entities-in-fullcast.md): Create new entities in Fullcast.
@@ -426,27 +462,6 @@
 - [Workflow Access Denied Error](https://support.fullcast.com/docs/workflow-access-denied-error.md): This article provides directions for troubleshooting an "Access Denied" error message.
 - [Provide Support with Temporary Access](https://support.fullcast.com/docs/provide-support-with-temporary-access.md)
 - [How to Clear Browser Cache for Fullcast](https://support.fullcast.com/docs/how-to-clear-browser-cache-for-fullcast.md)
-- [Fullcast Learning Hub](https://support.fullcast.com/docs/fullcast-learning-hub.md): Learn best practices for using Fullcast functionality to optimize your go-to-market strategy and execution.
-- [Smart Plan for Territory Management and Resource Alignment](https://support.fullcast.com/docs/smartplan-for-territory-management-and-resource-alignment.md): Learn how to apply Smart Plan rules to achieve specific territory management scenarios.
-- [Smart Plan - Advanced Strategies and Automation](https://support.fullcast.com/docs/smartplan-advanced-strategies-and-automation.md): Get realistic descriptions and examples of advanced use cases for the Fullcast Smart Plan
-- [Territory Planning Best Practices](https://support.fullcast.com/docs/territory-planning-best-practices.md): Learn the best practices for territory planning, leveraging the Fullcast platform.
-- [Customer Success Territories](https://support.fullcast.com/docs/customer-success-territories.md): Learn how to use Fullcast to build optimized books of business (territories) for Customer Success Managers.
-- [Manage territory coverage transitions](https://support.fullcast.com/docs/manage-territory-coverage-transitions.md): Master the End Coverage workflow in Fullcast. Learn best practices for managing employee transitions, assigning temporary backfills, and preserving historical data.
-- [Reports: Insights, tips, and blueprints](https://support.fullcast.com/docs/insights-and-tips-for-optimizing-fullcast-reports.md): Learn specific use cases for Fullcast reports and tips for optimizing them.
-- [Build Prescriptive Territory Books with Smart Plan Account Mixes](https://support.fullcast.com/docs/build-prescriptive-territory-books-with-smart-plan-account-mixes.md): Master Account Mix for precise territory control, ensuring optimal account distribution based on industry specialization and rep seniority.
-- [Territory-driven routing with Fullcast](https://support.fullcast.com/docs/territory-driven-routing-with-fullcast.md): Optimize your territory-driven routing with Fullcast, ensuring real-time updates and seamless integration with Salesforce for efficient account and lead management.
-- [Automate Account Transitions with Fullcast Holdouts](https://support.fullcast.com/docs/automate-account-transitions-with-fullcast-holdouts.md): Streamline your Go-To-Market execution with the Fullcast Holdouts Policy. This guide covers best practices for configuring Exempt vs. Eligible opportunities, automating rep selection periods, and setting up Salesforce flows to ensure smooth account transitions.
-- [Optimize your quota planning process](https://support.fullcast.com/docs/optimize-your-quota-planning-process.md): Struggling with a rigid or time-consuming quota planning process? This guide for RevOps and sales leaders outlines a modern framework for optimizing how you set targets. Learn how to build a more flexible, efficient, and data-driven plan for faster and fairer results.
-- [Inside Targets: A Practical Look at the Fullcast Quota Framework](https://support.fullcast.com/docs/inside-targets-a-practical-look-at-the-fullcast-quota-framework.md): Manage quotas and performance goals with Fullcast's Targets module, featuring dynamic, interconnected goals for your Go-To-Market organization.
-- [Video: Setting Individual Quotas Based on Territory Targets](https://support.fullcast.com/docs/video-setting-individual-quotas-based-on-territory-targets.md): Learn how to set dynamic, realistic quotas for reps by leveraging their territory assignments and territory data.
-- [Annual Planning Playbook: From Kickoff to Cutover](https://support.fullcast.com/docs/annual-planning-playbook-from-kickoff-to-cutover.md)
-- [Best practices for executing fiscal year cutovers](https://support.fullcast.com/docs/best-practices-for-executing-fiscal-year-cutovers.md): Learn best practices for cutting over or transitioning between gtm territory plans in Fullcast, from both the Fullcast and Salesforce sides.
-- [RevOps + Sales Collaboration in Fullcast](https://support.fullcast.com/docs/revops-sales-collaboration-in-fullcast.md): This article provides information regarding key strategies to streamline collaboration between RevOps and sales teams during annual planning, leveraging Fullcast.
-- [Get started with capacity planning - Office Hours session](https://support.fullcast.com/docs/get-started-with-capacity-planning-office-hours-session.md): This document provides a summary of the "Getting Started with Capacity Planning" Office Hours session, with timestamps to help you navigate to specific segments in the recording.
-- [Best practice: handle high volume exports in Fullcast](https://support.fullcast.com/docs/best-practices-for-handling-high-volume-exports-in-fullcast.md): Learn best practices for managing large data exports from Fullcast to your CRM. This guide helps administrators understand factors affecting export volume, implement strategies like staged exports and filtering, and avoid common pitfalls to ensure optimal performance and data integrity.
-- [Considerations for Salesforce Flows triggered by Fullcast Account Team exports](https://support.fullcast.com/docs/considerations-for-salesforce-flows-triggered-by-fullcast-account-team-exports.md): Learn how to use Salesforce Asynchronous Paths in Record-Triggered Flows to reliably automate actions triggered by Fullcast Account Team exports. This guide explains how to avoid governor limits and prevent recursion when handling high-volume data, complete with key considerations and an example flow.
-- [Prevent recursion related to Fullcast data exported to account team](https://support.fullcast.com/docs/prevent-recursion-related-to-fullcast-data-exported-to-account-team.md): Prevent Salesforce flow recursion triggered by Fullcast Account Team data exports. Understand the causes of recursion and implement strategies like control fields, asynchronous processing, and careful owner updates for reliable automation.
-- [Why Fullcast uses account teams & best practices for your Salesforce org](https://support.fullcast.com/docs/why-fullcast-uses-account-teams-best-practices-for-your-salesforce-org.md): Understand why Fullcast populates Salesforce Account Teams and learn best practices for leveraging this data as the primary source for assignments, reporting, and collaboration within your Salesforce org.
 - [Integration FAQs](https://support.fullcast.com/docs/integration-faqs.md)
 - [FAQ: Fullcast managed package](https://support.fullcast.com/docs/faq-fullcast-managed-package.md): Get answers to common questions about the Fullcast managed package, its contents, and how it works.
 - [FAQ: Salesforce connection and data flow](https://support.fullcast.com/docs/faq-salesforce-connection-and-data-flow.md): Get answers to common questions about how Salesforce connects with Fullcast, and how information is exchanged between the two systems.
@@ -559,7 +574,7 @@
 - [Inviting Users to Teamspaces and Managing Roles](https://support.fullcast.com/copy-ai/docs/inviting-users-to-teamspaces-and-managing-roles.md)
 - [Moving Things From One Teamspace to Another](https://support.fullcast.com/copy-ai/docs/moving-things-from-one-teamspace-to-another.md)
 - [Leaving a Teamspace](https://support.fullcast.com/copy-ai/docs/leaving-a-teamspace.md)
-- [Deleting a Teamspace](https://support.fullcast.com/docs/deleting-a-teamspace.md)
+- [Deleting a Teamspace](https://support.fullcast.com/copy-ai/docs/deleting-a-teamspace.md)
 - [User Roles for Workspace and Teamspace](https://support.fullcast.com/copy-ai/docs/user-roles-for-workspace-and-teamspace.md)
 - [Teamspace Update: Changes to Accessing Previous Projects](https://support.fullcast.com/copy-ai/docs/teamspace-update-changes-to-accessing-previous-projects.md)
 - [Teamspaces FAQ](https://support.fullcast.com/copy-ai/docs/teamspaces-faq.md)
@@ -580,4 +595,721 @@
 - [How do I manage the Workspace settings?](https://support.fullcast.com/copy-ai/docs/how-do-i-manage-the-workspace-settings.md)
 - [Can I recover deleted data?](https://support.fullcast.com/copy-ai/docs/can-i-recover-deleted-data.md)
 - [How can I rename projects?](https://support.fullcast.com/copy-ai/docs/how-can-i-rename-projects.md)
-- [How do I know that this content is n[Content truncated in source]
+- [How do I know that this content is not plagiarized?](https://support.fullcast.com/copy-ai/docs/how-do-i-know-that-this-content-is-not-plagiarized.md)
+- [Where did Tools and Templates go?](https://support.fullcast.com/copy-ai/docs/where-did-tools-and-templates-go.md)
+- [Changelog](https://support.fullcast.com/copy-ai/docs/changelog.md)
+- [Prompt Engineering](https://support.fullcast.com/copy-ai/docs/prompt-engineering.md)
+- [Getting Started with Prompts: A Guide to Effective Prompt Engineering](https://support.fullcast.com/copy-ai/docs/getting-started-with-prompts-a-guide-to-effective-prompt-engineering.md)
+- [copy.ai Learning Hub](https://support.fullcast.com/copy-ai/docs/copyai-learning-hub.md)
+- [Chat: Enterprise-safe AI that Speaks in Your Brand Voice](https://support.fullcast.com/copy-ai/docs/chat-enterprise-safe-ai-that-speaks-in-your-brand-voice.md): Unlock your creativity with Copy.ai Chat, your AI partner for brainstorming, strategy, and content tasks, all in a secure, user-friendly interface.
+- [Workflows: from Prompting to Production, Scale What Actually Works](https://support.fullcast.com/copy-ai/docs/workflows-from-prompting-to-production.md): Scale your CopyAI workflows with standardized brand assets, automation, and smart integrations for efficient content production.
+
+## Performance
+
+- [Best Practices](https://support.fullcast.com/performance/docs/best-practices.md)
+- [Effective Meetings](https://support.fullcast.com/performance/docs/effective-meetings.md)
+- [Best Practices: Pipeline Hygiene](https://support.fullcast.com/performance/docs/best-practices-pipeline-hygiene.md)
+- [Best Practices: Effective Weekly Team Meetings](https://support.fullcast.com/performance/docs/-best-practices-effective-weekly-team-meetings.md)
+- [Best Practices: 1 on 1 Sales Performance Management Check-Ins](https://support.fullcast.com/performance/docs/best-practices-1-1-sales-performance-management-check-ins.md)
+- [Quick Start Guide](https://support.fullcast.com/performance/docs/quick-start-guide.md)
+- [Admin Toolkit](https://support.fullcast.com/performance/docs/admin-toolkit.md)
+- [Fullcast Performance Admin Toolkit](https://support.fullcast.com/performance/docs/atrium-admin-toolkit.md)
+- [Prologue: AI Sales Management Solution](https://support.fullcast.com/performance/docs/prologue-ai-sales-management-solution.md)
+- [Single Sign On (SSO), and Identity Governance & Administration - Okta, Ping, Microsoft Entra](https://support.fullcast.com/performance/docs/atrium-single-sign-on-sso-and-identity-governance-administration-okta-ping-microsoft-entra.md)
+- [Metrics Inspection & Diagnosis](https://support.fullcast.com/performance/docs/metrics-inspection-diagnosis.md)
+- [Integrations 101](https://support.fullcast.com/performance/docs/integrations-101.md)
+- [Chapter 0: What is Fullcast Performance?](https://support.fullcast.com/performance/docs/chapter-0-what-is-atrium.md)
+- [Welcome Module: New License Holders & Navigation](https://support.fullcast.com/performance/docs/welcome-module-new-license-holders-navigation.md)
+- [Standardized Manager Playbooks](https://support.fullcast.com/performance/docs/standardized-manager-playbooks.md)
+- [FAQ Standardized Manager Playbooks: SDR Metrics & Reasoning](https://support.fullcast.com/performance/docs/faq-standardized-manager-playbooks-sdr-metrics-reasoning.md)
+- [FAQ Standardized Manager Playbooks: AE Metrics & Reasoning](https://support.fullcast.com/performance/docs/faq-standardized-manager-playbooks-ae-metrics-reasoning.md)
+- [Chapter 1: How to Navigate Rep Profile Pages](https://support.fullcast.com/performance/docs/chapter-1-how-to-navigate-rep-profile-pages.md)
+- [Quick Start Guide: Rep Profile Pages](https://support.fullcast.com/performance/docs/atrium-u-quick-start-guide-rep-profile-pages.md)
+- [Chapter 2: How to Customize a Metrics Card](https://support.fullcast.com/performance/docs/chapter-2-how-to-customize-a-metrics-card.md)
+- [Quick Start Guide: How to Customize a Metric Card](https://support.fullcast.com/performance/docs/atrium-u-quick-start-guide-how-to-customize-a-metric-card.md)
+- [Chapter 3: How To Build a Dashboard](https://support.fullcast.com/performance/docs/chapter-3-how-to-build-a-dashboard.md)
+- [How to Create, Edit, and Broadcast Dashboards](https://support.fullcast.com/performance/docs/how-to-create-edit-and-broadcast-dashboards.md)
+- [Chapter 4: How to Set Goals on Metrics](https://support.fullcast.com/performance/docs/chapter-4-how-to-set-goals-on-metrics.md)
+- [Set and Edit Goals](https://support.fullcast.com/performance/docs/set-and-edit-goals-in-atrium.md)
+- [Chapter 5: How to Create an Alert Feed](https://support.fullcast.com/performance/docs/chapter-5-how-to-create-an-alert-feed.md)
+- [How to be Amazing at Alert Feeds](https://support.fullcast.com/performance/docs/how-to-be-amazing-at-atrium-alert-feeds.md)
+- [Chapter 6: How to Broadcast Views to Rep](https://support.fullcast.com/performance/docs/chapter-6-how-to-broadcast-atrium-views-to-reps.md)
+- [How to Send Broadcasts Through Email](https://support.fullcast.com/performance/docs/how-to-send-atrium-broadcasts-through-email.md)
+- [How to Send Notifications Through Slack](https://support.fullcast.com/performance/docs/how-to-send-atrium-notifications-through-slack.md)
+- [How to Use the Subscription Center](https://support.fullcast.com/performance/docs/how-to-use-the-subscription-center.md)
+- [Chapter 7: How to Use Custom Tasks and Events](https://support.fullcast.com/performance/docs/chapter-7-how-to-use-custom-tasks-and-events.md)
+- [Quick Start Guide: Custom Tasks and Events](https://support.fullcast.com/performance/docs/atrium-u-quick-start-guide-custom-tasks-and-events.md)
+- [Chapter 8: How to Coach Using Data](https://support.fullcast.com/performance/docs/chapter-8-how-to-coach-using-data.md)
+- [How to Use Fullcast Performance in Daily, Weekly, Monthly Meetings and More!](https://support.fullcast.com/performance/docs/how-to-use-atrium-in-daily-weekly-monthly-meetings-and-more.md)
+- [Chapter 9: What is Sales Coach and How to Use It](https://support.fullcast.com/performance/docs/chapter-9-what-is-sales-coach-and-how-to-use-it.md)
+- [Quick Start Guide: Sales Coach](https://support.fullcast.com/performance/docs/atrium-u-quick-start-guide-sales-coach.md)
+- [Chapter 10: How to use Custom Filters](https://support.fullcast.com/performance/docs/chapter-10-how-to-use-custom-filters-in-atrium.md)
+- [Quick Start Guide: Custom Data Filters in Atrium](https://support.fullcast.com/performance/docs/atrium-u-custom-data-filters-in-atrium.md)
+- [Chapter 11: Opportunity Health](https://support.fullcast.com/performance/docs/chapter-11-opportunity-health.md)
+- [Quick Start Guide: Opportunity Health](https://support.fullcast.com/performance/docs/atrium-u-quick-start-guide-opportunity-health.md)
+- [Custom Metrics](https://support.fullcast.com/performance/docs/custom-metrics.md)
+- [Custom Metrics](https://support.fullcast.com/performance/docs/custom-metrics-1.md)
+- [Custom Metrics: Precision Sales Performance Management](https://support.fullcast.com/performance/docs/atrium-launches-custom-metrics-precision-sales-performance-management.md)
+- [Expand Your KPI Tracking with Popular Custom Metrics](https://support.fullcast.com/performance/docs/atrium-unlocked-expand-your-kpi-tracking-with-popular-custom-metrics.md)
+- [Performance how-to](https://support.fullcast.com/performance/docs/how-to.md)
+- [Navigating & Manipulating Atrium](https://support.fullcast.com/performance/docs/navigating-manipulating-atrium.md)
+- [Performance Check-Ins: What They Are & How To Use Them](https://support.fullcast.com/performance/docs/performance-check-ins-what-they-are-how-to-use-them.md)
+- [Copying a View To a New Team (Or Individual) - Using existing Goals or Dashboards as a Template and copying to a New Team, Individual, or Set of Teams](https://support.fullcast.com/performance/docs/copying-a-view-to-a-new-team-or-individual-using-existing-goals-or-dashboards-as-a-template-and-copying-to-a-new-team-individual-or-set-of-teams.md)
+- [EnableAI: Sales Enablement Content Copilot](https://support.fullcast.com/performance/docs/atrium-enableai-atrium-s-sales-enablement-content-copilot.md)
+- [Ramping: Visualizations, Alerting, Goals, Duration, and More](https://support.fullcast.com/performance/docs/ramping-in-atrium-visualizations-alerting-goals-duration-and-more.md)
+- [Goal History](https://support.fullcast.com/performance/docs/goal-history.md)
+- [Org Chart Health: Automatic rep removal, rep addition, etc.](https://support.fullcast.com/performance/docs/org-chart-health-automatic-rep-removal-rep-addition-etc.md)
+- [Roles: Disciplines, Segments, and Families with Custom Roles, Ramping Rules, Metrics Priorities, and more](https://support.fullcast.com/performance/docs/roles-in-atrium-disciplines-segments-and-families-with-custom-roles-ramping-rules-metrics-priorities-and-more.md)
+- [Customize Cards](https://support.fullcast.com/performance/docs/customizing-which-cards-show-up-and-which-cards-are-eligible-for-alerts-in-your-organization-s-atrium-instance.md)
+- [Custom Groups](https://support.fullcast.com/performance/docs/how-to-use-custom-groups-in-atrium.md)
+- [People Filter on Alert Feeds, Goal Views and Goal Center](https://support.fullcast.com/performance/docs/how-to-use-people-filter-on-alert-feeds-goal-views-and-goal-center.md)
+- [Visual Representation of Negative Values in Bookings and Pipeline](https://support.fullcast.com/performance/docs/visual-representation-of-negative-values-in-bookings-and-pipeline.md)
+- [Reps on extended Vacation & Leave: How to Stop Performance from Firing Alerts & Anomalies for Reps On Leave](https://support.fullcast.com/performance/docs/reps-on-extended-vacation-leave-how-to-stop-atrium-from-firing-alerts-anomalies-for-reps-on-leave.md)
+- [Tracking Close Date for Open, Closed Won, and Closed Lost Opps](https://support.fullcast.com/performance/docs/tracking-close-date-for-open-closed-won-and-closed-lost-opps.md)
+- [How to Save a Metrics Card You've Configured](https://support.fullcast.com/performance/docs/how-to-save-a-metrics-card-you-ve-configured.md)
+- [Shortcuts Button](https://support.fullcast.com/performance/docs/shortcuts-button.md)
+- [How to Use: People, Totals, and Averages in Performance Card Views](https://support.fullcast.com/performance/docs/how-to-use-people-totals-and-averages-in-atrium-card-views.md)
+- [Credit Card Payments](https://support.fullcast.com/performance/docs/atrium-credit-card-payments.md)
+- [Sharing & Broadcasting](https://support.fullcast.com/performance/docs/sharing-broadcasting-atrium.md)
+- [Share a Saved View](https://support.fullcast.com/performance/docs/how-to-in-atrium-share-a-saved-view.md)
+- [Automatic Notifications](https://support.fullcast.com/performance/docs/automatic-notifications-in-atrium.md)
+- [How Do I Integrate and Change Slack Accounts?](https://support.fullcast.com/performance/docs/how-do-i-integrate-and-change-slack-accounts.md)
+- [Intro to the Guest User Experience](https://support.fullcast.com/performance/docs/intro-to-the-guest-user-experience.md)
+- [FAQs](https://support.fullcast.com/performance/docs/atrium-faqs.md)
+- [Pipeline Change Card Updates for Velocity Sales Motions](https://support.fullcast.com/performance/docs/pipeline-change-card-updates-for-velocity-sales-motions.md)
+- [Alert Types: Peer Alerts, Trend Alerts, Goal Alerts, Strategy Insights, and Summary Alerts](https://support.fullcast.com/performance/docs/atrium-alert-types-peer-alerts-trend-alerts-goal-alerts-strategy-insights-and-summary-alerts.md)
+- [Specifying, Building, and Deploying a Scaled Modern Enablement Program](https://support.fullcast.com/performance/docs/specifying-building-and-deploying-a-scaled-modern-enablement-program-with-atrium.md)
+- [How Often Does Fullcast Performance Update My Data? (Salesforce, Email, Calls, and Calendar)](https://support.fullcast.com/performance/docs/how-often-does-atrium-update-my-data-salesforce-email-calls-and-calendar.md)
+- [How does Fullcast Performance deal with Salesforce Parent/Child Accounts?](https://support.fullcast.com/performance/docs/how-does-atrium-deal-with-salesforce-parent-child-accounts.md)
+- [Why am I not seeing Meetings on Calendar information for reps despite authorizing email and calendars?](https://support.fullcast.com/performance/docs/why-am-i-not-seeing-meetings-on-calendar-information-for-reps-despite-authorizing-email-and-calendars.md)
+- [How Does Fullcast Performance Calculate My Win Rate?](https://support.fullcast.com/performance/docs/how-does-atrium-calculate-my-win-rate.md)
+- [Customer Success Adoption & Usage Leaderboard Reports & Broadcasts](https://support.fullcast.com/performance/docs/atrium-customer-success-adoption-usage-leaderboard-reports-broadcasts.md)
+- [How Email Data Ends up in Fullcast Performance](https://support.fullcast.com/performance/docs/how-email-data-ends-up-in-atrium.md)
+- [How Fullcast Performance decides what individuals are included in a data point or not](https://support.fullcast.com/performance/docs/how-atrium-decides-what-individuals-are-included-in-a-data-point-or-not.md)
+- [Account Setup](https://support.fullcast.com/performance/docs/atrium-account-setup.md)
+- [Changing Currency Symbols and Converting Currency to Local Currencies](https://support.fullcast.com/performance/docs/how-currency-works-in-atrium-changing-currency-symbols-and-converting-currency-to-local-currencies.md)
+- [Actions & Objects: Touches, Emails, Calls, Meetings, Accounts (Companies), Contacts (People), Leads, Opportunities and more!](https://support.fullcast.com/performance/docs/atrium-actions-objects-touches-emails-calls-meetings-accounts-companies-contacts-people-leads-opportunities-and-more.md)
+- [How to Resolve Email Data Inconsistencies](https://support.fullcast.com/performance/docs/how-to-resolve-email-data-inconsistencies.md)
+- [How Do I Change our Salesforce Integration User?](https://support.fullcast.com/performance/docs/how-do-i-change-our-salesforce-integration-user.md)
+- [How Do I Change an Employee's Email Address?](https://support.fullcast.com/performance/docs/how-do-i-change-an-employee-s-email-address.md)
+- [How do I Understand and Update Salesforce Field Mappings?](https://support.fullcast.com/performance/docs/how-do-i-understand-and-update-salesforce-field-mappings-in-atrium.md)
+- [Why Is My Rep Missing all G Suite Data? And what is a sub-org?](https://support.fullcast.com/performance/docs/why-is-my-rep-missing-all-g-suite-data-and-what-is-a-sub-org.md)
+- [How Do I Add Additional Data Filters to Customize Data Metrics?](https://support.fullcast.com/performance/docs/how-do-i-add-additional-data-filters-to-customize-data-metrics.md)
+- [How Do I Add a New Employee?](https://support.fullcast.com/performance/docs/how-do-i-add-a-new-employee.md)
+- [Why Are Email Totals Not the Same as Salesforce?](https://support.fullcast.com/performance/docs/why-are-email-totals-not-the-same-as-salesforce.md)
+- [How Do I Edit a Dashboard?](https://support.fullcast.com/performance/docs/how-do-i-edit-a-dashboard.md)
+- [How do I Change Groups In My Team?](https://support.fullcast.com/performance/docs/how-do-i-change-groups-in-my-team.md)
+- [Metrics in Fullcast Performance and How to Use Them](https://support.fullcast.com/performance/docs/metrics-in-atrium-and-how-to-use-them.md)
+- [How Fullcast Performance Differentiates Between Initial and Follow-Up Meetings](https://support.fullcast.com/performance/docs/how-atrium-differentiates-between-initial-and-follow-up-meetings.md)
+- [Understanding Data Filters](https://support.fullcast.com/performance/docs/understanding-data-filters.md)
+- [Understanding where Fullcast Performance Pulls in Data](https://support.fullcast.com/performance/docs/understanding-where-atrium-pulls-in-data.md)
+- [Opp Size Filter](https://support.fullcast.com/performance/docs/opp-size-filter.md)
+- [Customizing Metric Cards with Data Filters](https://support.fullcast.com/performance/docs/customizing-metric-cards-with-data-filters.md)
+- [Custom Data Filters](https://support.fullcast.com/performance/docs/custom-data-filters.md)
+- [Using 6sense Qualified Accounts and More in Fullcast Performance (Madkudu, Demandbase, Etc.)](https://support.fullcast.com/performance/docs/using-6sense-qualified-accounts-and-more-in-atrium-madkudu-demandbase-etc.md)
+- [Custom Task & Event Data Filters (Custom Activity Card Filters)](https://support.fullcast.com/performance/docs/custom-task-event-data-filters-custom-activity-card-filters.md)
+- [CRM Modification to Differentiate Manual vs Automatic Emails (Email Campaigns and Sequences)](https://support.fullcast.com/performance/docs/crm-modification-for-atrium-to-differentiate-manual-vs-automatic-emails-email-campaigns-and-sequences.md)
+- [Create and Edit Custom Data Filters](https://support.fullcast.com/performance/docs/create-and-edit-custom-data-filters.md)
+- [Dashboards](https://support.fullcast.com/performance/docs/dashboards.md)
+- [How to be Amazing Dashboards](https://support.fullcast.com/performance/docs/how-to-be-amazing-at-atrium-dashboards.md)
+- [Saved View Folders: Foldering Dashboards, Alert Feeds, Opp Health Views, and more](https://support.fullcast.com/performance/docs/saved-view-folders-foldering-dashboards-alert-feeds-opp-health-views-and-more.md)
+- [Emojis in Fullcast Performance](https://support.fullcast.com/performance/docs/emojis-in-atrium.md)
+- [Admin Users](https://support.fullcast.com/performance/docs/admin-users.md)
+- [How to Manage Your Organization's Licenses (User Management)](https://support.fullcast.com/performance/docs/how-to-manage-your-organization-s-atrium-licenses-atrium-user-management.md)
+- [How to change your sales stages in a way that works best](https://support.fullcast.com/performance/docs/how-to-change-your-sales-stages-in-a-way-that-works-best-with-atrium.md)
+- [Role History: Creating Continuity Managers](https://support.fullcast.com/performance/docs/role-history-creating-continuity-managers-in-atrium.md)
+- [Role History in Team Totals and Team Averages](https://support.fullcast.com/performance/docs/how-atrium-uses-role-history-in-team-totals-and-team-averages.md)
+- [Ideal Salesforce Opportunity Design & Best Practices: Attribution, State, and Types](https://support.fullcast.com/performance/docs/ideal-salesforce-opportunity-design-best-practices-attribution-state-and-types.md)
+- [How to Integrate Microsoft Office 365 & Exchange Online with Fullcast Performance](https://support.fullcast.com/performance/docs/how-to-integrate-microsoft-office-365-exchange-online-with-atrium.md)
+- [How To: Set up Google Workspace App Permissions for Fullcast Performance (Google Calendar and Gmail Data)](https://support.fullcast.com/performance/docs/how-to-set-up-google-workspace-app-permissions-for-atrium-google-calendar-and-gmail-data.md)
+- [Administrator: Managing your Org Chart](https://support.fullcast.com/performance/docs/using-atrium-as-an-administrator-managing-your-org-chart.md)
+- [Administrator: Salesforce Mappings](https://support.fullcast.com/performance/docs/using-atrium-as-an-administrator-salesforce-mappings.md)
+- [Most Common Support Questions and Steps to Resolution!](https://support.fullcast.com/performance/docs/atrium-s-most-common-support-questions-and-steps-to-resolution.md)
+- [Custom Tasks: Tracking LinkedIn Sales Navigator InMail Messages by Adding a Flow](https://support.fullcast.com/performance/docs/custom-tasks-tracking-linkedin-sales-navigator-inmail-messages-by-adding-a-flow.md)
+- [Role History](https://support.fullcast.com/performance/docs/atrium-s-role-history.md)
+- [Role History: Why a manager shows as Not Specified in a role record](https://support.fullcast.com/performance/docs/atrium-role-history-why-a-manager-shows-as-not-specified-in-a-role-record.md)
+- [Gong Integration](https://support.fullcast.com/performance/docs/gong-integration.md)
+- [Goals and Goal Alerts](https://support.fullcast.com/performance/docs/goals-and-goal-alerts.md)
+- [Automated Historical Goal Recommendations](https://support.fullcast.com/performance/docs/automated-historical-goal-recommendations.md)
+- [How Do I Set a New Goal?](https://support.fullcast.com/performance/docs/how-do-i-set-a-new-goal.md)
+- [Default Goal Views](https://support.fullcast.com/performance/docs/default-goal-views.md)
+- [Custom Goal Views](https://support.fullcast.com/performance/docs/custom-goal-views.md)
+- [How-to: Create a Goal Dashboard](https://support.fullcast.com/performance/docs/how-to-create-a-goal-dashboard.md)
+- [Goal View Subscriptions](https://support.fullcast.com/performance/docs/goal-view-subscriptions.md)
+- [Goal Center draft](https://support.fullcast.com/performance/docs/goal-center-draft.md)
+- [Goal Center: goal management made easy!](https://support.fullcast.com/performance/docs/atrium-s-goal-center-goal-management-made-easy.md)
+- [Metric Ramp Durations](https://support.fullcast.com/performance/docs/atrium-metric-ramp-durations.md)
+- [Understanding Ramping Period](https://support.fullcast.com/performance/docs/understanding-atrium-s-ramping-period.md)
+- [KPI Card Definitions](https://support.fullcast.com/performance/docs/kpi-card-definitions.md)
+- [Effort & Activity Metrics](https://support.fullcast.com/performance/docs/effortactivity-metrics.md)
+- [Opportunities Touched Card](https://support.fullcast.com/performance/docs/opportunities-touched-card.md)
+- [Salesforce Custom Tasks & Events Card (Custom Activities Card)](https://support.fullcast.com/performance/docs/salesforce-custom-tasks-events-card-custom-activities-card.md)
+- [Activity Points](https://support.fullcast.com/performance/docs/activity-points.md)
+- [Time in Meetings](https://support.fullcast.com/performance/docs/time-in-meetings.md)
+- [Accounts (Companies) Touched](https://support.fullcast.com/performance/docs/accounts-companies-touched.md)
+- [Calls](https://support.fullcast.com/performance/docs/calls.md)
+- [Contacts (People) Touched](https://support.fullcast.com/performance/docs/contacts-people-touched.md)
+- [Emails Sent](https://support.fullcast.com/performance/docs/emails-sent.md)
+- [Meetings Created](https://support.fullcast.com/performance/docs/meetings-created.md)
+- [Meetings on Calendar](https://support.fullcast.com/performance/docs/meetings-on-calendar.md)
+- [New Accounts (Companies) Touched](https://support.fullcast.com/performance/docs/new-accounts-companies-touched.md)
+- [New Contacts (People) Touched](https://support.fullcast.com/performance/docs/new-contacts-people-touched.md)
+- [New Opportunities Owned](https://support.fullcast.com/performance/docs/new-opportunities-owned.md)
+- [Opportunities Owned](https://support.fullcast.com/performance/docs/opportunities-owned.md)
+- [Prospecting Accounts (Companies) Touched](https://support.fullcast.com/performance/docs/prospecting-accounts-companies-touched.md)
+- [Prospecting Calls](https://support.fullcast.com/performance/docs/prospecting-calls.md)
+- [Prospecting Emails Sent](https://support.fullcast.com/performance/docs/prospecting-emails-sent.md)
+- [Prospecting Meetings on Calendar](https://support.fullcast.com/performance/docs/prospecting-meetings-on-calendar.md)
+- [Untouched Salesforce Accounts](https://support.fullcast.com/performance/docs/untouched-salesforce-accounts.md)
+- [Selling Efficiency & Quality Metrics](https://support.fullcast.com/performance/docs/selling-efficiency-quality-metrics.md)
+- [Pipeline Change Card: Transferred Pipeline](https://support.fullcast.com/performance/docs/pipeline-change-card-transferred-pipeline.md)
+- [Time from Stage to Won](https://support.fullcast.com/performance/docs/time-from-stage-to-won.md)
+- [Average Sales Cycle](https://support.fullcast.com/performance/docs/average-sales-cycle.md)
+- [Opportunity Conversion: Win Rate from Stage](https://support.fullcast.com/performance/docs/opportunity-conversion-win-rate-from-stage.md)
+- [Opportunity Conversion: Conversion Rate From Stage](https://support.fullcast.com/performance/docs/opportunity-conversion-conversion-rate-from-stage.md)
+- [Time in Stage](https://support.fullcast.com/performance/docs/time-in-stage.md)
+- [Average Opportunity Size](https://support.fullcast.com/performance/docs/average-opportunity-size.md)
+- [Weighted Pipeline by Historical Win Rates](https://support.fullcast.com/performance/docs/weighted-pipeline-by-historical-win-rates.md)
+- [Pipeline at Stage Reached - Opp Owned By](https://support.fullcast.com/performance/docs/pipeline-at-stage-reached-opp-owned-by.md)
+- [Pipeline at Stage Reached - Opp Sourced By](https://support.fullcast.com/performance/docs/pipeline-at-stage-reached-opp-sourced-by.md)
+- [Wins](https://support.fullcast.com/performance/docs/wins.md)
+- [Contacts (People) Touched per Account (Company)](https://support.fullcast.com/performance/docs/contacts-people-touched-per-account-company.md)
+- [Opportunities Views, Pages, and Opportunity Sales Coach (Formerly Opportunity Health)](https://support.fullcast.com/performance/docs/opportunities-views-pages-and-opportunity-sales-coach-formerly-opportunity-health.md)
+- [Days Between Opp Touches](https://support.fullcast.com/performance/docs/days-between-opp-touches.md)
+- [Activities per Opp Created](https://support.fullcast.com/performance/docs/activities-per-opp-created.md)
+- [Average Selling Price](https://support.fullcast.com/performance/docs/average-selling-price.md)
+- [ASP on Opps Sourced](https://support.fullcast.com/performance/docs/asp-on-opps-sourced.md)
+- [Bookings per Meeting](https://support.fullcast.com/performance/docs/bookings-per-meeting.md)
+- [Conversion: Account (Company) Touched to Accepted Opp](https://support.fullcast.com/performance/docs/conversion-account-company-touched-to-accepted-opp.md)
+- [Conversion: Account (Company) Touched to Meeting Created](https://support.fullcast.com/performance/docs/conversion-account-company-touched-to-meeting-created.md)
+- [Conversion: Meeting to Opp Created](https://support.fullcast.com/performance/docs/conversion-meeting-to-opp-created.md)
+- [Conversion: Opp Created to Accepted Opp](https://support.fullcast.com/performance/docs/conversion-opp-created-to-accepted-opp.md)
+- [Email Engagement Rate (Email Responsiveness Rate)](https://support.fullcast.com/performance/docs/email-engagement-rate-email-responsiveness-rate.md)
+- [Weighted Pipeline By SFDC Stage Probability](https://support.fullcast.com/performance/docs/weighted-pipeline-by-sfdc-stage-probability.md)
+- [Follow-Up Meeting Ratio](https://support.fullcast.com/performance/docs/follow-up-meeting-ratio.md)
+- [Opportunity Age](https://support.fullcast.com/performance/docs/opportunity-age.md)
+- [Touches per Account (Company)](https://support.fullcast.com/performance/docs/touches-per-account-company.md)
+- [Opportunity Conversion Rate: Conversion Rate from Stage to Next](https://support.fullcast.com/performance/docs/opportunity-conversion-rate-conversion-rate-from-stage-to-next.md)
+- [New Pipeline Owned](https://support.fullcast.com/performance/docs/new-pipeline-owned.md)
+- [Pipeline Owned](https://support.fullcast.com/performance/docs/pipeline-owned.md)
+- [Untouched Opportunities](https://support.fullcast.com/performance/docs/untouched-opportunities.md)
+- [Pipeline Change](https://support.fullcast.com/performance/docs/pipeline-change.md)
+- [Pipeline by Close Date](https://support.fullcast.com/performance/docs/pipeline-by-close-date.md)
+- [Pipeline Pushed](https://support.fullcast.com/performance/docs/pipeline-pushed.md)
+- [Pipeline Pulled In](https://support.fullcast.com/performance/docs/pipeline-pulled-in.md)
+- [Pipeline Closed Lost](https://support.fullcast.com/performance/docs/pipeline-closed-lost.md)
+- [Pipeline Value Increased](https://support.fullcast.com/performance/docs/pipeline-value-increased.md)
+- [Pipeline Decreased](https://support.fullcast.com/performance/docs/pipeline-decreased.md)
+- [Stage Reached - Opp Owned By](https://support.fullcast.com/performance/docs/stage-reached-opp-owned-by.md)
+- [Stuck Opportunities](https://support.fullcast.com/performance/docs/stuck-opportunities.md)
+- [Win Rate](https://support.fullcast.com/performance/docs/win-rate.md)
+- [Win Rate on Opps Sourced](https://support.fullcast.com/performance/docs/win-rate-on-opps-sourced.md)
+- [Results](https://support.fullcast.com/performance/docs/results.md)
+- [Custom KPIs](https://support.fullcast.com/performance/docs/custom-kpis.md)
+- [Salesforce-Powered Salesforce (SFDC) Meetings Created Card](https://support.fullcast.com/performance/docs/salesforce-powered-salesforce-sfdc-meetings-created-card.md)
+- [Bookings](https://support.fullcast.com/performance/docs/bookings.md)
+- [Bookings Sourced](https://support.fullcast.com/performance/docs/bookings-sourced.md)
+- [Opportunities Advanced](https://support.fullcast.com/performance/docs/opportunities-advanced.md)
+- [Opportunities Created](https://support.fullcast.com/performance/docs/opportunities-created.md)
+- [Pipeline Created](https://support.fullcast.com/performance/docs/pipeline-created.md)
+- [Stage Reached - Opp Sourced By](https://support.fullcast.com/performance/docs/stage-reached-opp-sourced-by.md)
+- [Gong Cards](https://support.fullcast.com/performance/docs/gong-cards.md)
+- [Gong - Patience](https://support.fullcast.com/performance/docs/gong-patience.md)
+- [Gong - Tracker Frequency](https://support.fullcast.com/performance/docs/gong-tracker-frequency.md)
+- [Gong - Question Rate](https://support.fullcast.com/performance/docs/gong-question-rate.md)
+- [Gong - Call Interactivity](https://support.fullcast.com/performance/docs/gong-call-interactivity.md)
+- [Gong - Longest Monologue](https://support.fullcast.com/performance/docs/gong-longest-monologue.md)
+- [Gong - Talk Ratio](https://support.fullcast.com/performance/docs/gong-talk-ratio.md)
+- [Types of Alerts](https://support.fullcast.com/performance/docs/types-of-alerts.md)
+- [Strategy Insights](https://support.fullcast.com/performance/docs/strategy-insights.md)
+- [Other Definitions & Data Explanations](https://support.fullcast.com/performance/docs/other-definitions-data-explanations.md)
+- [Understanding How Fullcast Performance Runs API Calls in Salesforce](https://support.fullcast.com/performance/docs/understanding-how-atrium-runs-api-calls-in-salesforce.md)
+- [Trend and In Progress Visualizations for Trended Time Frames](https://support.fullcast.com/performance/docs/trend-and-in-progress-visualizations-for-trended-time-frames-in-atrium.md)
+- [Associations: How Fullcast Performance Matches Touches - Emails, Meetings, and Calls - to Accounts & Opportunities](https://support.fullcast.com/performance/docs/associations-how-atrium-matches-touches-emails-meetings-and-calls-to-accounts-opportunities.md)
+- [Management Resource Library](https://support.fullcast.com/performance/docs/management-resource-library.md)
+- [Coaching](https://support.fullcast.com/performance/docs/coaching.md)
+- [Remote Management Playbook](https://support.fullcast.com/performance/docs/remote-management-playbook.md)
+- [Metrics in Onboarding and Ramp](https://support.fullcast.com/performance/docs/metrics-in-onboarding-and-ramp.md)
+- [Holding Data-Driven 1:1s](https://support.fullcast.com/performance/docs/holding-data-driven-1-1s.md)
+- [Metrics for Pipeline Health](https://support.fullcast.com/performance/docs/metrics-for-pipeline-health.md)
+- [Sales Rep Disengagement](https://support.fullcast.com/performance/docs/sales-rep-disengagement.md)
+- [Coaching Win Rate](https://support.fullcast.com/performance/docs/coaching-win-rate.md)
+- [Coaching Untouched Opps](https://support.fullcast.com/performance/docs/coaching-untouched-opps.md)
+- [Coaching Average Selling Price](https://support.fullcast.com/performance/docs/coaching-average-selling-price.md)
+- [Coaching Follow-Up Meeting Ratio](https://support.fullcast.com/performance/docs/coaching-follow-up-meeting-ratio.md)
+- [Other Resources](https://support.fullcast.com/performance/docs/other-resources.md)
+- [Data Driven Manager - 1:1s](https://support.fullcast.com/performance/docs/data-driven-manager-1-1s.md)
+- [Sales Team KPI Benchmarks](https://support.fullcast.com/performance/docs/sales-team-kpi-benchmarks.md)
+- [Forecasting](https://support.fullcast.com/performance/docs/forecasting.md)
+- [Data Driven Manager - Sales Math](https://support.fullcast.com/performance/docs/data-driven-manager-sales-math.md)
+- [Incorporating Leaderboards](https://support.fullcast.com/performance/docs/incorporating-leaderboards.md)
+- [Manager Quick Start Guide](https://support.fullcast.com/performance/docs/manager-quick-start-guide.md)
+- [Calendar Best Practices](https://support.fullcast.com/performance/docs/calendar-best-practices.md)
+- [Articles and Podcasts](https://support.fullcast.com/performance/docs/articles-and-podcasts.md)
+- [Sales Ops Resources](https://support.fullcast.com/performance/docs/sales-ops-resources.md)
+- [Sales Operations Excellence Maturity Stages](https://support.fullcast.com/performance/docs/sales-operations-excellence-maturity-stages.md)
+- [Structuring Renewals and Upsells](https://support.fullcast.com/performance/docs/structuring-renewals-and-upsells.md)
+- [Models](https://support.fullcast.com/performance/docs/models.md)
+- [Sales Financial Model](https://support.fullcast.com/performance/docs/sales-financial-model.md)
+- [Calculators and Financial Models](https://support.fullcast.com/performance/docs/calculators-and-financial-models.md)
+- [Meeting Templates](https://support.fullcast.com/performance/docs/meeting-templates.md)
+- [1:1 Templates](https://support.fullcast.com/performance/docs/1-1-templates.md)
+- [Quarterly Business Review Template](https://support.fullcast.com/performance/docs/quarterly-business-review-template.md)
+- [Sales Board Deck Template](https://support.fullcast.com/performance/docs/sales-board-deck-template.md)
+- [Performance Management Resources](https://support.fullcast.com/performance/docs/performance-management-resources.md)
+- [Impact of Sales Performance Problems](https://support.fullcast.com/performance/docs/impact-of-sales-performance-problems.md)
+- [Making Performance Conversations Easy](https://support.fullcast.com/performance/docs/making-performance-conversations-easy.md)
+- [Performance Improvement Plan Template](https://support.fullcast.com/performance/docs/performance-improvement-plan-template.md)
+- [Product Release Notes](https://support.fullcast.com/performance/docs/product-release-notes.md)
+- [Release Notes 2025](https://support.fullcast.com/performance/docs/release-notes-2025.md)
+- [Introducing Ask Sales Coach: On-Demand Analysis & Managerial Asset Creation](https://support.fullcast.com/performance/docs/introducing-ask-sales-coach-on-demand-analysis-managerial-asset-creation.md)
+- [Release Notes 2024](https://support.fullcast.com/performance/docs/release-notes-2024.md)
+- [2024 Product Release Roundup: Accountability on Autopilot](https://support.fullcast.com/performance/docs/atrium-s-2024-product-release-roundup-accountability-on-autopilot.md)
+- [Driving Sales Leadership Initiatives with Sales Coach Spotlight](https://support.fullcast.com/performance/docs/driving-sales-leadership-initiatives-with-sales-coach-spotlight.md)
+- [Sales Coach Next Steps - Turning Performance Management Insight Into Action](https://support.fullcast.com/performance/docs/atrium-sales-coach-next-steps-turning-performance-management-insight-into-action.md)
+- [Release Notes 2023](https://support.fullcast.com/performance/docs/release-notes-2023.md)
+- [Migrating Roles, Segments, and Disciplines](https://support.fullcast.com/performance/docs/migrating-roles-segments-and-disciplines-in-atrium.md)
+- [Sales Coach Next Steps: Constructive Coaching Communications](https://support.fullcast.com/performance/docs/sales-coach-next-steps-constructive-coaching-communications.md)
+- [Q2 2023 Product Roundup](https://support.fullcast.com/performance/docs/q2-2023-atrium-product-roundup.md)
+- [Q1 2023 Product Roundup](https://support.fullcast.com/performance/docs/q1-2023-product-roundup.md)
+- [Sales Coach: AI-Driven Sales Performance Management](https://support.fullcast.com/performance/docs/atrium-sales-coach-ai-driven-sales-performance-management.md)
+- [Release Notes 2022](https://support.fullcast.com/performance/docs/release-notes-2022.md)
+- [H2 2022 Product Release Roundup](https://support.fullcast.com/performance/docs/h2-2022-product-release-roundup.md)
+- [H1 2022 Product Release Roundup](https://support.fullcast.com/performance/docs/h1-2022-product-release-roundup.md)
+- [New - Subscription Center - 05.00.2022](https://support.fullcast.com/performance/docs/new-subscription-center-05-00-2022.md)
+- [New - Purchase Licenses In-App with a Credit Card to Get Started Faster!](https://support.fullcast.com/performance/docs/new-purchase-licenses-in-app-with-a-credit-card-to-get-started-faster.md)
+- [New Time from Stage to Won Card!](https://support.fullcast.com/performance/docs/new-time-from-stage-to-won-card.md)
+- [New Activity Points Card! 02.25.22](https://support.fullcast.com/performance/docs/new-activity-points-card-02-25-22.md)
+- [New Win Rate Card!  - 02.03.22](https://support.fullcast.com/performance/docs/new-win-rate-card-02-03-22.md)
+- [New Average Sales Cycle Card!  01.26.22](https://support.fullcast.com/performance/docs/new-average-sales-cycle-card-01-26-22.md)
+- [Quarterly Product Roundup](https://support.fullcast.com/performance/docs/atrium-quarterly-product-roundup.md)
+- [New Custom Tasks Card! 01.20.22](https://support.fullcast.com/performance/docs/new-custom-tasks-card-01-20-22.md)
+- [Average Opportunity Size Card 01.12.22](https://support.fullcast.com/performance/docs/average-opportunity-size-card-01-12-22.md)
+- [Custom Data Filters Added to More Cards - Best Practices for using Custom Fields from Salesforce](https://support.fullcast.com/performance/docs/custom-data-filters-added-to-more-cards-best-practices-for-using-custom-fields-from-salesforce.md)
+- [Sharing Confirmation Emails. 01.05.22](https://support.fullcast.com/performance/docs/sharing-confirmation-emails-01-05-22.md)
+- [New Average Selling Price Card - 01.18.22](https://support.fullcast.com/performance/docs/new-average-selling-price-card-01-18-22.md)
+- [Data Filter Updates! 01.10.22](https://support.fullcast.com/performance/docs/data-filter-updates-01-10-22.md)
+- [Release Notes 2021](https://support.fullcast.com/performance/docs/release-notes-2021.md)
+- [Ramping Goals Settings  11.03.21](https://support.fullcast.com/performance/docs/ramping-goals-settings-11-03-21.md)
+- [Strategy Insight Emails - 12.22.21](https://support.fullcast.com/performance/docs/strategy-insight-emails-in-atrium-12-22-21.md)
+- [Product Roundup Q1 2021](https://support.fullcast.com/performance/docs/product-roundup-q1-2021.md)
+- [Release Notes 2020](https://support.fullcast.com/performance/docs/release-notes-2020.md)
+- [Saved Views and Email Distribution - Opp Health - 01.26.20](https://support.fullcast.com/performance/docs/saved-views-and-email-distribution-opp-health-01-26-20.md)
+- [Release Notes 2019](https://support.fullcast.com/performance/docs/release-notes-2019.md)
+- [New Filters - 09.04.19](https://support.fullcast.com/performance/docs/new-filters-09-04-19.md)
+- [TV Mode - 07.10.19](https://support.fullcast.com/performance/docs/tv-mode-07-10-19.md)
+- [SDR Strategy Insights - 06.25.19](https://support.fullcast.com/performance/docs/sdr-strategy-insights-06-25-19.md)
+- [Export to CSV - 06.20.19](https://support.fullcast.com/performance/docs/export-to-csv-06-20-19.md)
+- [New Homepage - 04.26.19](https://support.fullcast.com/performance/docs/new-homepage-04-26-19.md)
+- [Team Totals - 04.01.19](https://support.fullcast.com/performance/docs/team-totals-04-01-19.md)
+- [Opp Source Filter - 01.14.19](https://support.fullcast.com/performance/docs/opp-source-filter-01-14-19.md)
+- [Release Notes 2017-2018](https://support.fullcast.com/performance/docs/release-notes-2017-2018.md)
+- [User Management - 12.06.18](https://support.fullcast.com/performance/docs/user-management-12-06-18.md)
+- [Opp Conversion Rate - 10.15.18](https://support.fullcast.com/performance/docs/opp-conversion-rate-10-15-18.md)
+- [Goal Alerts - 10.9.17](https://support.fullcast.com/performance/docs/goal-alerts-10-9-17.md)
+- [Bundled Alerts - 09.27.18](https://support.fullcast.com/performance/docs/bundled-alerts-09-27-18.md)
+- [Ramping Alerts - 08.06.18](https://support.fullcast.com/performance/docs/ramping-alerts-08-06-18.md)
+- [Strategy Insights Alerts - 01.09.18](https://support.fullcast.com/performance/docs/strategy-insights-alerts-01-09-18.md)
+- [Release Note Archive 2017-2018](https://support.fullcast.com/performance/docs/release-note-archive-2017-2018.md)
+- [Performance Use Cases and Playbooks](https://support.fullcast.com/performance/docs/use-cases-and-playbooks.md)
+- [Playbooks](https://support.fullcast.com/performance/docs/playbooks.md)
+- [Managing & Improving a Low Meeting Activity Situation](https://support.fullcast.com/performance/docs/managing-improving-a-low-meeting-activity-situation.md)
+- [Managing & Improving a High Untouched Opportunity Situation (Managing Pipeline Hygiene)](https://support.fullcast.com/performance/docs/managing-improving-a-high-untouched-opportunity-situation-managing-pipeline-hygiene.md)
+- [Playbook: AM / CSM Core Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-am-csm-core-metrics.md)
+- [Playbook: SDR Team Warning Alert Feed](https://support.fullcast.com/performance/docs/atrium-playbook-sdr-team-warning-alert-feed.md)
+- [Playbook: AE Team Warning Alert Feed](https://support.fullcast.com/performance/docs/atrium-playbook-ae-team-warning-alert-feed.md)
+- [Playbook: Sales Motion Analysis](https://support.fullcast.com/performance/docs/atrium-playbook-sales-motion-analysis.md)
+- [Playbook: Account Executive Quarterly Business Reviews](https://support.fullcast.com/performance/docs/atrium-playbook-account-executive-quarterly-business-reviews.md)
+- [Playbook: SDR Quality Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-sdr-quality-metrics.md)
+- [Playbook: AE Per Rep Data-Driven Coaching](https://support.fullcast.com/performance/docs/atrium-playbook-ae-per-rep-data-driven-coaching.md)
+- [Playbook: SDR Core Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-sdr-core-metrics.md)
+- [Playbook: Gamification](https://support.fullcast.com/performance/docs/atrium-playbook-gamification.md)
+- [Playbook: Forecasting with Atrium](https://support.fullcast.com/performance/docs/atrium-playbook-forecasting-with-atrium.md)
+- [Playbook: SDR Hustle Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-sdr-hustle-metrics.md)
+- [Playbook: Second Level Manager - Monitoring Multiple Team Types](https://support.fullcast.com/performance/docs/atrium-playbook-second-level-manager-monitoring-multiple-team-types.md)
+- [Playbook: AE Core Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-ae-core-metrics.md)
+- [Playbook: Data-Driven SDR 1:1s](https://support.fullcast.com/performance/docs/atrium-playbook-data-driven-sdr-1-1s.md)
+- [Playbook: Data-Driven AE 1:1s](https://support.fullcast.com/performance/docs/atrium-playbook-data-driven-ae-1-1s.md)
+- [Playbook: AE & AM Pipeline Reviews](https://support.fullcast.com/performance/docs/atrium-playbook-ae-am-pipeline-reviews.md)
+- [Playbook: Pipeline Hygiene Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-pipeline-hygiene-metrics.md)
+- [Playbook: AE Prospecting Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-ae-prospecting-metrics.md)
+- [Playbook: AE Ramping Health Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-ae-ramping-health-metrics.md)
+- [Playbook: SDR Ramping Health Metrics](https://support.fullcast.com/performance/docs/atrium-playbook-sdr-ramping-health-metrics.md)
+- [Playbook Index](https://support.fullcast.com/performance/docs/playbook-index.md)
+- [Playbook Index](https://support.fullcast.com/performance/docs/atrium-playbook-index.md)
+- [CS Office Hours](https://support.fullcast.com/performance/docs/cs-office-hours.md)
+- [CS Office Hours](https://support.fullcast.com/performance/docs/cs-office-hours-1.md)
+- [Customer Office Hours](https://support.fullcast.com/performance/docs/atrium-customer-office-hours.md)
+- [Performance Playbook Tutorial Series](https://support.fullcast.com/performance/docs/atrium-playbook-tutorial-series.md)
+- [Performance Playbook Tutorial Series](https://support.fullcast.com/performance/docs/atrium-playbook-tutorial-series-1769547899355.md)
+
+## Revenue Intelligence
+
+- [Install & Configuration](https://support.fullcast.com/revenue-intelligence/docs/install-configuration.md)
+- [Install Revenue Intelligence into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-revenue-intelligence-into-salesforce.md)
+- [Connected App Usage Restrictions Change Sept 2025 - OAuth](https://support.fullcast.com/revenue-intelligence/docs/connected-app-usage-restrictions-change-sept-2025-oauth.md): Connected App Usage Restrictions Change Sept 2025 - OAuth. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install & Configure Revenue Intelligence in Salesforce: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/install-configure-ebsta-in-salesforce-an-administrator-guide.md): Install &amp; Configure Revenue Intelligence in Salesforce: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-into-salesforce-1769626469153.md): Install Revenue Intelligence into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence to Salesforce Page Layouts](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-to-salesforce-page-layouts.md): Add Revenue Intelligence to Salesforce Page Layouts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence to Salesforce Custom Object Page Layouts](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-to-salesforce-custom-object-page-layouts.md): Add Revenue Intelligence to Salesforce Custom Object Page Layouts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable API access in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/enable-api-access-in-salesforce.md): Enable API access in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable access to Visualforce Pages](https://support.fullcast.com/revenue-intelligence/docs/enable-access-to-ebsta-s-visualforce-pages.md): Enable access to Visualforce Pages. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable access to Apex Classes](https://support.fullcast.com/revenue-intelligence/docs/enable-access-to-ebsta-s-apex-classes.md): Enable access to Apex Classes. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Whitelist Revenue Intelligence's IP addresses in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/whitelist-ebsta-s-ip-addresses-in-salesforce.md): Whitelist Revenue Intelligence's IP addresses in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Roll out Revenue Intelligence to specific Salesforce Profiles or users](https://support.fullcast.com/revenue-intelligence/docs/roll-out-ebsta-to-specific-salesforce-profiles-or-users.md): Roll out Revenue Intelligence to specific Salesforce Profiles or users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get an 'Ebsta failed to get token' message?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-an-ebsta-failed-to-get-token-message.md): Why do I get an 'Ebsta failed to get token' message. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'can't display this page because your browser blocks cross-domain cookies' message?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-can-t-display-this-page-because-your-browser-blocks-cross-domain-cookies-message.md): Why do I get a 'can't display this page because your browser blocks cross-domain cookies' message. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence to Salesforce Communities Object Page Layouts](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-to-salesforce-communities-object-page-layouts.md): Add Revenue Intelligence to Salesforce Communities Object Page Layouts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence to Salesforce Page Layouts (Classic mode)](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-to-salesforce-page-layouts-classic-mode.md): Add Revenue Intelligence to Salesforce Page Layouts (Classic mode). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence to Salesforce Custom Object Page Layouts (Classic mode)](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-to-salesforce-custom-object-page-layouts-classic-mode.md): Add Revenue Intelligence to Salesforce Custom Object Page Layouts (Classic mode). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Web Components into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-web-components-into-salesforce.md)
+- [Install Revenue Intelligence Lightning Web Component into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-lightning-web-component-into-salesforce.md): Install Revenue Intelligence Lightning Web Component into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Account Insights Web Component into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-account-insights-web-component-into-salesforce.md): Install Revenue Intelligence Account Insights Web Component into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Opportunity 360º Web Component into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-opportunity-360-web-component-into-salesforce.md): Install Revenue Intelligence Opportunity 360º Web Component into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Qualification Methodology Web Component into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-qualification-methodology-web-component-into-salesforce.md): Install Revenue Intelligence Qualification Methodology Web Component into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Revenue & Ops Intelligence Insights Web Component into Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-revenue-ops-intelligence-insights-web-component-into-salesforce.md): Install Revenue Intelligence Revenue &amp; Ops Intelligence Insights Web Component into Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Revenue Intelligence Revenue Intelligence Reporting in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-revenue-intelligence-reporting-in-salesforce.md): Install Revenue Intelligence Revenue Intelligence Reporting in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Configuration of Revenue Intelligence in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/configuration-of-ebsta-in-salesforce.md)
+- [Set up Search Rules](https://support.fullcast.com/revenue-intelligence/docs/set-up-search-rules.md): Set up Search Rules. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Blacklist/Whitelist Rules](https://support.fullcast.com/revenue-intelligence/docs/set-up-blacklist-whitelist-rules.md): Set up Blacklist/Whitelist Rules. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Privacy Controls](https://support.fullcast.com/revenue-intelligence/docs/set-up-privacy-controls.md): Set up Privacy Controls. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [User Management](https://support.fullcast.com/revenue-intelligence/docs/user-management.md)
+- [Admin Guides](https://support.fullcast.com/revenue-intelligence/docs/admin-guides.md)
+- [Managing Users: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/managing-users-an-administrator-guide.md): Managing Users: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Managing Teams: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/managing-teams-an-administrator-guide.md): Managing Teams: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect mailboxes to Ebsta using a service account](https://support.fullcast.com/revenue-intelligence/docs/connect-mailboxes-to-ebsta-using-a-service-account.md): Connect mailboxes to Ebsta using a service account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Email Sync: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/set-up-email-sync-an-administrator-guide.md): Set up Email Sync: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Email Sync Management using Service Account: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/email-sync-management-using-service-account-an-administrator-guide.md): Email Sync Management using Service Account: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Calendar Sync Management using Service Account: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/calendar-sync-management-using-service-account-an-administrator-guide.md): Calendar Sync Management using Service Account: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Assign licences to Ebsta users](https://support.fullcast.com/revenue-intelligence/docs/assign-licences-to-ebsta-users.md): Assign licences to Ebsta users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Assign Administrator rights to Ebsta users](https://support.fullcast.com/revenue-intelligence/docs/assign-administrator-rights-to-ebsta-users.md): Assign Administrator rights to Ebsta users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Privacy Controls](https://support.fullcast.com/revenue-intelligence/docs/set-up-privacy-controls-1769626523233.md): Set up Privacy Controls. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Cadence Roles](https://support.fullcast.com/revenue-intelligence/docs/set-up-cadence-roles.md): Set up Cadence Roles. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [The differences between Ebsta's Native Email Sync & Team Email Sync explained](https://support.fullcast.com/revenue-intelligence/docs/the-differences-between-ebsta-s-native-email-sync-team-email-sync-explained.md): The differences between Ebsta's Native Email Sync &amp; Team Email Sync explained. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Customize Salesforce fields displayed in Ebsta: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/customize-salesforce-fields-displayed-in-ebsta-an-administrator-guide.md): Customize Salesforce fields displayed in Ebsta: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Onboarding new Ebsta users](https://support.fullcast.com/revenue-intelligence/docs/onboarding-new-ebsta-users.md): Onboarding new Ebsta users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Onboarding new Ebsta users using a service account](https://support.fullcast.com/revenue-intelligence/docs/onboarding-new-ebsta-users-using-a-service-account.md): Onboarding new Ebsta users using a service account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Re-connect a master Salesforce account to Ebsta](https://support.fullcast.com/revenue-intelligence/docs/re-connect-a-master-salesforce-account-to-ebsta.md): Re-connect a master Salesforce account to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to sign in to the Ebsta Console](https://support.fullcast.com/revenue-intelligence/docs/how-to-sign-in-to-the-ebsta-console.md): How to sign in to the Ebsta Console. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Service Account Connection](https://support.fullcast.com/revenue-intelligence/docs/service-account-connection.md)
+- [Restricting Revenue Intelligence EWS Service to a Security Group Using PowerShell](https://support.fullcast.com/revenue-intelligence/docs/restricting-ebsta-ews-service-to-a-security-group-using-powershell.md): Restricting Revenue Intelligence EWS Service to a Security Group Using PowerShell. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect Gmail service account to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/connect-gmail-service-account-to-ebsta.md): Connect Gmail service account to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Re-connect Gmail service account to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/re-connect-gmail-service-account-to-ebsta.md): Re-connect Gmail service account to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect Office 365/Exchange Server service account to Ebsta](https://support.fullcast.com/revenue-intelligence/docs/connect-office-365-exchange-server-service-account-to-ebsta.md): Connect Office 365/Exchange Server service account to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Re-connect Office 365/Exchange Server service account to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/re-connect-office-365-exchange-server-service-account-to-ebsta.md): Re-connect Office 365/Exchange Server service account to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect Microsoft Graph service account to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/connect-microsoft-graph-service-account-to-ebsta.md): Connect Microsoft Graph service account to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to a create a Gmail service account](https://support.fullcast.com/revenue-intelligence/docs/how-to-a-create-a-gmail-service-account.md): How to a create a Gmail service account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to create an Exchange Server service account (Exchange 2013 & above)](https://support.fullcast.com/revenue-intelligence/docs/how-to-create-an-exchange-server-service-account-exchange-2013-above.md): How to create an Exchange Server service account (Exchange 2013 &amp; above). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Test connectivity of your Office 365/Exchange Server service account](https://support.fullcast.com/revenue-intelligence/docs/test-connectivity-of-your-office-365-exchange-server-service-account.md): Test connectivity of your Office 365/Exchange Server service account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Checklist for connecting an IMAP account to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/checklist-for-connecting-an-imap-account-to-ebsta.md): Checklist for connecting an IMAP account to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Whitelist Revenue Intelligence for G Suite](https://support.fullcast.com/revenue-intelligence/docs/whitelist-ebsta-for-g-suite.md): Whitelist Revenue Intelligence for G Suite. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to a create a Gmail service account with Meta Only Scope](https://support.fullcast.com/revenue-intelligence/docs/how-to-a-create-a-gmail-service-account-with-meta-only-scope.md): How to a create a Gmail service account with Meta Only Scope. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Mailbox Connection](https://support.fullcast.com/revenue-intelligence/docs/user-management-mailbox-connection.md)
+- [Connect your mailbox to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/connect-your-mailbox-to-ebsta-1769626551216.md): Connect your mailbox to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect your mailbox to Revenue Intelligence from Salesforce](https://support.fullcast.com/revenue-intelligence/docs/connect-your-mailbox-to-ebsta-from-salesforce.md): Connect your mailbox to Revenue Intelligence from Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Select which mailbox Folders to sync to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/select-which-mailbox-folders-to-sync-to-ebsta.md): Select which mailbox Folders to sync to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [A mailbox has stopped syncing to Revenue Intelligence & displays an 'error connection status'](https://support.fullcast.com/revenue-intelligence/docs/a-mailbox-has-stopped-syncing-to-ebsta-displays-an-error-connection-status.md): A mailbox has stopped syncing to Revenue Intelligence &amp; displays an 'error connection status'. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Licenses & Billing](https://support.fullcast.com/revenue-intelligence/docs/user-management-licences-billing.md)
+- [Purchase an Revenue Intelligence subscription](https://support.fullcast.com/revenue-intelligence/docs/purchase-an-ebsta-subscription.md): Purchase an Revenue Intelligence subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add additional licenses to your Revenue Intelligence subscription](https://support.fullcast.com/revenue-intelligence/docs/add-additional-licences-to-your-ebsta-subscription.md): Add additional licenses to your Revenue Intelligence subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Update your Billing Information](https://support.fullcast.com/revenue-intelligence/docs/update-your-billing-information-1769626537174.md): Update your Billing Information. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add additional licenses to your Revenue Intelligence subscription](https://support.fullcast.com/revenue-intelligence/docs/cancel-your-ebsta-subscription.md): Add additional licenses to your Revenue Intelligence subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [My Revenue Intelligence subscription has expired](https://support.fullcast.com/revenue-intelligence/docs/my-ebsta-subscription-has-expired.md): My Revenue Intelligence subscription has expired. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a subscription was bought offline message when upgrading?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-subscription-was-bought-offline-message-when-upgrading.md): Why do I get a subscription was bought offline message when upgrading. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Revenue Intelligence for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-hubspot.md)
+- [HubSpot Users](https://support.fullcast.com/revenue-intelligence/docs/hubspot-users.md)
+- [Sign in & connect mailboxes to HubSpot](https://support.fullcast.com/revenue-intelligence/docs/sign-in-connect-mailboxes-to-ebsta-for-hubspot.md): Sign in &amp; connect mailboxes to HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Manage Teams for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/manage-teams-ebsta-for-hubspot.md): Manage Teams for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Overview of Revenue Intelligence for HubSpot Dashboard](https://support.fullcast.com/revenue-intelligence/docs/overview-of-ebsta-for-hubspot-dashboard.md): Overview of Revenue Intelligence for HubSpot Dashboard. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pipeline Tracker for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/pipeline-tracker-ebsta-for-hubspot.md): Pipeline Tracker for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pipeline Insights for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/pipeline-insights-ebsta-for-hubspot.md): Pipeline Insights for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pipeline Change HubSpot](https://support.fullcast.com/revenue-intelligence/docs/pipeline-change-ebsta-for-hubspot.md): Pipeline Change HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Forecasting for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/forecasting-ebsta-for-hubspot.md): Forecasting for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Forecast Change for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/forecast-change-ebsta-for-hubspot.md): Forecast Change for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Team Analytics for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/team-analytics-ebsta-for-hubspot.md): Team Analytics for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Funnel Analytics for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/funnel-analytics-ebsta-for-hubspot.md): Funnel Analytics for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Viewing HubSpot Activity from Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/viewing-hubspot-activity-from-ebsta.md): Viewing HubSpot Activity from Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Un-install Revenue Intelligence for HubSpot](https://support.fullcast.com/revenue-intelligence/docs/un-install-ebsta-for-hubspot.md): Un-install Revenue Intelligence for HubSpot. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Revenue Intelligence for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-salesforce.md)
+- [Pipeline Management & Forecasting](https://support.fullcast.com/revenue-intelligence/docs/pipeline-management-forecasting.md)
+- [Pipeline Change for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/pipeline-change-ebsta-for-salesforce.md): Pipeline Change for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pipeline Insights for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/pipeline-insights-ebsta-for-salesforce.md): Pipeline Insights for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Forecasting for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/forecasting-ebsta-for-salesforce.md): Forecasting for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Forecast Change for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/forecast-change-ebsta-for-salesforce.md): Forecast Change for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pipeline Tracker for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/pipeline-tracker-ebsta-for-salesforce.md): Pipeline Tracker for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Revenue Analytics & Relationship Intelligence](https://support.fullcast.com/revenue-intelligence/docs/revenue-analytics-relationship-intelligence.md)
+- [Team Analytics for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/team-analytics-ebsta-for-salesforce.md): Team Analytics for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Funnel Analytics for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/funnel-analytics-ebsta-for-salesforce.md): Funnel Analytics for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Account Insights for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/account-insights-ebsta-for-salesforce.md): Account Insights for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Activity Insights for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/activity-insights-ebsta-for-salesforce.md): Activity Insights for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Conversational Intelligence](https://support.fullcast.com/revenue-intelligence/docs/conversational-intelligence.md)
+- [Enable Conversational Intelligence Tool](https://support.fullcast.com/revenue-intelligence/docs/enable-conversational-intelligence-tool.md): Enable Conversational Intelligence Tool. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Conversional Intelligence Summaries in Slack](https://support.fullcast.com/revenue-intelligence/docs/set-up-conversional-intelligence-summaries-in-slack.md): Set up Conversional Intelligence Summaries in Slack. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Topic Tracking for Conversational Intelligence](https://support.fullcast.com/revenue-intelligence/docs/set-up-topic-tracking-for-conversational-intelligence.md): Set up Topic Tracking for Conversational Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Topic Tracking Alerts](https://support.fullcast.com/revenue-intelligence/docs/set-up-topic-tracking-alerts.md): Set up Topic Tracking Alerts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect Zoom Account](https://support.fullcast.com/revenue-intelligence/docs/connect-zoom-account.md): Connect Zoom Account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect Microsoft Teams Account](https://support.fullcast.com/revenue-intelligence/docs/connect-microsoft-teams-account.md): Connect Microsoft Teams Account. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Company Network](https://support.fullcast.com/revenue-intelligence/docs/company-network.md)
+- [Company Network for Salesforce](https://support.fullcast.com/revenue-intelligence/docs/company-network-ebsta-for-salesforce.md): Company Network for Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Import data to Salesforce using Data Import Wizard](https://support.fullcast.com/revenue-intelligence/docs/import-data-to-salesforce-using-data-import-wizard.md): Import data to Salesforce using Data Import Wizard. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to check the success of Bulk Data Load Jobs in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/how-to-check-the-success-of-bulk-data-load-jobs-in-salesforce.md): How to check the success of Bulk Data Load Jobs in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Revenue Intelligence in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/ebsta-in-salesforce.md)
+- [Overview of Revenue Intelligence & Ops Intelligence Insights Web Component in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/overview-of-ebsta-revenue-ops-intelligence-insights-web-component-in-salesforce.md): Overview of Revenue Intelligence &amp; Ops Intelligence Insights Web Component in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Overview of Revenue Intelligence in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/overview-of-ebsta-in-salesforce.md): Overview of Revenue Intelligence in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect your mailbox to Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/connect-your-mailbox-to-ebsta.md): Connect your mailbox to Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What is a Relationship Score?](https://support.fullcast.com/revenue-intelligence/docs/what-is-ebsta-s-relationship-score.md): What is a Relationship Score. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What is a Deal Score?](https://support.fullcast.com/revenue-intelligence/docs/what-is-ebsta-s-deal-score.md): What is a Deal Score. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Configuration](https://support.fullcast.com/revenue-intelligence/docs/configuration.md)
+- [Revenue Types Overview](https://support.fullcast.com/revenue-intelligence/docs/revenue-types-overview.md): Revenue Types Overview. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Creating a Salesforce Flow to Auto-Populate the Related To Field on Event Records](https://support.fullcast.com/revenue-intelligence/docs/creating-a-salesforce-flow-to-auto-populate-the-related-to-field-on-event-records.md): Creating a Salesforce Flow to Auto-Populate the Related To Field on Event Records. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable Slack Integration & using Slack from Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/enable-slack-integration-using-slack-from-ebsta.md): Enable Slack Integration &amp; using Slack from Revenue Intelligence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up & Configure Forecast Category in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/set-up-configure-forecast-category-in-salesforce.md): Set up &amp; Configure Forecast Category in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set Up Your Forecast Hierarchy in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/set-up-your-forecast-hierarchy-in-salesforce.md): Set Up Your Forecast Hierarchy in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable & Set up Quotas in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/enable-set-up-quotas-in-salesforce.md): Enable &amp; Set up Quotas in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Missing Contacts & Out-of-Date Data Alerts](https://support.fullcast.com/revenue-intelligence/docs/set-up-missing-contacts-out-of-date-data-alerts.md): Set up Missing Contacts &amp; Out-of-Date Data Alerts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Set up Out-of-Office & Left the Business Alerts](https://support.fullcast.com/revenue-intelligence/docs/set-up-out-of-office-left-the-business-alerts.md): Set up Out-of-Office &amp; Left the Business Alerts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Revenue Intelligence Web Component as a Trusted URL](https://support.fullcast.com/revenue-intelligence/docs/add-ebsta-web-component-as-a-trusted-url.md): Add Revenue Intelligence Web Component as a Trusted URL. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Reporting](https://support.fullcast.com/revenue-intelligence/docs/reporting.md)
+- [Enable Revenue Intelligence Reporting](https://support.fullcast.com/revenue-intelligence/docs/enable-ebsta-reporting.md): Enable Revenue Intelligence Reporting. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add Revenue Intelligence Reporting fields to Salesforce Page Layouts](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-ebsta-reporting-fields-to-salesforce-page-layouts.md): How to add Revenue Intelligence Reporting fields to Salesforce Page Layouts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add Junction Object Reporting fields to Record Pages](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-junction-object-reporting-fields-to-record-pages.md): How to add Junction Object Reporting fields to Record Pages. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add User Score Reporting to Record Pages](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-ebsta-user-score-reporting-to-record-pages.md): How to add User Score Reporting to Record Pages. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create a Relationship Score Object in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/create-an-ebsta-relationship-score-object-in-salesforce.md): Create a Relationship Score Object in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Use Relationship Score to track the average for Closed Won & Lost](https://support.fullcast.com/revenue-intelligence/docs/use-ebsta-relationship-score-to-track-the-average-for-closed-won-lost.md): Use Relationship Score to track the average for Closed Won &amp; Lost. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create a Days since Last Activity Custom Field](https://support.fullcast.com/revenue-intelligence/docs/create-a-days-since-last-activity-custom-field.md): Create a Days since Last Activity Custom Field. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create an Analysis Dashboard in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/create-an-ebsta-analysis-dashboard-in-salesforce.md): Create an Analysis Dashboard in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create a User Email Activity Report in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/create-a-user-email-activity-report-in-salesforce.md): Create a User Email Activity Report in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create a User Call Activity Report in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/create-a-user-call-activity-report-in-salesforce.md): Create a User Call Activity Report in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create a User Activity Report based on Salesforce Log in times](https://support.fullcast.com/revenue-intelligence/docs/create-a-user-activity-report-based-on-salesforce-log-in-times.md): Create a User Activity Report based on Salesforce Log in times. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable User Emails Custom Object](https://support.fullcast.com/revenue-intelligence/docs/enable-ebsta-s-user-emails-custom-object.md): Enable User Emails Custom Object. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Uninstall Revenue Intelligence](https://support.fullcast.com/revenue-intelligence/docs/uninstall-ebsta.md)
+- [Uninstall Revenue Intelligence Manage Package](https://support.fullcast.com/revenue-intelligence/docs/uninstall-ebsta-manage-package.md): Uninstall Revenue Intelligence Manage Package. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Uninstall Revenue Intelligence Lightning Component](https://support.fullcast.com/revenue-intelligence/docs/uninstall-ebsta-lightning-component.md): Uninstall Revenue Intelligence Lightning Component. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Uninstall Revenue Intelligence Reporting Unmanaged Package](https://support.fullcast.com/revenue-intelligence/docs/uninstall-ebsta-reporting-unmanaged-package.md): Uninstall Revenue Intelligence Reporting Unmanaged Package. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-bullhorn.md)
+- [Install](https://support.fullcast.com/revenue-intelligence/docs/install.md)
+- [Install Ebsta for Bullhorn into Chrome](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-for-bullhorn-into-chrome.md): Install Ebsta for Bullhorn into Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Ebsta for Bullhorn into Outlook](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-for-bullhorn-into-outlook.md): Install Ebsta for Bullhorn into Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Ebsta for Bullhorn into Word](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-for-bullhorn-into-word.md): Install Ebsta for Bullhorn into Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Settings](https://support.fullcast.com/revenue-intelligence/docs/settings.md)
+- [Connect Ebsta to Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/connect-ebsta-to-bullhorn.md): Connect Ebsta to Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Log in & out of Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/log-in-out-of-ebsta-for-bullhorn.md): Log in &amp; out of Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Refresh your settings in Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/refresh-your-settings-in-ebsta-for-bullhorn.md): Refresh your settings in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Change your Ebsta for Bullhorn Password](https://support.fullcast.com/revenue-intelligence/docs/change-your-ebsta-for-bullhorn-password.md): Change your Ebsta for Bullhorn Password. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to submit a Bullhorn Marketplace Ticket](https://support.fullcast.com/revenue-intelligence/docs/how-to-submit-a-bullhorn-marketplace-ticket.md): How to submit a Bullhorn Marketplace Ticket. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta for Chrome](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-chrome.md)
+- [Get started with Ebsta for Bullhorn's Chrome extension (video)](https://support.fullcast.com/revenue-intelligence/docs/get-started-with-ebsta-for-bullhorn-s-chrome-extension-video.md): Get started with Ebsta for Bullhorn's Chrome extension (video). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Overview of Chrome/Bullhorn integration](https://support.fullcast.com/revenue-intelligence/docs/overview-of-chrome-bullhorn-integration.md): Overview of Chrome/Bullhorn integration. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Search Bullhorn from any website](https://support.fullcast.com/revenue-intelligence/docs/search-bullhorn-from-any-website.md): Search Bullhorn from any website. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [View Bullhorn records in Chrome](https://support.fullcast.com/revenue-intelligence/docs/view-bullhorn-records-in-chrome.md): View Bullhorn records in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Edit a Bullhorn record in Chrome](https://support.fullcast.com/revenue-intelligence/docs/edit-a-bullhorn-record-in-chrome.md): Edit a Bullhorn record in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Update Bullhorn with information from a web page](https://support.fullcast.com/revenue-intelligence/docs/update-bullhorn-with-information-from-a-web-page.md): Update Bullhorn with information from a web page. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Open a record in Bullhorn from Chrome](https://support.fullcast.com/revenue-intelligence/docs/open-a-record-in-bullhorn-from-chrome.md): Open a record in Bullhorn from Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Candidates to Bullhorn from Chrome](https://support.fullcast.com/revenue-intelligence/docs/add-candidates-to-bullhorn-from-chrome.md): Add Candidates to Bullhorn from Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Contacts & Companies to Bullhorn from Chrome](https://support.fullcast.com/revenue-intelligence/docs/add-contacts-companies-to-bullhorn-from-chrome.md): Add Contacts &amp; Companies to Bullhorn from Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to edit the Company a Contact record is associated to](https://support.fullcast.com/revenue-intelligence/docs/how-to-edit-the-company-a-contact-record-is-associated-to.md): How to edit the Company a Contact record is associated to. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Note to a Bullhorn record in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-note-to-a-bullhorn-record-in-chrome.md): How to add a Note to a Bullhorn record in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Task to a Bullhorn record in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-task-to-a-bullhorn-record-in-chrome.md): How to add a Task to a Bullhorn record in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to review Notes & Tasks attached to a Bullhorn record in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-review-notes-tasks-attached-to-a-bullhorn-record-in-chrome.md): How to review Notes &amp; Tasks attached to a Bullhorn record in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Tearsheet in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-tearsheet-in-chrome.md): How to add a Bullhorn record to a Tearsheet in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Distribution List in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-distribution-list-in-chrome.md): How to add a Bullhorn record to a Distribution List in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a document to a Bullhorn record in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-document-to-a-bullhorn-record-in-chrome.md): How to add a document to a Bullhorn record in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to submit a Candidate to a Job in Chrome](https://support.fullcast.com/revenue-intelligence/docs/how-to-submit-a-candidate-to-a-job-in-chrome.md): How to submit a Candidate to a Job in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What is the Bullhorn Activity Widget? (Chrome)](https://support.fullcast.com/revenue-intelligence/docs/what-is-the-bullhorn-activity-widget-chrome.md): What is the Bullhorn Activity Widget? (Chrome). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What websites is Ebsta for Bullhorn optimized for?](https://support.fullcast.com/revenue-intelligence/docs/what-websites-is-ebsta-for-bullhorn-optimized-for.md): What websites is Ebsta for Bullhorn optimized for. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Ebsta for Bullhorn on LinkedIn](https://support.fullcast.com/revenue-intelligence/docs/using-ebsta-for-bullhorn-on-linkedin.md): Using Ebsta for Bullhorn on LinkedIn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta for Outlook](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-outlook.md)
+- [How Ebsta for Bullhorn's notification bar works in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-ebsta-for-bullhorn-s-notification-bar-works-in-outlook.md): How Ebsta for Bullhorn's notification bar works in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add an email as a Note to a Bullhorn record](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-an-email-as-a-note-to-a-bullhorn-record.md): How to add an email as a Note to a Bullhorn record. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add an email attachment to a Bullhorn record](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-an-email-attachment-to-a-bullhorn-record.md): How to add an email attachment to a Bullhorn record. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to refresh Ebsta for Bullhorn to display new email](https://support.fullcast.com/revenue-intelligence/docs/how-to-refresh-ebsta-for-bullhorn-to-display-new-email.md): How to refresh Ebsta for Bullhorn to display new email. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to view a Bullhorn record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-view-a-bullhorn-record-in-outlook.md): How to view a Bullhorn record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to edit/update a Bullhorn record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-edit-update-a-bullhorn-record-in-outlook.md): How to edit/update a Bullhorn record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to open a record in Bullhorn from Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-open-a-record-in-bullhorn-from-outlook.md): How to open a record in Bullhorn from Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Candidate record to Bullhorn in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-candidate-record-to-bullhorn-in-outlook.md): How to add a Candidate record to Bullhorn in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Contact & Company record to Bullhorn in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-contact-company-record-to-bullhorn-in-outlook.md): How to add a Contact &amp; Company record to Bullhorn in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to edit the Company a Contact record is associated to](https://support.fullcast.com/revenue-intelligence/docs/how-to-edit-the-company-a-contact-record-is-associated-to-1769625901029.md): How to edit the Company a Contact record is associated to. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Note to a Bullhorn record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-note-to-a-bullhorn-record-in-outlook.md): How to add a Note to a Bullhorn record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Task to a Bullhorn record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-task-to-a-bullhorn-record-in-outlook.md): How to add a Task to a Bullhorn record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to review Notes & Tasks attached to a Bullhorn record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-review-notes-tasks-attached-to-a-bullhorn-record-in-outlook.md): How to review Notes &amp; Tasks attached to a Bullhorn record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Tearsheet in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-tearsheet-in-outlook.md): How to add a Bullhorn record to a Tearsheet in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Distribution List in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-distribution-list-in-outlook.md): How to add a Bullhorn record to a Distribution List in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to submit a Candidate to a Job in Outlook](https://support.fullcast.com/revenue-intelligence/docs/how-to-submit-a-candidate-to-a-job-in-outlook.md): How to submit a Candidate to a Job in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What is the Bullhorn Activity Widget? (Outlook)](https://support.fullcast.com/revenue-intelligence/docs/what-is-the-bullhorn-activity-widget-outlook.md): What is the Bullhorn Activity Widget? (Outlook). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta for Word](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-word.md)
+- [How to search Bullhorn in Word using Ebsta's 'Right-Click' Search](https://support.fullcast.com/revenue-intelligence/docs/how-to-search-bullhorn-in-word-using-ebsta-s-right-click-search.md): How to search Bullhorn in Word using Ebsta's 'Right-Click' Search. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Distribution List in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-distribution-list-in-word.md): How to add a Bullhorn record to a Distribution List in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to view a Bullhorn record in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-view-a-bullhorn-record-in-word.md): How to view a Bullhorn record in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to edit/update a Bullhorn record in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-edit-update-a-bullhorn-record-in-word.md): How to edit/update a Bullhorn record in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to open a record in Bullhorn from Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-open-a-record-in-bullhorn-from-word.md): How to open a record in Bullhorn from Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Candidate record to Bullhorn in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-candidate-record-to-bullhorn-in-word.md): How to add a Candidate record to Bullhorn in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Contact & Company record to Bullhorn in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-contact-company-record-to-bullhorn-in-word.md): How to add a Contact &amp; Company record to Bullhorn in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to edit the Company a Contact record is associated to](https://support.fullcast.com/revenue-intelligence/docs/how-to-edit-the-company-a-contact-record-is-associated-to-1769625935032.md): How to edit the Company a Contact record is associated to. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Note to a Bullhorn record in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-note-to-a-bullhorn-record-in-word.md): How to add a Note to a Bullhorn record in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Task to a Bullhorn record in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-task-to-a-bullhorn-record-in-word.md): How to add a Task to a Bullhorn record in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to review Notes & Tasks attached to a Bullhorn record in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-review-notes-tasks-attached-to-a-bullhorn-record-in-word.md): How to review Notes &amp; Tasks attached to a Bullhorn record in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Bullhorn record to a Tearsheet in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-bullhorn-record-to-a-tearsheet-in-word.md): How to add a Bullhorn record to a Tearsheet in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a Word document to Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-word-document-to-bullhorn.md): How to add a Word document to Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to submit a Candidate to a Job in Word](https://support.fullcast.com/revenue-intelligence/docs/how-to-submit-a-candidate-to-a-job-in-word.md): How to submit a Candidate to a Job in Word. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What is the Bullhorn Activity Widget? (Word)](https://support.fullcast.com/revenue-intelligence/docs/what-is-the-bullhorn-activity-widget-word.md): What is the Bullhorn Activity Widget? (Word). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Customization](https://support.fullcast.com/revenue-intelligence/docs/customization.md)
+- [How to customize fields in Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/how-to-customize-fields-in-ebsta-for-bullhorn.md): How to customize fields in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to customize Note Type values in Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/how-to-customize-note-type-values-in-ebsta-for-bullhorn.md): How to customize Note Type values in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to customize Job Type values in Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/how-to-customize-job-type-values-in-ebsta-for-bullhorn.md): How to customize Job Type values in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to customize State and Country values in Ebsta for Bullhorn](https://support.fullcast.com/revenue-intelligence/docs/how-to-customize-state-and-country-values-in-ebsta-for-bullhorn.md): How to customize State and Country values in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to change a field from a multi-select to a single select drop-down field in Ebsta for Bullhorn.](https://support.fullcast.com/revenue-intelligence/docs/how-to-change-a-field-from-multi-select-to-single-select-drop-down.md): How to change a field from a multi-select to a single select drop-down field in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to set Ebsta to automatically update field value changes in Bullhorn.](https://support.fullcast.com/revenue-intelligence/docs/how-to-set-ebsta-to-automatically-update-field-value-changes-in-bullhorn.md): How to set Ebsta to automatically update field value changes in Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to update Ebsta to reflect field value changes in Bullhorn.](https://support.fullcast.com/revenue-intelligence/docs/how-to-update-ebsta-to-reflect-field-value-changes-in-bullhorn.md): How to update Ebsta to reflect field value changes in Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to find your Bullhorn field names](https://support.fullcast.com/revenue-intelligence/docs/how-to-find-your-bullhorn-field-names.md): How to find your Bullhorn field names. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Troubleshooting](https://support.fullcast.com/revenue-intelligence/docs/troubleshooting.md)
+- [How to update Ebsta for Bullhorn's Chrome extension to run the latest version](https://support.fullcast.com/revenue-intelligence/docs/how-to-update-ebsta-for-bullhorn-s-chrome-extension-to-run-the-latest-version.md): How to update Ebsta for Bullhorn's Chrome extension to run the latest version. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to update Ebsta for Bullhorn's Outlook tool to run the latest version](https://support.fullcast.com/revenue-intelligence/docs/how-to-update-ebsta-for-bullhorn-s-outlook-tool-to-run-the-latest-version.md): How to update Ebsta for Bullhorn's Outlook tool to run the latest version. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to update Ebsta for Bullhorn's Word tool to run the latest version](https://support.fullcast.com/revenue-intelligence/docs/how-to-update-ebsta-for-bullhorn-s-word-tool-to-run-the-latest-version.md): How to update Ebsta for Bullhorn's Word tool to run the latest version. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why can't I see the Ebsta for Bullhorn in Chrome?](https://support.fullcast.com/revenue-intelligence/docs/why-can-t-i-see-the-ebsta-for-bullhorn-in-chrome.md): Why can't I see the Ebsta for Bullhorn in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why can't I see Ebsta for Bullhorn in Outlook?](https://support.fullcast.com/revenue-intelligence/docs/why-can-t-i-see-ebsta-for-bullhorn-in-outlook.md): Why can't I see Ebsta for Bullhorn in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why isn't Ebsta for Bullhorn appearing in Outlook (2007 & Windows XP)?](https://support.fullcast.com/revenue-intelligence/docs/why-isn-t-ebsta-for-bullhorn-appearing-in-outlook-2007-windows-xp.md): Why isn't Ebsta for Bullhorn appearing in Outlook (2007 &amp; Windows XP). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to install .NET Framework](https://support.fullcast.com/revenue-intelligence/docs/how-to-install-net-framework.md): How to install .NET Framework. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why is my cursor out of alignment in Ebsta's bubble?](https://support.fullcast.com/revenue-intelligence/docs/why-is-my-cursor-out-of-alignment-in-ebsta-s-bubble.md): Why is my cursor out of alignment in Ebsta's bubble. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why is the content in Ebsta for Bullhorn not displaying correctly?](https://support.fullcast.com/revenue-intelligence/docs/why-is-the-content-in-ebsta-for-bullhorn-not-displaying-correctly.md): Why is the content in Ebsta for Bullhorn not displaying correctly. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How do I know which version of Microsoft Outlook I am running?](https://support.fullcast.com/revenue-intelligence/docs/how-do-i-know-which-version-of-microsoft-outlook-i-am-running.md): How do I know which version of Microsoft Outlook I am running. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How do I know which version of Microsoft Word I am running?](https://support.fullcast.com/revenue-intelligence/docs/how-do-i-know-which-version-of-microsoft-word-i-am-running.md): How do I know which version of Microsoft Word I am running. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why has Ebsta for Bullhorn stopped parsing information?](https://support.fullcast.com/revenue-intelligence/docs/why-has-ebsta-for-bullhorn-stopped-parsing-information.md): Why has Ebsta for Bullhorn stopped parsing information. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why can't I see Notes & Tasks when I'm viewing a record in Ebsta for Bullhorn?](https://support.fullcast.com/revenue-intelligence/docs/why-can-t-i-see-notes-tasks-when-i-m-viewing-a-record-in-ebsta-for-bullhorn.md): Why can't I see Notes &amp; Tasks when I'm viewing a record in Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why aren't new Bullhorn users appearing in Ebsta's Bullhorn user list?](https://support.fullcast.com/revenue-intelligence/docs/why-aren-t-new-bullhorn-users-appearing-in-ebsta-s-bullhorn-user-list.md): Why aren't new Bullhorn users appearing in Ebsta's Bullhorn user list. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'http/1.1 Service Unavailable' error message when running a search with Ebsta for Bullhorn?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-http-1-1-service-unavailable-error-message-when-running-a-search-with-ebsta-for-bullhorn.md): Why do I get a 'http/1.1 Service Unavailable' error message when running a search with Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'download was not a CRX' error message when downloading Ebsta for Bullhorn?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-download-was-not-a-crx-error-message-when-downloading-ebsta-for-bullhorn.md): Why do I get a 'download was not a CRX' error message when downloading Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to change Display Settings in Windows](https://support.fullcast.com/revenue-intelligence/docs/how-to-change-display-settings-in-windows.md): How to change Display Settings in Windows. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'install Google Chrome again' message when downloading Ebsta for Bullhorn?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-install-google-chrome-again-message-when-downloading-ebsta-for-bullhorn.md): Why do I get a 'install Google Chrome again' message when downloading Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to get Ebsta for Bullhorn to work in Incognito Mode](https://support.fullcast.com/revenue-intelligence/docs/how-to-get-ebsta-for-bullhorn-to-work-in-incognito-mode.md): How to get Ebsta for Bullhorn to work in Incognito Mode. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a could not create download directory error message when downloading Ebsta for Bullhorn?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-could-not-create-download-directory-error-message-when-downloading-ebsta-for-bullhorn.md): Why do I get a could not create download directory error message when downloading Ebsta for Bullhorn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Ebsta for Bullhorn on a Surface](https://support.fullcast.com/revenue-intelligence/docs/using-ebsta-for-bullhorn-on-a-surface.md): Using Ebsta for Bullhorn on a Surface. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Ebsta for Bullhorn on a Terminal Server](https://support.fullcast.com/revenue-intelligence/docs/using-ebsta-for-bullhorn-on-a-terminal-server.md): Using Ebsta for Bullhorn on a Terminal Server. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to un-install Ebsta for Bullhorn's Chrome extension](https://support.fullcast.com/revenue-intelligence/docs/how-to-un-install-ebsta-for-bullhorn-s-chrome-extension.md): How to un-install Ebsta for Bullhorn's Chrome extension. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to un-install Ebsta for Bullhorn's Outlook tool](https://support.fullcast.com/revenue-intelligence/docs/how-to-un-install-ebsta-for-bullhorn-s-outlook-tool.md): How to un-install Ebsta for Bullhorn's Outlook tool. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to un-install Ebsta for Bullhorn's Word tool](https://support.fullcast.com/revenue-intelligence/docs/how-to-un-install-ebsta-for-bullhorn-s-word-tool.md): How to un-install Ebsta for Bullhorn's Word tool. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Licences & Billing](https://support.fullcast.com/revenue-intelligence/docs/licences-billing.md)
+- [Purchase an Ebsta for Bullhorn subscription](https://support.fullcast.com/revenue-intelligence/docs/purchase-an-ebsta-for-bullhorn-subscription.md): Purchase an Ebsta for Bullhorn subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Upgrade your Ebsta for Bullhorn subscription](https://support.fullcast.com/revenue-intelligence/docs/upgrade-your-ebsta-for-bullhorn-subscription.md): Upgrade your Ebsta for Bullhorn subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Update your Billing Information](https://support.fullcast.com/revenue-intelligence/docs/update-your-billing-information.md): Update your Billing Information. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Cancel your Ebsta for Bullhorn subscription](https://support.fullcast.com/revenue-intelligence/docs/cancel-your-ebsta-for-bullhorn-subscription.md): Cancel your Ebsta for Bullhorn subscription. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Managing Users](https://support.fullcast.com/revenue-intelligence/docs/managing-users.md)
+- [How to access the Ebsta for Bullhorn's Control Panel](https://support.fullcast.com/revenue-intelligence/docs/how-to-access-the-ebsta-for-bullhorn-s-control-panel.md): How to access the Ebsta for Bullhorn's Control Panel. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta for Bullhorn's Admin Control Panel (Video)](https://support.fullcast.com/revenue-intelligence/docs/ebsta-for-bullhorn-s-admin-control-panel-video.md): Ebsta for Bullhorn's Admin Control Panel (Video). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to assign Ebsta for Bullhorn licences to users](https://support.fullcast.com/revenue-intelligence/docs/how-to-assign-ebsta-for-bullhorn-licences-to-users.md): How to assign Ebsta for Bullhorn licences to users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to send Ebsta for Bullhorn welcome information email to users](https://support.fullcast.com/revenue-intelligence/docs/how-to-send-ebsta-for-bullhorn-welcome-information-email-to-users.md): How to send Ebsta for Bullhorn welcome information email to users. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to add a new Bullhorn user to Ebsta](https://support.fullcast.com/revenue-intelligence/docs/how-to-add-a-new-bullhorn-user-to-ebsta.md): How to add a new Bullhorn user to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to reload the Bullhorn Users list](https://support.fullcast.com/revenue-intelligence/docs/how-to-reload-the-bullhorn-users-list.md): How to reload the Bullhorn Users list. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to hide Disabled Bullhorn Accounts](https://support.fullcast.com/revenue-intelligence/docs/how-to-hide-disabled-bullhorn-accounts.md): How to hide Disabled Bullhorn Accounts. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Ebsta Inbox](https://support.fullcast.com/revenue-intelligence/docs/ebsta-inbox.md)
+- [Mailbox Connection](https://support.fullcast.com/revenue-intelligence/docs/mailbox-connection.md)
+- [Connect your Gmail mailbox to Ebsta](https://support.fullcast.com/revenue-intelligence/docs/connect-your-gmail-mailbox-to-ebsta.md): Connect your Gmail mailbox to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect your Outlook mailbox to Ebsta](https://support.fullcast.com/revenue-intelligence/docs/connect-your-outlook-mailbox-to-ebsta.md): Connect your Outlook mailbox to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Connect & use multiple Outlook mailboxes with Ebsta](https://support.fullcast.com/revenue-intelligence/docs/connect-use-multiple-outlook-mailboxes-with-ebsta.md): Connect &amp; use multiple Outlook mailboxes with Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'bad request error 400' message when connecting my Gmail mailbox to Ebsta?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-bad-request-error-400-message-when-connecting-my-gmail-mailbox-to-ebsta.md): Why do I get a 'bad request error 400' message when connecting my Gmail mailbox to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'need admin approval' message when connecting my Outlook mailbox to Ebsta?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-need-admin-approval-message-when-connecting-my-outlook-mailbox-to-ebsta.md): Why do I get a 'need admin approval' message when connecting my Outlook mailbox to Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Email Sync](https://support.fullcast.com/revenue-intelligence/docs/email-sync.md)
+- [Sync emails from Gmail to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/sync-emails-from-gmail-to-salesforce.md): Sync emails from Gmail to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Sync emails from Outlook to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/sync-emails-from-outlook-to-salesforce.md): Sync emails from Outlook to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to record email direction (Inbound/Outbound) when syncing to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/how-to-record-email-direction-inbound-outbound-when-syncing-to-salesforce.md): How to record email direction (Inbound/Outbound) when syncing to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to create an Ebsta Sync Source field](https://support.fullcast.com/revenue-intelligence/docs/how-to-create-an-ebsta-sync-source-field.md): How to create an Ebsta Sync Source field. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to create an Email Activity Report in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/how-to-create-an-email-activity-report-in-salesforce.md): How to create an Email Activity Report in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [A mailbox has stopped syncing to Salesforce & displays an 'error connection' status](https://support.fullcast.com/revenue-intelligence/docs/a-mailbox-has-stopped-syncing-to-salesforce-displays-an-error-connection-status.md): A mailbox has stopped syncing to Salesforce &amp; displays an 'error connection' status. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why are synced emails being added to Open Activities instead of Activity History in Salesforce?](https://support.fullcast.com/revenue-intelligence/docs/why-are-synced-emails-being-added-to-open-activities-instead-of-activity-history-in-salesforce.md): Why are synced emails being added to Open Activities instead of Activity History in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to find the message ID in Gmail](https://support.fullcast.com/revenue-intelligence/docs/how-to-find-the-message-id-in-gmail.md): How to find the message ID in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Calendar Sync](https://support.fullcast.com/revenue-intelligence/docs/calendar-sync.md)
+- [Sync your Google & Salesforce Calendars](https://support.fullcast.com/revenue-intelligence/docs/sync-your-google-salesforce-calendars.md): Sync your Google &amp; Salesforce Calendars. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Sync your Outlook & Salesforce Calendars](https://support.fullcast.com/revenue-intelligence/docs/sync-your-outlook-salesforce-calendars.md): Sync your Outlook &amp; Salesforce Calendars. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Adjust your Calendar Sync settings](https://support.fullcast.com/revenue-intelligence/docs/adjust-your-calendar-sync-settings.md): Adjust your Calendar Sync settings. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Stop/re-start your Calendars syncing](https://support.fullcast.com/revenue-intelligence/docs/stop-re-start-your-calendars-syncing.md): Stop/re-start your Calendars syncing. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Manage Private Events syncing between your calendars.](https://support.fullcast.com/revenue-intelligence/docs/manage-private-events-syncing-between-your-calendars.md): Manage Private Events syncing between your calendars. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Manage multiple calendars syncing with Salesforce](https://support.fullcast.com/revenue-intelligence/docs/manage-multiple-calendars-syncing-with-salesforce.md): Manage multiple calendars syncing with Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Change your time zone settings in Salesforce, Google & Outlook](https://support.fullcast.com/revenue-intelligence/docs/change-your-time-zone-settings-in-salesforce-google-outlook.md): Change your time zone settings in Salesforce, Google &amp; Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to customize fields in Event Page Layout in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/how-to-customize-fields-in-event-page-layout-in-salesforce.md): How to customize fields in Event Page Layout in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to view HTML Descriptions legibly in Salesforce Events](https://support.fullcast.com/revenue-intelligence/docs/how-to-view-html-descriptions-legibly-in-salesforce-events.md): How to view HTML Descriptions legibly in Salesforce Events. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to find Event ID in Gmail](https://support.fullcast.com/revenue-intelligence/docs/how-to-find-event-id-in-gmail.md): How to find Event ID in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Cadences](https://support.fullcast.com/revenue-intelligence/docs/cadences.md)
+- [Create a cadence](https://support.fullcast.com/revenue-intelligence/docs/test-create-a-cadence-1769625762112.md): Create a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using merge fields in a cadence](https://support.fullcast.com/revenue-intelligence/docs/using-merge-fields-in-a-cadence.md): Using merge fields in a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add a recipient to a cadence (Gmail users)](https://support.fullcast.com/revenue-intelligence/docs/add-a-recipient-to-a-cadence-gmail-users.md): Add a recipient to a cadence (Gmail users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add multiple recipients to a cadence (Gmail users)](https://support.fullcast.com/revenue-intelligence/docs/add-multiple-recipients-to-a-cadence-gmail-users.md): Add multiple recipients to a cadence (Gmail users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add a recipient to a cadence (Outlook users)](https://support.fullcast.com/revenue-intelligence/docs/add-a-recipient-to-a-cadence-outlook-users.md): Add a recipient to a cadence (Outlook users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add a Contact or Lead to a cadence in Salesforce](https://support.fullcast.com/revenue-intelligence/docs/add-a-contact-or-lead-to-a-cadence-in-salesforce.md): Add a Contact or Lead to a cadence in Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Job Science short-listed Candidates to a cadence (Gmail users)](https://support.fullcast.com/revenue-intelligence/docs/add-job-science-short-listed-candidates-to-a-cadence-gmail-users.md): Add Job Science short-listed Candidates to a cadence (Gmail users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add a recipient to a cadence set up by a colleague](https://support.fullcast.com/revenue-intelligence/docs/add-a-recipient-to-a-cadence-set-up-by-a-colleague.md): Add a recipient to a cadence set up by a colleague. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Allow team members to send cadences out on your on behalf](https://support.fullcast.com/revenue-intelligence/docs/allow-team-members-to-send-cadences-out-on-your-on-behalf.md): Allow team members to send cadences out on your on behalf. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pause or stop recipients in a cadence (Gmail users)](https://support.fullcast.com/revenue-intelligence/docs/pause-or-stop-recipients-in-a-cadence-gmail-users.md): Pause or stop recipients in a cadence (Gmail users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Pause or stop recipients in a cadence (Outlook users)](https://support.fullcast.com/revenue-intelligence/docs/pause-or-stop-recipients-in-a-cadence-outlook-users.md): Pause or stop recipients in a cadence (Outlook users). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How to relate an Ebsta cadence to a Salesforce Campaign](https://support.fullcast.com/revenue-intelligence/docs/how-to-relate-an-ebsta-cadence-to-a-salesforce-campaign.md): How to relate an Ebsta cadence to a Salesforce Campaign. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Review & manage recipients in a cadence](https://support.fullcast.com/revenue-intelligence/docs/review-manage-recipients-in-a-cadence.md): Review &amp; manage recipients in a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Review opens, clicks & replies of a cadence](https://support.fullcast.com/revenue-intelligence/docs/review-opens-clicks-replies-of-a-cadence.md): Review opens, clicks &amp; replies of a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Edit a cadence](https://support.fullcast.com/revenue-intelligence/docs/edit-a-cadence.md): Edit a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Clone a cadence](https://support.fullcast.com/revenue-intelligence/docs/clone-a-cadence.md): Clone a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Delete a cadence](https://support.fullcast.com/revenue-intelligence/docs/delete-a-cadence.md): Delete a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Change the status of a cadence](https://support.fullcast.com/revenue-intelligence/docs/change-the-status-of-a-cadence.md): Change the status of a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get an 'Account not Authenticated' message when sending a cadence?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-an-account-not-authenticated-message-when-sending-a-cadence.md): Why do I get an 'Account not Authenticated' message when sending a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'you have exceeded your daily limit' message when adding recipients to a cadence?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-you-have-exceeded-your-daily-limit-message-when-adding-recipients-to-a-cadence.md): Why do I get a 'you have exceeded your daily limit' message when adding recipients to a cadence. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Email Tracking](https://support.fullcast.com/revenue-intelligence/docs/email-tracking.md)
+- [Enable Email Tracking in Gmail](https://support.fullcast.com/revenue-intelligence/docs/enable-email-tracking-in-gmail.md): Enable Email Tracking in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Enable Email Tracking in Outlook](https://support.fullcast.com/revenue-intelligence/docs/enable-email-tracking-in-outlook.md): Enable Email Tracking in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Review your Email Tracking Report in Gmail](https://support.fullcast.com/revenue-intelligence/docs/review-your-email-tracking-report-in-gmail.md): Review your Email Tracking Report in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Review your Email Tracking Report in Outlook](https://support.fullcast.com/revenue-intelligence/docs/review-your-email-tracking-report-in-outlook.md): Review your Email Tracking Report in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Understanding & using Email Tracking Insights](https://support.fullcast.com/revenue-intelligence/docs/understanding-using-email-tracking-insights.md): Understanding &amp; using Email Tracking Insights. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Can I track emails in plain text mode?](https://support.fullcast.com/revenue-intelligence/docs/can-i-track-emails-in-plain-text-mode.md): Can I track emails in plain text mode. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why are emails I send with Ebsta appearing in Drafts in Outlook?](https://support.fullcast.com/revenue-intelligence/docs/why-are-emails-i-send-with-ebsta-appearing-in-drafts-in-outlook.md): Why are emails I send with Ebsta appearing in Drafts in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why does Ebsta notify me  that 'someone' has viewed my email?](https://support.fullcast.com/revenue-intelligence/docs/why-does-ebsta-notify-me-that-someone-has-viewed-my-email.md): Why does Ebsta notify me  that 'someone' has viewed my email. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Meeting Scheduler](https://support.fullcast.com/revenue-intelligence/docs/meeting-scheduler.md)
+- [Set up Meeting Scheduler](https://support.fullcast.com/revenue-intelligence/docs/set-up-meeting-scheduler.md): Set up Meeting Scheduler. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Meeting Scheduler (Gmail)](https://support.fullcast.com/revenue-intelligence/docs/using-meeting-scheduler-gmail.md): Using Meeting Scheduler (Gmail). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Meeting Scheduler (Outlook)](https://support.fullcast.com/revenue-intelligence/docs/using-meeting-scheduler-outlook.md): Using Meeting Scheduler (Outlook). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Salesforce/Outlook Integration](https://support.fullcast.com/revenue-intelligence/docs/salesforce-outlook-integration.md)
+- [Search Salesforce from Outlook](https://support.fullcast.com/revenue-intelligence/docs/search-salesforce-from-outlook.md): Search Salesforce from Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Access Salesforce Templates in Outlook](https://support.fullcast.com/revenue-intelligence/docs/access-salesforce-templates-in-outlook.md): Access Salesforce Templates in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add emails in Outlook to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/add-emails-in-outlook-to-salesforce.md): Add emails in Outlook to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [View Activities & Opportunities related to a Salesforce record in Outlook](https://support.fullcast.com/revenue-intelligence/docs/view-activities-opportunities-related-to-a-salesforce-record-in-outlook.md): View Activities &amp; Opportunities related to a Salesforce record in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Activities & Opportunities to Salesforce in Outlook](https://support.fullcast.com/revenue-intelligence/docs/add-activities-opportunities-to-salesforce-in-outlook.md): Add Activities &amp; Opportunities to Salesforce in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Open a record in Salesforce from Outlook](https://support.fullcast.com/revenue-intelligence/docs/open-a-record-in-salesforce-from-outlook.md): Open a record in Salesforce from Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create Contacts & Leads in Salesforce from Outlook](https://support.fullcast.com/revenue-intelligence/docs/create-contacts-leads-in-salesforce-from-outlook.md): Create Contacts &amp; Leads in Salesforce from Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Re-enable Outlook Add-in](https://support.fullcast.com/revenue-intelligence/docs/re-enable-outlook-add-in.md): Re-enable Outlook Add-in. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Salesforce/Gmail Integration](https://support.fullcast.com/revenue-intelligence/docs/salesforce-gmail-integration.md)
+- [Access Salesforce Templates in Gmail](https://support.fullcast.com/revenue-intelligence/docs/access-salesforce-templates-in-gmail.md): Access Salesforce Templates in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Overview of Gmail/Salesforce Integration](https://support.fullcast.com/revenue-intelligence/docs/overview-of-gmail-salesforce-integration.md): Overview of Gmail/Salesforce Integration. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add emails in Gmail to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/add-emails-in-gmail-to-salesforce.md): Add emails in Gmail to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add email attachments in Gmail to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/add-email-attachments-in-gmail-to-salesforce.md): Add email attachments in Gmail to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Customize fields in Ebsta's Add Email to Salesforce](https://support.fullcast.com/revenue-intelligence/docs/customize-fields-in-ebsta-s-add-email-to-salesforce.md): Customize fields in Ebsta's Add Email to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Customize fields in Ebsta's Add Email to Salesforce Summary View](https://support.fullcast.com/revenue-intelligence/docs/customize-fields-in-ebsta-s-add-email-to-salesforce-summary-view.md): Customize fields in Ebsta's Add Email to Salesforce Summary View. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Schedule emails to send in Gmail](https://support.fullcast.com/revenue-intelligence/docs/schedule-emails-to-send-in-gmail.md): Schedule emails to send in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Search Salesforce from any website](https://support.fullcast.com/revenue-intelligence/docs/search-salesforce-from-any-website.md): Search Salesforce from any website. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [View Activities & Opportunities related to a Salesforce record in Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/view-activities-opportunities-related-to-a-salesforce-record-in-gmail-chrome.md): View Activities &amp; Opportunities related to a Salesforce record in Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Add Activities & Opportunities to Salesforce in Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/add-activities-opportunities-to-salesforce-in-gmail-chrome.md): Add Activities &amp; Opportunities to Salesforce in Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Edit a Salesforce record in Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/edit-a-salesforce-record-in-gmail-chrome.md): Edit a Salesforce record in Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Open a record in Salesforce from Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/open-a-record-in-salesforce-from-gmail-chrome.md): Open a record in Salesforce from Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create Contacts, Leads & Accounts in Salesforce from Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/create-contacts-leads-accounts-in-salesforce-from-gmail-chrome.md): Create Contacts, Leads &amp; Accounts in Salesforce from Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Chatter in Gmail/Chrome](https://support.fullcast.com/revenue-intelligence/docs/using-chatter-in-gmail-chrome.md): Using Chatter in Gmail/Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [What websites is Ebsta optimized for?](https://support.fullcast.com/revenue-intelligence/docs/what-websites-is-ebsta-optimized-for.md): What websites is Ebsta optimized for. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Using Ebsta on LinkedIn](https://support.fullcast.com/revenue-intelligence/docs/using-ebsta-on-linkedin.md): Using Ebsta on LinkedIn. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why does Ebsta's bar sit loading?](https://support.fullcast.com/revenue-intelligence/docs/why-does-ebsta-s-bar-sit-loading.md): Why does Ebsta's bar sit loading. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'Ebsta doesn't run searches for this domain' message in the bar?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-ebsta-doesn-t-run-searches-for-this-domain-message-in-the-bar.md): Why do I get a 'Ebsta doesn't run searches for this domain' message in the bar. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'This field is not active for your Task Object' message when adding an email to Salesforce?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-this-field-is-not-active-for-your-task-object-message-when-adding-an-email-to-salesforce.md): Why do I get a 'This field is not active for your Task Object' message when adding an email to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get an 'unable to create/update fields: Description' message when using Send+Add to Salesforce?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-an-unable-to-create-update-fields-description-message-when-using-send-add-to-salesforce.md): Why do I get an 'unable to create/update fields: Description' message when using Send+Add to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Settings & Configuration](https://support.fullcast.com/revenue-intelligence/docs/settings-configuration.md)
+- [Ebsta Inbox tool not loading](https://support.fullcast.com/revenue-intelligence/docs/ebsta-inbox-tool-not-loading.md): Ebsta Inbox tool not loading. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Get Started with Ebsta Inbox (Gmail)](https://support.fullcast.com/revenue-intelligence/docs/get-started-with-ebsta-inbox-gmail.md): Get Started with Ebsta Inbox (Gmail). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Get Started with Ebsta Inbox (Outlook)](https://support.fullcast.com/revenue-intelligence/docs/get-started-with-ebsta-inbox-outlook.md): Get Started with Ebsta Inbox (Outlook). Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Log in & Log out of Ebsta](https://support.fullcast.com/revenue-intelligence/docs/log-in-log-out-of-ebsta.md): Log in &amp; Log out of Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Refresh your settings](https://support.fullcast.com/revenue-intelligence/docs/test-refresh-your-settings-1769625760627.md): Refresh your settings. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Customize Salesforce fields displayed in Ebsta](https://support.fullcast.com/revenue-intelligence/docs/customize-salesforce-fields-displayed-in-ebsta.md): Customize Salesforce fields displayed in Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get a 'this app is blocked by admin' message when connecting Ebsta to Salesforce?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-a-this-app-is-blocked-by-admin-message-when-connecting-ebsta-to-salesforce.md): Why do I get a 'this app is blocked by admin' message when connecting Ebsta to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why do I get an 'expired authorization code' message when connecting Ebsta to Salesforce?](https://support.fullcast.com/revenue-intelligence/docs/why-do-i-get-an-expired-authorization-code-message-when-connecting-ebsta-to-salesforce.md): Why do I get an 'expired authorization code' message when connecting Ebsta to Salesforce. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Create keyboard shortcut to open Ebsta in Chrome](https://support.fullcast.com/revenue-intelligence/docs/create-keyboard-shortcut-to-open-ebsta-in-chrome.md): Create keyboard shortcut to open Ebsta in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Keep Ebsta open in Outlook](https://support.fullcast.com/revenue-intelligence/docs/keep-ebsta-open-in-outlook.md): Keep Ebsta open in Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Disable Ebsta's notification bar in Gmail.](https://support.fullcast.com/revenue-intelligence/docs/disable-ebsta-s-notification-bar-in-gmail.md): Disable Ebsta's notification bar in Gmail. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why has Ebsta disappeared from Chrome?](https://support.fullcast.com/revenue-intelligence/docs/why-has-ebsta-disappeared-from-chrome.md): Why has Ebsta disappeared from Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [How do I update Ebsta to run the latest version in Chrome?](https://support.fullcast.com/revenue-intelligence/docs/how-do-i-update-ebsta-to-run-the-latest-version-in-chrome.md): How do I update Ebsta to run the latest version in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Allow Ebsta to run in Incognito mode in Chrome](https://support.fullcast.com/revenue-intelligence/docs/allow-ebsta-to-run-in-incognito-mode-in-chrome.md): Allow Ebsta to run in Incognito mode in Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Why is my cursor is out of alignment in Ebsta?](https://support.fullcast.com/revenue-intelligence/docs/why-is-my-cursor-is-out-of-alignment-in-ebsta.md): Why is my cursor is out of alignment in Ebsta. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Un-install Ebsta from Chrome](https://support.fullcast.com/revenue-intelligence/docs/un-install-ebsta-from-chrome.md): Un-install Ebsta from Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Un-install Ebsta from Outlook](https://support.fullcast.com/revenue-intelligence/docs/un-install-ebsta-from-outlook.md): Un-install Ebsta from Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Ebsta Inbox](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-inbox.md)
+- [Install Ebsta into Chrome](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-into-chrome.md): Install Ebsta into Chrome. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Ebsta into Outlook](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-into-outlook.md): Install Ebsta into Outlook. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.
+- [Install Ebsta into Outlook: An Administrator Guide](https://support.fullcast.com/revenue-intelligence/docs/install-ebsta-into-outlook-an-administrator-guide.md): Install Ebsta into Outlook: An Administrator Guide. Fullcast Revenue Intelligence — fka Ebsta Knowledge Base.

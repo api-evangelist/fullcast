@@ -1,0 +1,38 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fullcast.com/apidocs/quick-start-guide.md
+note: >-
+  Fullcast publishes no rate limits for any of its three programmatic surfaces. The Copy.ai
+  Workflows API quick-start and recipes pages document authentication and polling but state
+  no limits; the API key management page documents no limits; the Assistant API OpenAPI
+  declares no 429 response; and the MCP tool reference documents no per-tool or per-tenant
+  throttle. No RateLimit-* or X-RateLimit-* header was observed on any live unauthenticated
+  response captured during this pass. An honest zero.
+limit_count: 0
+limits: []
+response_headers: []
+exhaustion_status: null
+retry_after: false
+documented: false
+searched:
+- {url: 'https://support.fullcast.com/apidocs/quick-start-guide.md', found: false}
+- {url: 'https://support.fullcast.com/apidocs/recipes.md', found: false}
+- {url: 'https://support.fullcast.com/copy-ai/docs/api-key-management.md', found: false}
+- {url: 'https://support.fullcast.com/docs/fullcast-mcp-tool-reference.md', found: false}
+- {url: 'https://assistant.fullcast.io/openapi.json', found: false, note: no 429 response object on any of 24 operations}
+observed_headers:
+  method: probed
+  checked: '2026-08-13'
+  hosts_checked: [https://app.fullcast.io/mcp, https://assistant.fullcast.io, https://api.copy.ai]
+  rate_limit_headers_seen: []
+adjacent_limits:
+  note: >-
+    The nearest published throughput guidance is about Salesforce, not Fullcast: the
+    integration docs discuss avoiding Salesforce governor limits and recursion when
+    Fullcast Account Team exports trigger record-triggered Flows.
+  url: https://support.fullcast.com/docs/considerations-for-salesforce-flows-triggered-by-fullcast-account-team-exports.md
+  applies_to: Salesforce org limits, not the Fullcast API
+gap: >-
+  For an MCP surface that exposes bulk write tools (rebalance_smart_territories,
+  rerun_territories_rules, run_comp_plan_period), the absence of any published limit or
+  runtime rate-limit header leaves an agent with no backpressure signal at all.

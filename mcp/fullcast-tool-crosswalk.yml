@@ -1,0 +1,128 @@
+generated: '2026-08-13'
+method: derived
+source: mcp/fullcast-mcp.yml + openapi/fullcast-assistant-openapi-original.json
+note: >-
+  THE HEADLINE FINDING: Fullcast's MCP surface and Fullcast's public OpenAPI describe two
+  different systems. The only machine-readable REST contract Fullcast publishes
+  (assistant.fullcast.io/openapi.json, "Fullcast Assistant API") covers chat sessions,
+  assistant configuration and OAuth -- it does not expose territories, accounts, people,
+  targets, commissions or documents. Every planning and revenue-operations MCP tool
+  therefore has NO backing public REST operation. That is a real surface divergence, not a
+  mapping gap: an agent can move an account through MCP but there is no published REST
+  operation to do the same thing. The REST endpoints named on Fullcast's own status page
+  ("Fullcast Platform API", "Territory Routing API", "Integration API",
+  "Authentication Management API") exist but publish no contract, which is what makes MCP
+  the only documented programmatic route into the planning data model.
+surfaces:
+  openapi:
+    file: openapi/fullcast-assistant-openapi-original.json
+    title: Fullcast Assistant API
+    version: 1.0.0
+    host: https://assistant.fullcast.io
+    operations: 24
+    gated: false
+    note: served anonymously at the API host root; Swagger UI at /docs
+  mcp:
+  - url: https://app.fullcast.io/mcp
+    name: Fullcast MCP
+    gated: true
+    gate: OAuth bearer; tools/list returns 401 MISSING_BEARER
+    tools_documented: 88
+  - url: https://assistant.fullcast.io/mcp/
+    name: Fullcast Assistant MCP Server
+    gated: true
+    gate: OAuth bearer; tools/list returns 401 invalid_token
+    tools_verified: 17
+    anonymous_discovery: https://assistant.fullcast.io/mcp_info
+  graphql: null
+crosswalk:
+- tool: ping
+  category: diagnostics
+  rest: [ping_copilot_api_v1_ping_get]
+  binding: rest
+  confidence: high
+  note: GET /copilot-api/v1/ping returns {"message":"pong"}; the MCP ping tool is the same health check
+- tool: get_server_info
+  category: diagnostics
+  rest: [mcp_info_mcp_info_get]
+  binding: rest
+  confidence: medium
+  note: >-
+    GET /mcp_info is the anonymous server-identity document (name, version, tool list,
+    resource list); get_server_info is its in-protocol equivalent. Shapes not verified
+    against each other because tools/list is gated.
+mcp_only:
+- tools: [search_entities, resolve_entity, deep_search, get_account, get_person, get_person_targets,
+    get_territory, get_territory_heirarchy, get_teams_hierarchy, get_products_hierarchy,
+    get_plans, get_territories, get_teams, get_product_families, list_accounts, list_people,
+    list_products, get_account_history, get_people_history, get_product_history,
+    explain_placement, analyze_placement, analyze_account_family, analyze_org_chart]
+  reason: >-
+    Planning data model reads. Backed by the unpublished Fullcast Platform API; no public
+    OpenAPI operation exists for any of them.
+- tools: [move_account, move_person, move_product, create_assignment, end_coverage,
+    get_assignment_suggestions, set_assignment_end_date, change_role, offboard_person,
+    set_team_manager, add_target_relief, create_role, update_role, retire_role,
+    name_accounts, clear_named_accounts, commit_changes, undo_changes]
+  reason: >-
+    Write operations against territories, coverage and people. No published REST equivalent;
+    MCP is the only documented programmatic write path into the GTM plan.
+- tools: [create_territory, create_territories_by_field, create_territory_buckets,
+    create_smart_territories, edit_smart_territories, rebalance_smart_territories,
+    create_geo_territory, edit_geo_territory, create_map_smart_territories,
+    rename_territory, delete_territory, create_team, delete_team, create_product_group,
+    rerun_territories_rules, rerun_team_rules, rerun_product_rules]
+  reason: Territory and hierarchy construction; no public REST contract.
+- tools: [list_assignments, list_targets, execute_metric, report, analyze_coverage,
+    list_metrics, list_roles, describe_entities, describe_entity_sources,
+    describe_report_fields, get_tenant_context, list_plans]
+  reason: Reporting, metrics and tenant metadata; no public REST contract.
+- tools: [list_comp_plans, list_crediting_rules, list_crediting_transactions, list_credits,
+    list_ledger_entries, run_crediting_rule, run_comp_plan_period, run_comp_plan_window,
+    explain_commission]
+  reason: >-
+    Commissions. Backed by the commissions-api.fullcast.io host referenced in the app shell,
+    which serves no OpenAPI (probed /openapi.json, /swagger.json, /api-docs -> 404).
+- tools: [list_document_groups, list_documents, list_document_recipients,
+    list_document_approvers, send_document, cancel_document]
+  reason: Document approval and signature workflow; no public REST contract.
+- tools: [list_audit_entries, explain_audit_entry, list_policies, list_jobs, get_job]
+  reason: Audit and job operations; no public REST contract.
+- tools: [read_domain_doc, search_knowledge_base]
+  reason: >-
+    Retrieval over Fullcast's own documentation corpus. The nearest public equivalent is the
+    published knowledge base at support.fullcast.com and its llms.txt, not a REST operation.
+rest_only:
+- capability: Assistant chat
+  operations: [chat_copilot_api_v1_chat_post, get_messages_copilot_api_v1_chat_messages_get,
+    submit_feedback_copilot_api_v1_chat_feedback_post, stop_chat_copilot_api_v1_chat_stop_post,
+    create_session_copilot_api_v1_chat_session_post, list_sessions_copilot_api_v1_chat_sessions_get,
+    get_session_copilot_api_v1_chat_session__session_id__get,
+    delete_session_copilot_api_v1_chat_session__session_id__delete,
+    list_archived_sessions_copilot_api_v1_chat_sessions_archived_get]
+  note: The assistant's own conversational surface. Not exposed as MCP tools.
+- capability: Assistant configuration
+  operations: [list_assistants_copilot_api_v1_assistant_get, create_assistant_copilot_api_v1_assistant_post,
+    update_assistant_copilot_api_v1_assistant_put, deactivate_assistant_copilot_api_v1_assistant_delete,
+    reactivate_assistant_copilot_api_v1_assistant_patch]
+  note: Administrative CRUD over assistant definitions. Not exposed as MCP tools.
+- capability: OAuth 2.1 authorization server
+  operations: [register_client_oauth_register_post, authorize_oauth_authorize_get,
+    token_exchange_oauth_token_post, oauth_callback_oauth_callback_get,
+    oauth_callback_options_oauth_callback_options, userinfo_oauth_userinfo_get,
+    discovery__well_known_oauth_authorization_server_get,
+    protected_resource_metadata__well_known_oauth_protected_resource_get]
+  note: >-
+    Infrastructure, not a capability an agent calls as a tool. These are the operations an
+    MCP client uses to OBTAIN the token it then presents to the MCP endpoint.
+coverage:
+  tools_named: 90
+  tools_bound_to_rest: 2
+  mcp_only: 88
+  rest_operations_total: 24
+  rest_operations_with_a_tool: 2
+  rest_only: 22
+  binding_confidence: low
+  reason_low: >-
+    tools/list is OAuth-gated on both servers, so every binding above is by name and
+    published description rather than by comparing a live inputSchema to a spec operation.

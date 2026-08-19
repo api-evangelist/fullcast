@@ -1,0 +1,53 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.fullcast.com/plans-and-pricing-2/
+note: >-
+  Fullcast has no developer sandbox in the usual sense -- there is no test-mode key prefix,
+  no magic test identifiers, no fixture or trigger tooling, and no self-serve test tenant.
+  What it publishes is (a) a paid "Sandbox Environment" add-on sold per contract, and (b)
+  guidance for working against a SALESFORCE sandbox, which is the customer's CRM sandbox and
+  not a Fullcast one. Both are recorded honestly below; no test values are invented.
+developer_sandbox: false
+test_mode_keys: false
+key_prefixes: []
+magic_test_values: []
+test_clocks: false
+fixture_tooling: false
+offerings:
+- name: Sandbox Environment
+  kind: paid-add-on
+  self_serve: false
+  price: null
+  source: https://www.fullcast.com/plans-and-pricing-2/
+  note: listed as an optional add-on alongside Premium Support; contact sales for details
+- name: Salesforce sandbox support
+  kind: customer-crm-sandbox
+  self_serve: false
+  note: >-
+    Documentation covers reconnecting Fullcast to a Salesforce sandbox after a sandbox
+    refresh, including the external client app. This is about the customer's Salesforce
+    sandbox, not a Fullcast test environment.
+  docs:
+  - https://support.fullcast.com/docs/reconfigure-salesforce-connection-after-sandbox-refresh.md
+  - https://support.fullcast.com/docs/reconfigure-salesforce-external-client-app-after-sandbox-refresh.md
+- name: Routing policy testing
+  kind: in-product-dry-run
+  self_serve: true
+  note: >-
+    The closest thing to a safe rehearsal surface. Routing policies can be exercised against
+    test records and inspected via the Policy Status page before deployment.
+  docs:
+  - https://support.fullcast.com/docs/test-fullcast-routing-policies.md
+  - https://support.fullcast.com/docs/understand-the-policy-status-page-in-salesforce.md
+- name: Staged edits
+  kind: in-product-transaction
+  self_serve: true
+  note: >-
+    MCP write tools stage changes that are applied with commit_changes and reversed with
+    undo_changes, which is the practical safety mechanism for agent writes given there is no
+    test tenant and no idempotency contract.
+  tools: [commit_changes, undo_changes]
+agent_guidance: >-
+  There is no environment in which an agent can rehearse a Fullcast write. Any MCP write tool
+  invocation is against production tenant data. Use the staged-edit tools and the
+  confirm-first discipline the provider documents for send_document / cancel_document.

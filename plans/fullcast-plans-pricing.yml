@@ -1,0 +1,63 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.fullcast.com/plans-and-pricing-2/
+note: >-
+  Fullcast publishes a plans page that names three product lines and the metric each is
+  priced on, but no prices, no currency, no billing period and no included quotas. Every
+  line routes to "Request Pricing" or "Book a Demo". plan_count is 3 because three named,
+  separately-priced product lines are published; price_count is 0 because no monetary figure
+  is published anywhere on the page.
+public_pricing: false
+sales_gated: true
+currency: null
+billing_period: null
+plan_count: 3
+price_count: 0
+plans:
+- name: Territory, Quota & Headcount Management (TQM)
+  price: null
+  currency: null
+  billing_period: null
+  pricing_metric: Users
+  included: >-
+    Visual territory design with rules-based carving; centralized quota and headcount
+    planning; scenario modeling.
+  quota: null
+  overage: null
+  cta: Request Pricing
+- name: Incentive & Commission Management (ICM)
+  price: null
+  currency: null
+  billing_period: null
+  pricing_metric: Number of payees and plan complexity
+  included: Commission automation, rep visibility, error reduction.
+  quota: null
+  overage: null
+  cta: Request Pricing
+- name: Lead & Account Routing
+  price: null
+  currency: null
+  billing_period: null
+  pricing_metric: Routing volume and policy complexity
+  included: Real-time routing automation, SLA-based logic, compliance audit logs.
+  quota: null
+  overage: null
+  cta: Request Pricing
+add_ons:
+- name: Premium Support
+  price: null
+  note: contact sales
+- name: Sandbox Environment
+  price: null
+  note: contact sales; a paid add-on rather than a self-serve developer sandbox
+free_tier: false
+trial: false
+self_serve_signup: false
+copy_ai:
+  note: >-
+    The acquired Copy.ai product has its own credit-based pricing and billing documentation
+    on Fullcast's support host, priced in workflow credits rather than seats.
+  docs:
+  - https://support.fullcast.com/copy-ai/docs/pricing.md
+  - https://support.fullcast.com/copy-ai/docs/workflow-credits.md
+  - https://support.fullcast.com/copy-ai/docs/billing-pricing.md

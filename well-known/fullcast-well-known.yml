@@ -1,0 +1,115 @@
+generated: '2026-08-13'
+method: probed
+source: live GET of /.well-known/* across every apis.yml baseURL host, the OpenAPI host and the docs host
+note: >-
+  Five real documents were returned. The RFC 9728 protected-resource metadata and RFC 8414
+  authorization-server metadata on BOTH Fullcast MCP hosts are genuine machine-readable
+  discovery documents and are what justify the WellKnown pointer. www.fullcast.com answers
+  HTTP 200 with the WordPress marketing shell for EVERY /.well-known/* path (identical
+  4360-character "Get A Risk-Free Demo" body, confirmed against a nonsense control path)
+  -- those are soft-200s and are recorded below as misses, not hits. No security.txt is
+  served on any host, so no SecurityTxt pointer is emitted.
+hosts:
+- host: https://assistant.fullcast.io
+  documents:
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: fullcast-assistant-oauth-protected-resource.json
+    spec: RFC 9728
+    note: declares mcp-server + dynamic-client-registration capabilities and 7 scopes
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: fullcast-assistant-oauth-authorization-server.json
+    spec: RFC 8414
+  - path: /mcp_info
+    status: 200
+    file: fullcast-assistant-mcp-info.json
+    spec: vendor-specific
+    note: >-
+      Not a /.well-known/ path, but an unauthenticated MCP discovery document on the same
+      host that lists the real tool and resource names. Captured here because it is the only
+      anonymous source of truth for this server's tool surface.
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://app.fullcast.io
+  documents:
+  - path: /.well-known/oauth-protected-resource/mcp
+    status: 200
+    file: fullcast-app-mcp-oauth-protected-resource.json
+    spec: RFC 9728
+    note: resource_name "Fullcast MCP"; advertised by the WWW-Authenticate header on a 401
+  - path: /mcp/.well-known/oauth-authorization-server
+    status: 200
+    file: fullcast-app-mcp-oauth-authorization-server.json
+    spec: RFC 8414
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+    note: returns {"error":"oidc_not_supported"} - OIDC discovery deliberately declined
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.fullcast.com
+  note: soft-200 catch-all; every path below returned the marketing shell, none is a document
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 200
+    hit: false
+    reason: html-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    hit: false
+    reason: html-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    hit: false
+    reason: html-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    hit: false
+    reason: html-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    hit: false
+    reason: html-shell
+  - path: /.well-known/agent.json
+    status: 200
+    hit: false
+    reason: html-shell
+- host: https://support.fullcast.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+- host: https://api.copy.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+summary:
+  paths_probed: 40
+  real_documents: 5
+  security_txt: false
+  agent_card: false

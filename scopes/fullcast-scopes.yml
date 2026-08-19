@@ -1,0 +1,72 @@
+generated: '2026-08-13'
+method: probed
+source: https://assistant.fullcast.io/.well-known/oauth-authorization-server
+sources:
+- https://assistant.fullcast.io/.well-known/oauth-authorization-server
+- https://assistant.fullcast.io/.well-known/oauth-protected-resource
+- https://app.fullcast.io/mcp/.well-known/oauth-authorization-server
+note: >-
+  Fullcast's OpenAPI declares no oauth2 security scheme, so the mechanical derive pass found
+  nothing. The scopes below were read directly from live RFC 8414 / RFC 9728 metadata on the
+  MCP hosts, which is where Fullcast's real OAuth surface is described. No human-readable
+  scopes reference page is published; descriptions below are the standard meaning of each
+  registered scope, marked as such.
+schemes:
+- name: Fullcast Assistant OAuth 2.1
+  issuer: https://assistant.fullcast.io
+  source: well-known/fullcast-assistant-oauth-authorization-server.json
+  dynamic_client_registration: https://assistant.fullcast.io/oauth/register
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://assistant.fullcast.io/oauth/authorize
+    tokenUrl: https://assistant.fullcast.io/oauth/token
+    userinfoUrl: https://assistant.fullcast.io/oauth/userinfo
+    pkce: [plain, S256]
+    token_endpoint_auth_methods: [client_secret_post, none]
+- name: Fullcast MCP OAuth 2.1
+  issuer: https://app.fullcast.io/mcp
+  source: well-known/fullcast-app-mcp-oauth-authorization-server.json
+  dynamic_client_registration: https://app.fullcast.io/mcp/register
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://app.fullcast.io/mcp/authorize
+    tokenUrl: https://app.fullcast.io/mcp/token
+    pkce: [S256]
+    token_endpoint_auth_methods: [client_secret_post, none]
+  note: this issuer advertises no scopes_supported in its metadata
+scopes:
+- scope: openid
+  description: OpenID Connect subject identifier (standard scope meaning; not provider-documented)
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-authorization-server]
+- scope: email
+  description: User email address (standard scope meaning; not provider-documented)
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-authorization-server]
+- scope: profile
+  description: Basic user profile claims (standard scope meaning; not provider-documented)
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-authorization-server]
+- scope: offline_access
+  description: Issue a refresh token for long-lived agent sessions
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-authorization-server]
+- scope: 'mcp:tools'
+  description: Call MCP tools on the Fullcast Assistant MCP server
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-protected-resource]
+- scope: 'mcp:resources'
+  description: Read MCP resources (the fullcast://resource/* guidance documents)
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-protected-resource]
+- scope: 'mcp:prompts'
+  description: Read MCP prompts exposed by the server
+  flows: [authorizationCode]
+  sources: [https://assistant.fullcast.io/.well-known/oauth-protected-resource]
+gaps:
+- No scopes reference page is published for developers.
+- >-
+  Scopes are surface-level (mcp:tools covers all 17 verified tools), not capability-scoped.
+  There is no read-only scope, so an agent granted mcp:tools can call move_account and
+  end_coverage with the same token it uses to call get_account.
+- The app.fullcast.io/mcp issuer publishes no scopes_supported at all.

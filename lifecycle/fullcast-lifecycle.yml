@@ -1,0 +1,77 @@
+generated: '2026-08-13'
+method: searched
+source: https://status.fullcast.io + https://support.fullcast.com/docs/platform-release-notes-2026.md
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: /copilot-api/v1/ on assistant.fullcast.io
+  policy_url: null
+  policy_published: false
+  managed_package:
+    scheme: semver-ish
+    current_line: v2.16x
+    note: >-
+      The Salesforce managed package is versioned separately from the platform and is
+      customer-installed, so tenants can run different package versions against the same
+      platform. Release notes are published per line (v2.15x, v2.16x).
+    docs: https://support.fullcast.com/docs/managed-package-release-notes-v2-16x.md
+deprecation:
+  policy_url: null
+  policy_published: false
+  sunset_header: false
+  deprecation_header: false
+  evidence: >-
+    No RFC 8594 Sunset or Deprecation header is declared in the OpenAPI or documented. The
+    only deprecation surface Fullcast publishes is a Salesforce managed-package field list
+    recording fields that were deprecated or deleted -- a data-model change log, not an API
+    deprecation policy.
+  partial_surface:
+    url: https://support.fullcast.com/docs/managed-package-field-list.md
+    scope: Salesforce managed package fields only
+sla:
+  url: null
+  uptime_target: null
+  published: false
+  note: Premium Support is sold as a paid add-on; no public uptime commitment is published.
+status_page:
+  url: https://status.fullcast.io
+  platform: Atlassian Statuspage
+  machine_readable: https://status.fullcast.io/api/v2/summary.json
+  rss: https://status.fullcast.io/history.rss
+  status_at_capture: All Systems Operational
+  checked: '2026-08-13'
+  note: >-
+    The component list is itself evidence of undocumented API surfaces -- Fullcast monitors
+    a "Fullcast Platform API", a "Territory Routing API", an "Integration API" and an
+    "Authentication Management API", none of which publish a contract.
+  components:
+  - app.fullcast.io
+  - Fullcast PROD
+  - DNS
+  - DNS2 - West
+  - Customer Success
+  - Integration Storage
+  - Key Management Services
+  - Integration
+  - Compute Infrastructure
+  - Integration API
+  - Notifications
+  - Messaging Services
+  - Storage Infrastructure
+  - Support Beacon
+  - Email Infrastructure
+  - Support Email Processing
+  - User Authentication
+  - support.fullcast.io Docs Site
+  - Multi Factor Authentication
+  - Authentication Management API
+  - General Infrastructure
+  - Fullcast Platform API
+  - Territory Routing API
+changelog:
+  url: https://support.fullcast.com/docs/platform-release-notes-2026.md
+  artifact: changelog/fullcast-changelog.yml
+deprecated_operations: []
+stale_documentation:
+- url: https://support.fullcast.com/apidocs/recipes.md
+  note: page is flagged stale (last updated February 2026) and contains a known code defect

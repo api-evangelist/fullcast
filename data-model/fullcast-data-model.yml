@@ -1,0 +1,91 @@
+generated: '2026-08-13'
+method: derived
+source: openapi/fullcast-assistant-openapi-original.json
+note: >-
+  Derived from components.schemas $ref edges in the only public Fullcast contract, the
+  Assistant API. This is the ASSISTANT domain (conversations, assistants, OAuth clients)
+  and is NOT the Fullcast planning data model. The planning entities an agent actually works
+  with -- territory, team, product family, account, person, product, plan, target,
+  assignment, role, comp plan, credit, ledger entry, document, policy, job, audit entry --
+  are reachable only through the MCP tool surface (see mcp/fullcast-tool-crosswalk.yml) and
+  are named but not schema-described anywhere public, so they are listed below as
+  undocumented rather than modelled.
+entities:
+- name: Assistant
+  fields: [id, name, config, metadata]
+  relationships:
+  - {type: has_one, target: AssistantConfig, via: config}
+  - {type: has_one, target: Metadata, via: metadata}
+- name: AssistantConfig
+  fields: [provider, type, model, table_name]
+- name: AssistantList
+  fields: [assistants]
+  relationships:
+  - {type: has_many, target: Assistant, via: assistants}
+- name: AssistantDeletion
+  fields: [id]
+- name: UserSession
+  fields: [id, title, assistant_id, user_id, tenant_id, data, created_at, pin_flag]
+  relationships:
+  - {type: belongs_to, target: Assistant, via: assistant_id}
+  note: tenant_id is the multi-tenancy boundary across the whole platform
+- name: SessionRequest
+  fields: [session_id, assistant_id, browser_details, current_url, renderLastFiveMessage,
+    planId, planName, pin_flag, type, module]
+  relationships:
+  - {type: belongs_to, target: Assistant, via: assistant_id}
+  note: >-
+    planId/planName are the only fields in the public contract that reference the planning
+    domain, and they are opaque strings with no schema.
+- name: SessionResponse
+  fields: [session]
+  relationships:
+  - {type: has_one, target: UserSession, via: session}
+- name: StopRequest
+  fields: [session_id]
+- name: Message
+  fields: [role, content, blocks, message_id, metadata, masked_content]
+  note: masked_content indicates server-side redaction before the message is stored or returned
+- name: MessageList
+  fields: [messages]
+  relationships:
+  - {type: has_many, target: Message, via: messages}
+- name: ChatRequest
+  fields: [session_id, message, metadata, web_search_access]
+  relationships:
+  - {type: has_one, target: Message, via: message}
+  - {type: belongs_to, target: UserSession, via: session_id}
+- name: FeedbackRequest
+  fields: [message_id, feedback, feedback_comment, support_ticket]
+  relationships:
+  - {type: belongs_to, target: Message, via: message_id}
+- name: Metadata
+  fields: [title, description, icon, prompts, num_history_messages]
+- name: ClientRegistrationRequest
+  fields: [redirect_uris, client_name, client_uri, logo_uri, scope, contacts, tos_uri,
+    policy_uri, jwks_uri, software_id, software_version]
+  note: RFC 7591 dynamic client registration
+- name: ClientRegistrationResponse
+  fields: [client_id, client_secret, client_id_issued_at, client_secret_expires_at,
+    redirect_uris, client_name, scope]
+- name: TokenResponse
+  fields: [access_token, jwe_access_token, token_type, expires_in, refresh_token, scope]
+  note: jwe_access_token alongside access_token indicates an encrypted-token variant
+- name: HTTPValidationError
+  fields: [detail]
+  relationships:
+  - {type: has_many, target: ValidationError, via: detail}
+- name: ValidationError
+  fields: [loc, msg, type]
+undocumented_planning_entities:
+  note: >-
+    Named by MCP tools and by the support documentation; no published schema. An agent must
+    call describe_entities over MCP to obtain field-level shapes at runtime.
+  discovery_tool: describe_entities
+  entities: [territory, team, product_family, account, person, product, plan, target,
+    assignment, role, position, comp_plan, crediting_rule, crediting_transaction, credit,
+    ledger_entry, document, document_group, policy, job, audit_entry, metric]
+counts:
+  documented_entities: 18
+  relationships: 9
+  undocumented_planning_entities: 22

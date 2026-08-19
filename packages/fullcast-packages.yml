@@ -1,0 +1,71 @@
+generated: '2026-08-13'
+method: searched
+source: registry queries against npm, PyPI, RubyGems, crates.io, NuGet, Maven Central and pkg.go.dev plus the GitHub org
+note: >-
+  Fullcast publishes NO first-party client library in any public package registry. Every
+  registry lookup for fullcast, copyai, copy-ai, @fullcast/sdk, @copy.ai/sdk and fullcast-mcp
+  returned 404, and an npm full-text search for "fullcast" returned zero results. The
+  distribution units Fullcast actually ships are platform packages installed into a customer's
+  CRM, not developer SDKs, so they are recorded below under distributions rather than as
+  packages with registry versions. Because no official SDK exists, NO SDKs pointer is emitted
+  in apis.yml.
+package_count: 0
+official_sdk_count: 0
+packages: []
+distributions:
+- name: Fullcast Salesforce Managed Package
+  kind: salesforce-managed-package
+  registry: appexchange
+  official: true
+  version: v2.16x
+  published: null
+  version_note: >-
+    Version read from the provider's own release-notes page title (line v2.16x); AppExchange
+    exposes no unauthenticated metadata endpoint, so an exact build number and release date
+    could not be resolved. Recorded as the published line rather than guessed.
+  install: Installed into a Salesforce org by an admin; manual updates supported.
+  docs: https://support.fullcast.com/docs/managed-package-release-notes-v2-16x.md
+  reference: https://support.fullcast.com/docs/managed-package-field-list.md
+- name: Fullcast ServiceNow scoped application
+  kind: servicenow-scoped-app
+  registry: servicenow-store
+  official: true
+  version: null
+  published: null
+  version_note: >-
+    No version or release date is published in the provider documentation and the ServiceNow
+    Store exposes no anonymous metadata endpoint. Checked, nothing to record.
+  scope: >-
+    Core planning and compensation features only. The provider states it does not yet support
+    policies such as routing and holdouts.
+  docs: https://support.fullcast.com/docs/servicenow-integration.md
+registries_checked:
+- {registry: npm, queries: [fullcast, copyai, copy-ai, '@fullcast/sdk', '@copy.ai/sdk', fullcast-mcp], hits: 0, search_hits: 0}
+- {registry: pypi, queries: [fullcast, copyai, copy-ai], hits: 0}
+- {registry: rubygems, queries: [fullcast], hits: 0}
+- {registry: crates.io, queries: [fullcast], hits: 0}
+- {registry: nuget, queries: [fullcast], hits: 0}
+- {registry: maven-central, queries: [fullcast], hits: 0}
+- {registry: pkg.go.dev, queries: [fullcast], hits: 0}
+github:
+  org: https://github.com/copy-ai
+  note: >-
+    The only Fullcast-controlled GitHub organisation is copy-ai, inherited with the October
+    2025 Copy.ai acquisition. Its 10 public repositories are forks and CI/deployment helpers
+    (heroku-buildpack-pnpm, markdown-it, bull-board, copy-to-clipboard, branch-name,
+    heroku-docker-deploy) plus a hiring page. None is a Fullcast or Copy.ai client library,
+    and the most recent push is 2025-05-13. There is no github.com/fullcast organisation.
+  public_repos: 10
+  most_recent_push: '2025-05-13'
+  first_party_sdk: false
+third_party:
+  note: >-
+    Community packages exist for the acquired Copy.ai product but are NOT first party and are
+    not counted above.
+  examples:
+  - {name: '@activepieces/piece-copy-ai', registry: npm, version: 0.1.6, published: '2026-08-04', official: false}
+  - {name: '@scopieflows/app-copy-ai', registry: npm, version: 0.1.3, published: '2026-05-14', official: false}
+  - {name: '@neurarank/node-copy-ai', registry: npm, version: 0.0.5, published: '2025-11-30', official: false}
+gap: >-
+  An MCP-first provider with no SDK and no CLI leaves HTTP + OAuth as the only integration
+  path for anyone not using an MCP client.

@@ -1,0 +1,75 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for the Fullcast Assistant API
+  version: 1.0.0
+extends: openapi/fullcast-assistant-openapi-original.json
+x-generated: '2026-08-13'
+x-method: generated
+x-source: >-
+  Captured from https://assistant.fullcast.io/openapi.json on 2026-08-13 and enriched from
+  Fullcast's published documentation and live probes. The original document is never mutated.
+actions:
+- target: $.info
+  update:
+    x-apievangelist-provider: fullcast
+    x-apievangelist-captured: '2026-08-13'
+    x-apievangelist-source: https://assistant.fullcast.io/openapi.json
+    contact:
+      name: Fullcast Support
+      url: https://support.fullcast.com
+    termsOfService: https://www.fullcast.com/others/terms-of-service/
+    x-apievangelist-note: >-
+      Served anonymously at the API host root with Swagger UI at /docs. This is the only
+      machine-readable REST contract Fullcast publishes; the Platform, Territory Routing,
+      Integration and Authentication Management APIs named on the status page publish none.
+- target: $
+  update:
+    servers:
+    - url: https://assistant.fullcast.io
+      description: >-
+        Production. Added by API Evangelist - the original document declares no servers[]
+        block at all, so a generated client has no base URL. Host confirmed by live fetch of
+        the spec itself and by the app shell configuration at app.fullcast.io, which points
+        the assistant client at https://assistant.fullcast.io/copilot-api/v1/chat.
+- target: $.paths['/copilot-api/v1/ping'].get
+  update:
+    tags: [diagnostics]
+    x-apievangelist-note: Unauthenticated health check; returns {"message":"pong"}. Verified 200 on 2026-08-13.
+- target: $.paths['/mcp_info'].get
+  update:
+    tags: [mcp, discovery]
+    x-apievangelist-note: >-
+      Unauthenticated MCP discovery document. Returns the real tool and resource names for
+      the co-hosted Fullcast Assistant MCP Server, which is otherwise OAuth-gated. Captured
+      verbatim to well-known/fullcast-assistant-mcp-info.json.
+- target: $.paths['/.well-known/oauth-authorization-server'].get
+  update:
+    tags: [oauth, discovery]
+    x-apievangelist-spec: RFC 8414
+- target: $.paths['/.well-known/oauth-protected-resource'].get
+  update:
+    tags: [oauth, discovery]
+    x-apievangelist-spec: RFC 9728
+- target: $.components.securitySchemes
+  update:
+    OAuth2:
+      type: oauth2
+      description: >-
+        Added by API Evangelist. The original document declares only cookie and CSRF apiKey
+        schemes, yet the same host runs a full OAuth 2.1 authorization server whose metadata
+        is published at /.well-known/oauth-authorization-server and whose operations
+        (/oauth/register, /oauth/authorize, /oauth/token, /oauth/userinfo) are IN this
+        document. This scheme records the flow the spec omits.
+      flows:
+        authorizationCode:
+          authorizationUrl: https://assistant.fullcast.io/oauth/authorize
+          tokenUrl: https://assistant.fullcast.io/oauth/token
+          refreshUrl: https://assistant.fullcast.io/oauth/token
+          scopes:
+            openid: OpenID Connect subject identifier
+            email: User email address
+            profile: Basic user profile claims
+            offline_access: Issue a refresh token
+            'mcp:tools': Call MCP tools
+            'mcp:resources': Read MCP resources
+            'mcp:prompts': Read MCP prompts

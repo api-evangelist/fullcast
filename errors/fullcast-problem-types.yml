@@ -1,0 +1,70 @@
+generated: '2026-08-13'
+method: derived
+source: openapi/fullcast-assistant-openapi-original.json
+format: fastapi-detail
+rfc9457: false
+note: >-
+  The Fullcast Assistant API declares exactly one error response across all 24 operations:
+  HTTP 422 Validation Error, carrying the FastAPI HTTPValidationError envelope as
+  application/json. It does NOT use application/problem+json and publishes no 401/403/404/429/5xx
+  response objects, even though the live service demonstrably returns 401 on the MCP path and
+  404 on unknown routes. Observed runtime errors are recorded separately below so an agent
+  has the real shapes, not just the declared one.
+envelope:
+  declared:
+    schema: HTTPValidationError
+    media_type: application/json
+    shape: '{"detail": [ValidationError]}'
+    fields:
+    - name: detail
+      type: array
+      items: ValidationError
+    validation_error:
+      fields:
+      - {name: loc, type: array, description: location path of the offending field}
+      - {name: msg, type: string, description: human-readable message}
+      - {name: type, type: string, description: machine-readable error type}
+problems:
+- status: 422
+  title: Validation Error
+  media_type: application/json
+  schema: HTTPValidationError
+  declared_on: all 24 operations
+  source_operation: openapi/fullcast-assistant-openapi-original.json#chat_copilot_api_v1_chat_post
+observed:
+  method: probed
+  checked: '2026-08-13'
+  note: shapes captured from live unauthenticated requests; not declared in the OpenAPI
+  responses:
+  - status: 401
+    host: https://app.fullcast.io/mcp
+    body: '{"code":"MISSING_BEARER","message":"No Bearer token was provided in the Authorization header."}'
+    headers:
+      www-authenticate: 'Bearer realm="mcp-openapi", resource_metadata="https://app.fullcast.io/.well-known/oauth-protected-resource/mcp"'
+    remediation: >-
+      Complete the OAuth 2.1 authorization-code + PKCE flow at
+      https://app.fullcast.io/mcp/authorize and present the bearer token.
+  - status: 401
+    host: https://assistant.fullcast.io/mcp/
+    body: '{"error": "invalid_token", "error_description": "Authentication required"}'
+    headers:
+      www-authenticate: 'Bearer error="invalid_token", error_description="Authentication required"'
+    remediation: Obtain a token from https://assistant.fullcast.io/oauth/token.
+  - status: 404
+    host: https://assistant.fullcast.io
+    body: '{"detail":"Not Found"}'
+    remediation: Check the path; the assistant API is namespaced under /copilot-api/v1/.
+  - status: 404
+    host: https://app.fullcast.io
+    body: '{"error":"oidc_not_supported","message":"Use /.well-known/oauth-authorization-server/ instead."}'
+    path: /.well-known/openid-configuration
+    remediation: Use RFC 8414 authorization-server metadata; OIDC discovery is not offered.
+  - status: 400
+    host: https://app.fullcast.io/mcp/register
+    body: '{"error":"invalid_client_metadata","error_description":"[... redirect_uris expected array ...]"}'
+    remediation: Dynamic client registration requires a redirect_uris array (RFC 7591).
+gaps:
+- No 401 or 403 response objects are declared on any operation despite bearer auth being enforced.
+- No 429 response object and no documented rate-limit error.
+- No RFC 9457 application/problem+json anywhere in the contract.
+- No stable error type URIs or error codes; the 422 envelope carries free-text msg only.

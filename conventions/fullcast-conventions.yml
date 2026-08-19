@@ -1,0 +1,111 @@
+generated: '2026-08-13'
+method: derived
+source: openapi/fullcast-assistant-openapi-original.json + live probes + provider documentation
+docs:
+- https://support.fullcast.com/apidocs/quick-start-guide.md
+- https://support.fullcast.com/apidocs/recipes.md
+- https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
+note: >-
+  Cross-cutting semantics across the three Fullcast programmatic surfaces. They do not share
+  conventions: the Assistant API uses cookie/CSRF auth, the MCP servers use OAuth 2.1 bearer,
+  and the acquired Copy.ai Workflows API uses a static header API key. An agent must treat
+  them as three separate contracts.
+authentication:
+  summary: three distinct schemes, one per surface
+  surfaces:
+  - surface: Fullcast Assistant API
+    host: https://assistant.fullcast.io
+    schemes:
+    - {type: apiKey, in: cookie, name: token}
+    - {type: apiKey, in: header, name: csrf_token}
+    note: browser-session oriented; a cookie token plus a CSRF header, not a developer key
+  - surface: Fullcast MCP
+    host: https://app.fullcast.io/mcp
+    schemes:
+    - {type: oauth2, flow: authorization_code, pkce: S256, bearer: header}
+    dynamic_client_registration: true
+  - surface: Fullcast Copy.ai Workflows API
+    host: https://api.copy.ai/api
+    schemes:
+    - {type: apiKey, in: header, name: x-copy-ai-api-key}
+    key_lifecycle:
+      created_in: Configuration > API Keys > Create API Key
+      shown_once: true
+      expiry: optional, default never; provider recommends 12 months
+      permissions: key inherits all access permissions of the user it is assigned to
+      revocation: disable, rename or delete
+      managed_by: Workspace Owners and Admins only
+      docs: https://support.fullcast.com/copy-ai/docs/api-key-management.md
+idempotency:
+  supported: false
+  header: null
+  evidence: >-
+    No Idempotency-Key parameter appears in the Assistant API OpenAPI, and neither the
+    Copy.ai Workflows API reference nor the MCP tool reference documents an idempotency key
+    or a safe-retry contract. Writes are not idempotent by contract.
+  agent_risk: >-
+    MCP write tools (move_account, move_person, create_assignment, run_comp_plan_period,
+    send_document) have no replay protection. The documented mitigation is procedural, not
+    protocol-level: the tool reference marks send_document and cancel_document
+    "Write (confirm first)", and the platform provides commit_changes / undo_changes to stage
+    and reverse edits.
+  compensating_controls: [commit_changes, undo_changes, confirm-first tools, audit log]
+pagination:
+  supported: false
+  evidence: >-
+    No limit, offset, cursor, page or page_size parameter exists on any of the 24 Assistant
+    API operations; list responses (AssistantList, MessageList) are unbounded envelopes with
+    no next-page field. The Copy.ai Get All Workflow Runs and Get All Webhooks endpoints
+    document no pagination parameters either.
+  note: MCP list tools may paginate internally; schemas are auth-gated and unverified.
+versioning:
+  scheme: uri-path
+  current: v1
+  evidence: all assistant operations are namespaced under /copilot-api/v1/
+  copy_ai: unversioned - /api/workflow/{workflow_id}/run carries no version segment
+  policy_published: false
+  header_negotiation: false
+error_envelope:
+  declared: '{"detail": [{"loc": [], "msg": "", "type": ""}]}'
+  media_type: application/json
+  rfc9457: false
+  see: errors/fullcast-problem-types.yml
+rate_limit_signaling:
+  documented: false
+  response_headers: []
+  see: rate-limits/fullcast-rate-limits.yml
+request_tracing:
+  request_id_header: null
+  documented: false
+  note: >-
+    No X-Request-Id / correlation header is declared or documented. The platform's traceability
+    story is the in-product Audit Log (list_audit_entries, explain_audit_entry) and the
+    Salesforce Policy Status page, not an HTTP correlation id.
+async_and_polling:
+  pattern: submit-then-poll, with optional webhook callback
+  surface: Fullcast Copy.ai Workflows API
+  submit: POST /api/workflow/{workflow_id}/run
+  poll: GET /api/workflow/{workflow_id}/run/{run_id}
+  response_shape: '{"status":"success","data":{"id":"<workflow run id>"}}'
+  callback: webhook registration, see asyncapi/fullcast-copy-ai-webhooks.yml
+  docs: https://support.fullcast.com/apidocs/recipes.md
+  known_doc_defect: >-
+    The published polling recipe reuses workflow_url instead of run_url in the GET step, so
+    the sample as written polls the wrong URL. The page is also flagged stale (Feb 2026).
+field_expansion:
+  supported: false
+metadata:
+  supported: true
+  note: >-
+    ChatRequest, Message and Assistant each carry a free-form metadata object; Assistant
+    metadata is typed (title, description, icon, prompts, num_history_messages).
+content_masking:
+  supported: true
+  field: Message.masked_content
+  note: the contract exposes a server-masked variant of message content alongside the raw content
+cross_links:
+  errors: errors/fullcast-problem-types.yml
+  authentication: authentication/fullcast-authentication.yml
+  scopes: scopes/fullcast-scopes.yml
+  lifecycle: lifecycle/fullcast-lifecycle.yml
+  rate_limits: rate-limits/fullcast-rate-limits.yml

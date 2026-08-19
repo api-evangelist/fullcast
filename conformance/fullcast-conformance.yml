@@ -1,25 +1,105 @@
-generated: '2026-07-19'
+generated: '2026-08-13'
 method: searched
 source: https://www.fullcast.com/security/
-notes: >-
-  Fullcast publishes no public OpenAPI or developer portal, so cross-cutting
-  API standards (rfc9457, pagination, idempotency, oauth2) cannot be asserted
-  from a spec. The compliance program below is taken verbatim from the
-  provider's public security page.
+sources:
+- https://www.fullcast.com/security/
+- https://trust.fullcast.io/
+- https://app.fullcast.io/mcp/.well-known/oauth-authorization-server
+- https://assistant.fullcast.io/.well-known/oauth-protected-resource
+- openapi/fullcast-assistant-openapi-original.json
+note: >-
+  Supersedes the 2026-07-19 pass, which recorded "Fullcast publishes no public OpenAPI or
+  developer portal, so cross-cutting API standards cannot be asserted from a spec." That is
+  no longer true: a live OpenAPI 3.1.0 was captured at https://assistant.fullcast.io/openapi.json
+  and two OAuth 2.1 authorization servers publish RFC 8414 and RFC 9728 metadata. The
+  compliance program below remains as published by the provider.
 standards:
-  - id: soc2-type2
-    conforms: true
-    evidence: >-
-      Security page states Fullcast maintains SOC 2 Type 2 and aligns incident
-      response to SOC 2 Type 2 requirements.
-  - id: gdpr
-    conforms: true
-    evidence: Security page states Fullcast complies with GDPR.
-  - id: iso27001
-    conforms: false
-  - id: hipaa
-    conforms: false
-  - id: pci-dss
-    conforms: false
-  - id: fedramp
-    conforms: false
+- id: openapi-3.1
+  conforms: true
+  evidence: >-
+    assistant.fullcast.io/openapi.json declares "openapi":"3.1.0" with 18 paths and 24
+    operations. Saved to openapi/fullcast-assistant-openapi-original.json.
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Two authorization servers, both authorization_code with PKCE:
+    https://app.fullcast.io/mcp (S256) and https://assistant.fullcast.io (plain, S256).
+- id: oauth2-pkce-rfc7636
+  conforms: true
+  evidence: code_challenge_methods_supported includes S256 on both issuers.
+- id: rfc8414-authorization-server-metadata
+  conforms: true
+  evidence: >-
+    200 at https://app.fullcast.io/mcp/.well-known/oauth-authorization-server and
+    https://assistant.fullcast.io/.well-known/oauth-authorization-server.
+- id: rfc9728-protected-resource-metadata
+  conforms: true
+  evidence: >-
+    200 at https://app.fullcast.io/.well-known/oauth-protected-resource/mcp and
+    https://assistant.fullcast.io/.well-known/oauth-protected-resource; advertised via the
+    resource_metadata parameter of the WWW-Authenticate header on a 401.
+- id: rfc7591-dynamic-client-registration
+  conforms: true
+  evidence: >-
+    registration_endpoint published by both issuers; POST to
+    https://app.fullcast.io/mcp/register returns 400 invalid_client_metadata with an RFC 7591
+    redirect_uris validation error, confirming a live implementation.
+- id: rfc6750-bearer-token
+  conforms: true
+  evidence: 'WWW-Authenticate: Bearer with realm and error/error_description on both MCP endpoints.'
+- id: mcp
+  conforms: true
+  version_declared: '1.0.0'
+  evidence: >-
+    Streamable HTTP MCP servers at https://app.fullcast.io/mcp and
+    https://assistant.fullcast.io/mcp/; mcp_capabilities {tools, resources, prompts}
+    published in protected-resource metadata.
+- id: oidc
+  conforms: false
+  evidence: >-
+    Explicitly declined. https://app.fullcast.io/.well-known/openid-configuration returns
+    {"error":"oidc_not_supported","message":"Use /.well-known/oauth-authorization-server/ instead."}
+    The openid scope is offered on the assistant issuer, but no OIDC discovery document is served.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: >-
+    The Assistant API returns the FastAPI application/json {"detail":[...]} envelope; no
+    application/problem+json appears anywhere in the contract.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returned 404 on all five hosts probed.
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: No Sunset or Deprecation header is declared in the spec or documented.
+- id: asyncapi
+  conforms: false
+  evidence: >-
+    No AsyncAPI document is published. A real webhook surface exists on the acquired Copy.ai
+    Workflows API; captured as a webhook catalog instead.
+- id: a2a
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json returned 404 on every host.
+- id: idempotency
+  conforms: false
+  evidence: No idempotency key is declared in the spec or documented on any surface.
+- id: pagination
+  conforms: partial
+  evidence: >-
+    The Copy.ai webhook list endpoint documents size (max 100) and zero-indexed page
+    parameters. No other surface publishes any pagination contract.
+- id: soc2-type2
+  conforms: true
+  evidence: >-
+    Security page states Fullcast maintains SOC 2 Type 2 and aligns incident response to
+    SOC 2 Type 2 requirements. Trust center at trust.fullcast.io.
+- id: gdpr
+  conforms: true
+  evidence: Security page states Fullcast complies with GDPR.
+- id: iso27001
+  conforms: false
+- id: hipaa
+  conforms: false
+- id: pci-dss
+  conforms: false
+- id: fedramp
+  conforms: false

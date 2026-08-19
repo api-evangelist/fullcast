@@ -1,0 +1,74 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fullcast.com/docs/platform-release-notes-2026.md
+scheme: dated-release-notes
+note: >-
+  Fullcast publishes dated, categorised platform release notes rather than a semantic API
+  version history. Entries are product-feature oriented; API-level breaking changes are not
+  called out as such. Recent window only. A separate release-notes stream exists for the
+  Salesforce managed package (v2.15x, v2.16x lines).
+current_version: null
+streams:
+- name: Platform
+  url: https://support.fullcast.com/docs/platform-release-notes-2026.md
+  archive: [2025, 2024, 2022]
+- name: Salesforce Managed Package
+  url: https://support.fullcast.com/docs/managed-package-release-notes-v2-16x.md
+  current_line: v2.16x
+entries:
+- date: '2026-08-10'
+  area: Assignments
+  breaking: false
+  title: Track the position each person holds over time
+  highlights: >-
+    Define positions (Account Executive, Senior Account Executive, BDR) and manage position
+    history across promotions and moves; targets and commissions can be set by position
+    rather than role.
+- date: '2026-08-10'
+  area: Commissions
+  breaking: false
+  title: Raise and resolve commission disputes in Fullcast
+  highlights: >-
+    Reps can dispute commissions from the ledger with file attachments; support agents work
+    disputes in an Agent Console with activity trails and reassignment.
+- date: '2026-08-10'
+  area: Platform
+  breaking: false
+  title: Run your plans on your own fiscal calendar
+  highlights: >-
+    Fiscal years configured under Application settings > Time periods, supporting standard,
+    4-4-5 family and 13-period calendars.
+- date: '2026-08-10'
+  area: Hierarchy
+  breaking: false
+  title: See where an account, person, or product sat on any past date
+  highlights: >-
+    Every move recorded as a permanent dated event per plan, surviving record deletion, for
+    audit and commission traceability.
+- date: '2026-08-08'
+  area: Salesforce Integration
+  breaking: true
+  title: Token refresh support for your Salesforce connections
+  highlights: >-
+    Fullcast and data integration now operate as separate connections, each issuing and
+    refreshing its own access token to meet Salesforce policy requirements.
+  note: >-
+    Marked breaking here because it splits one connection into two and changes token
+    handling; the provider does not label it a breaking change.
+- date: '2026-08-03'
+  area: Reporting
+  breaking: false
+  title: Delete saved reports
+  highlights: Remove a saved report from the three-dot menu, with a confirmation showing affected dashboards.
+- date: '2026-07-13'
+  area: Commissions
+  breaking: false
+  title: Send documents for approval and signature with multiple approvers and signers
+  highlights: Route documents through multiple approvers and signers in a set order, with separate role handling and status tracking.
+- date: '2026-07-11'
+  area: Platform
+  breaking: false
+  title: A redesigned Settings area
+  highlights: Settings moved from tabs to a left sidebar with expandable sections.
+entry_count: 8
+window: 2026-07-11 to 2026-08-10

@@ -1,0 +1,117 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fullcast.com/apidocs/api-references.md
+spec_type: WebhookCatalog
+asyncapi_published: false
+note: >-
+  Fullcast publishes NO AsyncAPI document on any host (probed /asyncapi.yaml, /asyncapi.json
+  and the GitHub org). It does publish a real, documented webhook surface: the Copy.ai
+  Workflows API, acquired by Fullcast in October 2025 and documented under
+  support.fullcast.com/apidocs/. Captured here as a webhook catalog, verbatim from the
+  provider's own reference pages. Nothing is fabricated -- the four event types below are the
+  complete published set.
+ownership:
+  justification: >-
+    api.copy.ai is a different registrable domain from fullcast.com, but Fullcast acquired
+    Copy.ai in October 2025, markets it as "Fullcast Copy.ai" at
+    https://www.fullcast.com/product/fullcast-copy-ai/, and serves this API reference from
+    its own support host at support.fullcast.com/apidocs/.
+  acquisition_announcement: https://www.fullcast.com/content/fullcast-announces-the-acquisition-of-copy-ai/
+  product_page: https://www.fullcast.com/product/fullcast-copy-ai/
+surface:
+  name: Fullcast Copy.ai Workflows webhooks
+  base_url: https://api.copy.ai/api
+  transport: https
+  delivery: provider-initiated HTTP POST to a subscriber-supplied URL
+  authentication:
+    management: 'header: x-copy-ai-api-key'
+    delivery_verification: null
+    note: >-
+      No signing secret, signature header or timestamp-replay protection is documented for
+      inbound webhook deliveries. A receiver cannot verify a payload actually came from
+      Copy.ai. This is a real gap, recorded as found.
+  retries: null
+  ordering: null
+events:
+- name: workflowRun.started
+  description: A workflow run has begun.
+  scope: a specific workflowId, or all workflows in the workspace when workflowId is omitted
+- name: workflowRun.completed
+  description: >-
+    A workflow run finished. The delivery carries the run results and any metadata attached
+    at run time.
+  scope: a specific workflowId, or all workflows in the workspace when workflowId is omitted
+- name: workflowRun.failed
+  description: A workflow run failed.
+  scope: a specific workflowId, or all workflows in the workspace when workflowId is omitted
+- name: workflowCreditLimit.reached
+  description: The workspace has reached its workflow credit limit.
+  scope: workspace
+event_count: 4
+management_operations:
+- name: Register Webhook
+  method: POST
+  path: /webhook
+  url: https://api.copy.ai/api/webhook
+  docs: https://support.fullcast.com/apidocs/register-webhook-2.md
+  request:
+  - {field: url, type: string, required: true, description: webhook endpoint URL}
+  - {field: eventType, type: string, required: true, enum: [workflowRun.started, workflowRun.completed, workflowRun.failed, workflowCreditLimit.reached]}
+  - {field: workflowId, type: string, required: false, description: omit to receive events for all workspace workflows}
+  responses:
+    200: '{"status":"success","data":{"id":"","url":"","eventType":"","workflowId":""}}'
+    400: Bad Request - returns status and errorCode
+    404: Not Found - returns status and errorCode
+    422: Validation Error - returns status, errorCode and a details object
+- name: Get Webhook
+  method: GET
+  path: /webhook/{webhook_id}
+  docs: https://support.fullcast.com/apidocs/get-webhook-2.md
+- name: Get All Webhooks
+  method: GET
+  path: /webhook
+  url: https://api.copy.ai/api/webhook
+  docs: https://support.fullcast.com/apidocs/get-all-webhooks-2.md
+  query:
+  - {field: size, type: integer, default: 10, max: 100, description: number of webhooks per page}
+  - {field: page, type: integer, default: 0, description: zero-indexed page number}
+  responses:
+    200: '{"total": 0, "data": [{"id":"","url":"","eventType":"","workflowId":null}]}'
+    400: Bad Request
+    422: Validation Error
+  note: >-
+    This is the only paginated surface Fullcast documents anywhere; the Assistant API has no
+    pagination at all.
+- name: Remove Webhook
+  method: DELETE
+  path: /webhook/{webhook_id}
+  docs: https://support.fullcast.com/apidocs/remove-webhook-2.md
+related_run_operations:
+- name: Start a Workflow Run
+  method: POST
+  path: /workflow/{workflow_id}/run
+  docs: https://support.fullcast.com/apidocs/start-a-workflow-run-2.md
+  request:
+  - {field: startVariables, type: object, required: true, description: workflow input values}
+  - {field: metadata, type: object, required: false, description: custom metadata echoed back on the completion webhook}
+  responses:
+    200: '{"status":"success","data":{"id":"<run_id>"}}'
+    400: Bad request, or credit limit exceeded (errorCode WORKFLOW_CREDIT_LIMIT_REACHED)
+    404: Workflow not found
+    422: Validation error
+- name: Get Workflow Run
+  method: GET
+  path: /workflow/{workflow_id}/run/{run_id}
+  docs: https://support.fullcast.com/apidocs/get-workflow-run-2.md
+  statuses: [PROCESSING, COMPLETE]
+  note: the polling alternative to the workflowRun.completed webhook
+- name: Get All Workflow Runs
+  method: GET
+  path: /workflow/{workflow_id}/run
+  docs: https://support.fullcast.com/apidocs/get-all-workflow-runs-2.md
+gaps:
+- No AsyncAPI document is published for this event surface.
+- No webhook signature or shared secret is documented, so deliveries are unverifiable.
+- No retry, backoff or delivery-ordering guarantees are documented.
+- No dead-letter or delivery-log surface is documented.
+- The Fullcast platform itself (territories, routing, commissions) publishes no webhooks; the only event surface is the acquired Copy.ai product.

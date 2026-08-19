@@ -1,0 +1,47 @@
+generated: '2026-08-13'
+method: generated
+source: >-
+  Grounded in mcp/fullcast-mcp.yml (tool names verified live at
+  https://assistant.fullcast.io/mcp_info and documented at
+  https://support.fullcast.com/docs/fullcast-mcp-tool-reference.md), the operationIds in
+  openapi/fullcast-assistant-openapi-original.json, and the Copy.ai Workflows API reference
+  at https://support.fullcast.com/apidocs/. Every tool name, operationId, resource URI,
+  endpoint, event type and error code used in these skills exists in one of those sources;
+  none is invented.
+note: >-
+  Fullcast is an MCP-first provider: the planning platform has no public REST contract, so
+  three of the four skills are written against MCP tools rather than OpenAPI operations. The
+  skills deliberately foreground the two things an agent will otherwise get wrong -- there is
+  no idempotency contract and no sandbox, so every write is a one-shot production write.
+skills:
+- file: fullcast-connect-an-mcp-client.md
+  name: Connect an AI client to the Fullcast MCP server
+  api: https://app.fullcast.io/mcp
+  safety: read-only
+  operations: [register_client_oauth_register_post, authorize_oauth_authorize_get, token_exchange_oauth_token_post]
+  mcp_tools: [ping, get_server_info]
+- file: fullcast-explore-a-gtm-plan.md
+  name: Explore a Fullcast go-to-market plan read-only
+  api: https://app.fullcast.io/mcp
+  safety: read-only
+  mcp_tools: [get_tenant_context, list_plans, describe_entities, describe_entity_sources,
+    describe_report_fields, get_territories, get_teams, get_product_families, list_accounts,
+    list_people, list_products, list_targets, list_assignments, resolve_entity, deep_search,
+    explain_placement, analyze_placement, analyze_coverage, execute_metric, report]
+- file: fullcast-move-a-record-safely.md
+  name: Move an account, person or product safely in Fullcast
+  api: https://app.fullcast.io/mcp
+  safety: write
+  mcp_tools: [resolve_entity, explain_placement, get_assignment_suggestions, move_account,
+    move_person, move_product, commit_changes, undo_changes, rerun_territories_rules,
+    rerun_team_rules, rerun_product_rules, name_accounts, clear_named_accounts,
+    list_audit_entries, explain_audit_entry]
+  mcp_resources: ['fullcast://resource/workflow_agent_guidance',
+    'fullcast://resource/move_account_guidance', 'fullcast://resource/move_people_guidance',
+    'fullcast://resource/move_product_guidance']
+- file: fullcast-run-a-copy-ai-workflow.md
+  name: Run a Fullcast Copy.ai workflow and collect the result
+  api: https://api.copy.ai/api
+  safety: write
+  operations: [Start a Workflow Run, Get Workflow Run, Register Webhook, Get All Webhooks, Remove Webhook]
+skill_count: 4
