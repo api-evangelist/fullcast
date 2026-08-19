@@ -35,7 +35,7 @@ accessModel:
     with no published figure. No self-serve signup, no free tier, no trial. MCP access is a
     tenant-admin toggle on an existing contract, not a developer signup.
 image: https://www.fullcast.com/wp-content/uploads/2026/07/Fullcast-plan-to-pay-1024x576.png
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-08-13'
 tags:
