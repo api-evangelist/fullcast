@@ -44,6 +44,19 @@ tags:
 - Revenue Operations
 - Sales Planning
 - Territory Management
+- Go-To-Market
+- Incentive Compensation
+- Forecasting
+- Lead Routing
+- MCP
+- AI Agents
+- Sales Compensation
+tags_raw:
+- Company
+- Enterprise
+- Revenue Operations
+- Sales Planning
+- Territory Management
 - Go-to-Market
 - Incentive Compensation
 - Forecasting
@@ -63,6 +76,11 @@ apis:
   humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
   baseURL: https://assistant.fullcast.io
   tags:
+  - AI Assistant
+  - Chat
+  - Authentication
+  - MCP
+  tags_raw:
   - AI Assistant
   - Chat
   - OAuth
@@ -111,6 +129,10 @@ apis:
   humanURL: https://support.fullcast.com/apidocs/quick-start-guide.md
   baseURL: https://api.copy.ai/api
   tags:
+  - Workflows
+  - Generative AI
+  - Webhook
+  tags_raw:
   - Workflows
   - Generative AI
   - Webhooks
