@@ -66,45 +66,12 @@ tags_raw:
 - Model Context Protocol
 - Sales Compensation
 apis:
-- name: Fullcast Assistant API
-  description: >-
-    The HTTP API behind the in-platform Fullcast Assistant (copilot) and the assistant-hosted
-    Fullcast MCP Server. Covers chat sessions, message history, feedback, assistant
-    configuration lifecycle, and a full OAuth 2.1 authorization-server surface
-    (dynamic client registration, authorize, token, userinfo) used by external AI clients.
-    Discovered as a live OpenAPI 3.1.0 document served at the API host root.
-  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
-  baseURL: https://assistant.fullcast.io
-  tags:
-  - AI Assistant
-  - Chat
-  - Authentication
-  - MCP
-  tags_raw:
-  - AI Assistant
-  - Chat
-  - OAuth
-  - MCP
-  properties:
-  - type: OpenAPI
-    url: openapi/fullcast-assistant-openapi-original.json
-  - type: APIReference
-    url: https://assistant.fullcast.io/docs
-  - type: Authentication
-    url: authentication/fullcast-authentication.yml
-  - type: ErrorCatalog
-    url: errors/fullcast-problem-types.yml
-  - type: DataModel
-    url: data-model/fullcast-data-model.yml
-  - type: Overlay
-    url: overlays/fullcast-assistant-overlay.yaml
 - name: Fullcast MCP Server
   description: >-
-    Fullcast's remote Model Context Protocol server, exposing go-to-market planning,
-    territory and team hierarchy, coverage, targets, reporting, commissions and document
-    operations to external AI clients (Claude, ChatGPT, Agentforce, Cursor). Streamable
-    HTTP transport, OAuth 2.1 with PKCE and dynamic client registration. Enabled per tenant
-    under Settings > Application Settings > AI & Agents.
+    Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory and team
+    hierarchy, coverage, targets, reporting, commissions and document operations to external AI clients
+    (Claude, ChatGPT, Agentforce, Cursor). Streamable HTTP transport, OAuth 2.1 with PKCE and dynamic
+    client registration. Enabled per tenant under Settings > Application Settings > AI & Agents.
   humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
   baseURL: https://app.fullcast.io/mcp
   tags:
@@ -122,10 +89,10 @@ apis:
     url: well-known/fullcast-well-known.yml
 - name: Fullcast Copy.ai Workflows API
   description: >-
-    The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on
-    Fullcast's own support host as Fullcast Copy.ai. Programmatically starts GTM workflow
-    runs, polls run status, and registers webhooks for workflow lifecycle events. Authenticated
-    with a workspace API key sent in the x-copy-ai-api-key header.
+    The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's own support
+    host as Fullcast Copy.ai. Programmatically starts GTM workflow runs, polls run status, and registers
+    webhooks for workflow lifecycle events. Authenticated with a workspace API key sent in the x-copy-ai-api-key
+    header.
   humanURL: https://support.fullcast.com/apidocs/quick-start-guide.md
   baseURL: https://api.copy.ai/api
   tags:
@@ -145,6 +112,78 @@ apis:
     url: asyncapi/fullcast-copy-ai-webhooks.yml
   - type: Authentication
     url: https://support.fullcast.com/copy-ai/docs/api-key-management.md
+- aid: fullcast:fullcast-copilot-api-api
+  name: Fullcast Copilot API
+  description: The Copilot Api API from Fullcast — 10 operation(s) for copilot api.
+  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
+  baseURL: https://assistant.fullcast.io
+  tags:
+  - Copilot Api
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-copilot-api-api-openapi.yml
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
+- aid: fullcast:fullcast-mcp-info-api
+  name: Fullcast Mcp Info API
+  description: The Mcp Info API from Fullcast — 1 operation(s) for mcp info.
+  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
+  baseURL: https://assistant.fullcast.io
+  tags:
+  - Mcp Info
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-mcp-info-api-openapi.yml
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
+- aid: fullcast:fullcast-oauth-api
+  name: Fullcast OAUTH API
+  description: The oauth API from Fullcast — 5 operation(s) for oauth.
+  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
+  baseURL: https://assistant.fullcast.io
+  tags:
+  - oauth
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-oauth-api-openapi.yml
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
+- aid: fullcast:fullcast-well-known-api
+  name: Fullcast .well Known API
+  description: The .well Known API from Fullcast — 2 operation(s) for .well known.
+  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
+  baseURL: https://assistant.fullcast.io
+  tags:
+  - .well Known
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-well-known-api-openapi.yml
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
