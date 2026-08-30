@@ -1,0 +1,405 @@
+openapi: 3.2.0
+info:
+  title: Fullcast Assistant OAUTH API
+  description: API for Fullcast Assistant
+  version: 1.0.0
+tags:
+- name: oauth
+paths:
+  /oauth/register:
+    post:
+      tags:
+      - oauth
+      summary: Register Client
+      description: OAuth 2.0 Dynamic Client Registration endpoint
+      operationId: register_client_oauth_register_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientRegistrationRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientRegistrationResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /oauth/authorize:
+    get:
+      tags:
+      - oauth
+      summary: Authorize
+      description: OAuth 2.0 Authorization endpoint
+      operationId: authorize_oauth_authorize_get
+      parameters:
+      - name: response_type
+        in: query
+        required: true
+        schema:
+          type: string
+          title: Response Type
+      - name: client_id
+        in: query
+        required: true
+        schema:
+          type: string
+          title: Client Id
+      - name: redirect_uri
+        in: query
+        required: true
+        schema:
+          type: string
+          title: Redirect Uri
+      - name: scope
+        in: query
+        required: false
+        schema:
+          type: string
+          default: ''
+          title: Scope
+      - name: state
+        in: query
+        required: false
+        schema:
+          type: string
+          title: State
+      - name: code_challenge
+        in: query
+        required: false
+        schema:
+          type: string
+          title: Code Challenge
+      - name: code_challenge_method
+        in: query
+        required: false
+        schema:
+          type: string
+          title: Code Challenge Method
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /oauth/callback:
+    options:
+      tags:
+      - oauth
+      summary: Oauth Callback Options
+      description: Handle OPTIONS preflight request for OAuth callback
+      operationId: oauth_callback_options_oauth_callback_options
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+    get:
+      tags:
+      - oauth
+      summary: Oauth Callback
+      description: Handle OAuth callback - supports both UUID (local) and Auth0 flows
+      operationId: oauth_callback_oauth_callback_get
+      parameters:
+      - name: uuid
+        in: query
+        required: false
+        schema:
+          type: string
+          title: Uuid
+      - name: code
+        in: query
+        required: false
+        schema:
+          type: string
+          title: Code
+      - name: state
+        in: query
+        required: false
+        schema:
+          type: string
+          title: State
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /oauth/token:
+    post:
+      tags:
+      - oauth
+      summary: Token Exchange
+      description: OAuth 2.0 Token endpoint
+      operationId: token_exchange_oauth_token_post
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Body_token_exchange_oauth_token_post'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /oauth/userinfo:
+    get:
+      tags:
+      - oauth
+      summary: Userinfo
+      description: OAuth 2.0 UserInfo endpoint - retrieves session from shared cache using UUID token
+      operationId: userinfo_oauth_userinfo_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+components:
+  schemas:
+    ClientRegistrationRequest:
+      properties:
+        redirect_uris:
+          items:
+            type: string
+            minLength: 1
+            format: uri
+          type: array
+          title: Redirect Uris
+        client_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Client Name
+        client_uri:
+          anyOf:
+          - type: string
+            minLength: 1
+            format: uri
+          - type: 'null'
+          title: Client Uri
+        logo_uri:
+          anyOf:
+          - type: string
+            maxLength: 2083
+            minLength: 1
+            format: uri
+          - type: 'null'
+          title: Logo Uri
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+        contacts:
+          anyOf:
+          - items:
+              type: string
+            type: array
+          - type: 'null'
+          title: Contacts
+        tos_uri:
+          anyOf:
+          - type: string
+            maxLength: 2083
+            minLength: 1
+            format: uri
+          - type: 'null'
+          title: Tos Uri
+        policy_uri:
+          anyOf:
+          - type: string
+            maxLength: 2083
+            minLength: 1
+            format: uri
+          - type: 'null'
+          title: Policy Uri
+        jwks_uri:
+          anyOf:
+          - type: string
+            maxLength: 2083
+            minLength: 1
+            format: uri
+          - type: 'null'
+          title: Jwks Uri
+        software_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Software Id
+        software_version:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Software Version
+      type: object
+      required:
+      - redirect_uris
+      title: ClientRegistrationRequest
+      description: OAuth 2.0 Dynamic Client Registration Request (RFC 7591)
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    TokenResponse:
+      properties:
+        access_token:
+          type: string
+          title: Access Token
+        jwe_access_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Jwe Access Token
+        token_type:
+          type: string
+          title: Token Type
+          default: Bearer
+        expires_in:
+          type: integer
+          title: Expires In
+        refresh_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Refresh Token
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - access_token
+      - expires_in
+      title: TokenResponse
+      description: OAuth 2.0 Token Response with both JWT and JWE tokens
+    Body_token_exchange_oauth_token_post:
+      properties:
+        grant_type:
+          type: string
+          title: Grant Type
+        code:
+          type: string
+          title: Code
+        redirect_uri:
+          type: string
+          title: Redirect Uri
+        client_id:
+          type: string
+          title: Client Id
+        client_secret:
+          type: string
+          title: Client Secret
+        code_verifier:
+          type: string
+          title: Code Verifier
+      type: object
+      required:
+      - grant_type
+      - code
+      - redirect_uri
+      - client_id
+      title: Body_token_exchange_oauth_token_post
+    ClientRegistrationResponse:
+      properties:
+        client_id:
+          type: string
+          title: Client Id
+        client_secret:
+          type: string
+          title: Client Secret
+        client_id_issued_at:
+          type: integer
+          title: Client Id Issued At
+        client_secret_expires_at:
+          type: integer
+          title: Client Secret Expires At
+          default: 0
+        redirect_uris:
+          items:
+            type: string
+          type: array
+          title: Redirect Uris
+        client_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Client Name
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - client_id
+      - client_secret
+      - client_id_issued_at
+      - redirect_uris
+      title: ClientRegistrationResponse
+      description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+  securitySchemes:
+    APIKeyCookie:
+      type: apiKey
+      in: cookie
+      name: token
+    APIKeyHeader:
+      type: apiKey
+      in: header
+      name: csrf_token

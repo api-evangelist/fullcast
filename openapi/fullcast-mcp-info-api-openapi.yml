@@ -1,0 +1,31 @@
+openapi: 3.2.0
+info:
+  title: Fullcast Assistant Mcp Info API
+  description: API for Fullcast Assistant
+  version: 1.0.0
+tags:
+- name: Mcp Info
+paths:
+  /mcp_info:
+    get:
+      summary: Mcp Info
+      description: Get MCP server information
+      operationId: mcp_info_mcp_info_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      tags:
+      - Mcp Info
+components:
+  securitySchemes:
+    APIKeyCookie:
+      type: apiKey
+      in: cookie
+      name: token
+    APIKeyHeader:
+      type: apiKey
+      in: header
+      name: csrf_token

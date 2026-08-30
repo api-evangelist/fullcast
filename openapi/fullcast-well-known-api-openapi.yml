@@ -1,0 +1,44 @@
+openapi: 3.2.0
+info:
+  title: Fullcast Assistant .well Known API
+  description: API for Fullcast Assistant
+  version: 1.0.0
+tags:
+- name: .well Known
+paths:
+  /.well-known/oauth-authorization-server:
+    get:
+      summary: Discovery
+      description: OAuth 2.0 Authorization Server Metadata endpoint
+      operationId: discovery__well_known_oauth_authorization_server_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      tags:
+      - .well Known
+  /.well-known/oauth-protected-resource:
+    get:
+      summary: Protected Resource Metadata
+      description: OAuth 2.0 Protected Resource Metadata endpoint
+      operationId: protected_resource_metadata__well_known_oauth_protected_resource_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      tags:
+      - .well Known
+components:
+  securitySchemes:
+    APIKeyCookie:
+      type: apiKey
+      in: cookie
+      name: token
+    APIKeyHeader:
+      type: apiKey
+      in: header
+      name: csrf_token
