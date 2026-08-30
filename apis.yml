@@ -55,7 +55,7 @@ tags:
 - Revenue Operations
 - Sales Planning
 - Territory Management
-- Go-To-Market
+- Go-to-Market
 - Incentive Compensation
 - Forecasting
 - Lead Routing
@@ -165,6 +165,8 @@ apis:
   humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
   baseURL: https://assistant.fullcast.io
   tags:
+  - Authentication
+  tags_raw:
   - oauth
   properties:
   - type: OpenAPI
