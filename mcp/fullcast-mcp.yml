@@ -13,13 +13,15 @@ deployment:
   endpoint: https://app.fullcast.io/mcp
   auth: oauth
   verified: probed
-  note: >-
-    POST tools/list to https://app.fullcast.io/mcp returned HTTP 401 with
-    WWW-Authenticate: Bearer realm="mcp-openapi",
-    resource_metadata="https://app.fullcast.io/.well-known/oauth-protected-resource/mcp".
-    The server exists and is reachable by an MCP client over HTTPS today; only the tool
-    schemas are auth-gated. No stdio package is published on npm or PyPI, so this is a
-    remote-only agent surface.
+  note: 'POST tools/list to https://app.fullcast.io/mcp returned HTTP 401 with WWW-Authenticate: Bearer
+    realm="mcp-openapi", resource_metadata="https://app.fullcast.io/.well-known/oauth-protected-resource/mcp".
+    The server exists and is reachable by an MCP client over HTTPS today; only the tool schemas are auth-gated.
+    No stdio package is published on npm or PyPI, so this is a remote-only agent surface.'
+  probe_prior: (never probed)
+  probe: gated
+  probe_why: RFC 9728 challenge on the MCP path only
+  checked: '2026-09-11'
+  source: claimed-backlog re-probe 2026-09-11
 servers:
 - name: Fullcast MCP
   role: primary
@@ -28,7 +30,8 @@ servers:
   auth:
     type: oauth2
     flow: authorization_code
-    pkce: [S256]
+    pkce:
+    - S256
     dynamic_client_registration: true
     issuer: https://app.fullcast.io/mcp
     authorization_endpoint: https://app.fullcast.io/mcp/authorize
@@ -40,7 +43,8 @@ servers:
     method: POST
     body: '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
     http_status: 401
-    body_returned: '{"code":"MISSING_BEARER","message":"No Bearer token was provided in the Authorization header."}'
+    body_returned: '{"code":"MISSING_BEARER","message":"No Bearer token was provided in the Authorization
+      header."}'
     checked: '2026-08-13'
 - name: Fullcast Assistant MCP Server
   role: secondary
@@ -50,10 +54,19 @@ servers:
   auth:
     type: oauth2
     flow: authorization_code
-    pkce: [plain, S256]
+    pkce:
+    - plain
+    - S256
     dynamic_client_registration: true
     issuer: https://assistant.fullcast.io
-    scopes: [openid, email, profile, offline_access, 'mcp:resources', 'mcp:tools', 'mcp:prompts']
+    scopes:
+    - openid
+    - email
+    - profile
+    - offline_access
+    - mcp:resources
+    - mcp:tools
+    - mcp:prompts
     metadata: well-known/fullcast-assistant-oauth-authorization-server.json
   capabilities:
     tools: true
@@ -66,10 +79,9 @@ servers:
     http_status: 401
     body_returned: '{"error": "invalid_token", "error_description": "Authentication required"}'
     checked: '2026-08-13'
-  note: >-
-    A second, smaller MCP server co-hosted with the Fullcast Assistant API. Its
-    /mcp_info endpoint is unauthenticated and returns the real tool and resource names
-    verbatim, which is the source for the tools_verified list below.
+  note: A second, smaller MCP server co-hosted with the Fullcast Assistant API. Its /mcp_info endpoint
+    is unauthenticated and returns the real tool and resource names verbatim, which is the source for
+    the tools_verified list below.
 clients_supported:
 - Claude
 - ChatGPT
@@ -85,79 +97,164 @@ tools_verified:
   server: Fullcast Assistant MCP Server
   note: names returned verbatim by an unauthenticated endpoint; input schemas are auth-gated
   tools:
-  - {name: ping, access: read}
-  - {name: get_server_info, access: read}
-  - {name: search_entities, access: read}
-  - {name: get_account, access: read}
-  - {name: get_person_targets, access: read}
-  - {name: get_person, access: read}
-  - {name: get_territory, access: read}
-  - {name: get_territory_heirarchy, access: read, note: spelling is the provider's}
-  - {name: get_teams_hierarchy, access: read}
-  - {name: get_products_hierarchy, access: read}
-  - {name: get_plans, access: read}
-  - {name: move_account, access: write}
-  - {name: move_person, access: write}
-  - {name: move_product, access: write}
-  - {name: get_assignment_suggestions, access: read}
-  - {name: create_assignment, access: write}
-  - {name: end_coverage, access: write}
+  - name: ping
+    access: read
+  - name: get_server_info
+    access: read
+  - name: search_entities
+    access: read
+  - name: get_account
+    access: read
+  - name: get_person_targets
+    access: read
+  - name: get_person
+    access: read
+  - name: get_territory
+    access: read
+  - name: get_territory_heirarchy
+    access: read
+    note: spelling is the provider's
+  - name: get_teams_hierarchy
+    access: read
+  - name: get_products_hierarchy
+    access: read
+  - name: get_plans
+    access: read
+  - name: move_account
+    access: write
+  - name: move_person
+    access: write
+  - name: move_product
+    access: write
+  - name: get_assignment_suggestions
+    access: read
+  - name: create_assignment
+    access: write
+  - name: end_coverage
+    access: write
   resources:
-  - 'fullcast://resource/workflow_agent_guidance'
-  - 'fullcast://resource/move_account_guidance'
-  - 'fullcast://resource/move_people_guidance'
-  - 'fullcast://resource/move_product_guidance'
+  - fullcast://resource/workflow_agent_guidance
+  - fullcast://resource/move_account_guidance
+  - fullcast://resource/move_people_guidance
+  - fullcast://resource/move_product_guidance
 tools_documented:
   source: https://support.fullcast.com/docs/fullcast-mcp-tool-reference.md
   method: searched
   server: Fullcast MCP
-  note: >-
-    Names and descriptions taken from the provider's published tool reference. Input schemas
-    require authenticated tools/list introspection and are NOT recorded here.
+  note: Names and descriptions taken from the provider's published tool reference. Input schemas require
+    authenticated tools/list introspection and are NOT recorded here.
   categories:
   - name: Context and discovery
     access: read
-    tools: [get_tenant_context, list_plans, list_metrics, list_roles, describe_entities,
-      describe_entity_sources, describe_report_fields, resolve_entity, deep_search,
-      read_domain_doc, search_knowledge_base]
+    tools:
+    - get_tenant_context
+    - list_plans
+    - list_metrics
+    - list_roles
+    - describe_entities
+    - describe_entity_sources
+    - describe_report_fields
+    - resolve_entity
+    - deep_search
+    - read_domain_doc
+    - search_knowledge_base
   - name: Hierarchies and records
     access: read
-    tools: [get_territories, get_teams, get_product_families, list_accounts, list_people,
-      list_products, get_account_history, get_people_history, get_product_history,
-      explain_placement, analyze_placement]
+    tools:
+    - get_territories
+    - get_teams
+    - get_product_families
+    - list_accounts
+    - list_people
+    - list_products
+    - get_account_history
+    - get_people_history
+    - get_product_history
+    - explain_placement
+    - analyze_placement
   - name: Coverage, targets and reporting
     access: read
-    tools: [list_assignments, list_targets, execute_metric, report, analyze_coverage,
-      analyze_org_chart, analyze_account_family]
+    tools:
+    - list_assignments
+    - list_targets
+    - execute_metric
+    - report
+    - analyze_coverage
+    - analyze_org_chart
+    - analyze_account_family
   - name: Territory building and editing
     access: write
-    tools: [create_territory, create_territories_by_field, create_territory_buckets,
-      create_smart_territories, edit_smart_territories, rebalance_smart_territories,
-      create_geo_territory, edit_geo_territory, create_map_smart_territories,
-      rename_territory, delete_territory, create_team, delete_team, create_product_group]
+    tools:
+    - create_territory
+    - create_territories_by_field
+    - create_territory_buckets
+    - create_smart_territories
+    - edit_smart_territories
+    - rebalance_smart_territories
+    - create_geo_territory
+    - edit_geo_territory
+    - create_map_smart_territories
+    - rename_territory
+    - delete_territory
+    - create_team
+    - delete_team
+    - create_product_group
   - name: Moves and rules
     access: write
-    tools: [move_account, move_person, move_product, rerun_territories_rules,
-      rerun_team_rules, rerun_product_rules, name_accounts, clear_named_accounts,
-      commit_changes, undo_changes]
+    tools:
+    - move_account
+    - move_person
+    - move_product
+    - rerun_territories_rules
+    - rerun_team_rules
+    - rerun_product_rules
+    - name_accounts
+    - clear_named_accounts
+    - commit_changes
+    - undo_changes
   - name: People and assignment lifecycle
     access: write
-    tools: [create_assignment, set_assignment_end_date, end_coverage, change_role,
-      offboard_person, set_team_manager, add_target_relief, create_role, update_role,
-      retire_role]
+    tools:
+    - create_assignment
+    - set_assignment_end_date
+    - end_coverage
+    - change_role
+    - offboard_person
+    - set_team_manager
+    - add_target_relief
+    - create_role
+    - update_role
+    - retire_role
   - name: Commissions and crediting
     access: mixed
-    tools: [list_comp_plans, list_crediting_rules, list_crediting_transactions, list_credits,
-      list_ledger_entries, run_crediting_rule, run_comp_plan_period, run_comp_plan_window,
-      explain_commission]
+    tools:
+    - list_comp_plans
+    - list_crediting_rules
+    - list_crediting_transactions
+    - list_credits
+    - list_ledger_entries
+    - run_crediting_rule
+    - run_comp_plan_period
+    - run_comp_plan_window
+    - explain_commission
   - name: Documents
     access: mixed
-    tools: [list_document_groups, list_documents, list_document_recipients,
-      list_document_approvers, send_document, cancel_document]
+    tools:
+    - list_document_groups
+    - list_documents
+    - list_document_recipients
+    - list_document_approvers
+    - send_document
+    - cancel_document
     note: send_document and cancel_document are documented as "Write (confirm first)"
   - name: Operations and audit
     access: read
-    tools: [list_audit_entries, explain_audit_entry, list_policies, list_jobs, get_job]
+    tools:
+    - list_audit_entries
+    - explain_audit_entry
+    - list_policies
+    - list_jobs
+    - get_job
 coverage:
   tools_verified_live: 17
   tools_documented: 88
