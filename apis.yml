@@ -1,14 +1,12 @@
 aid: fullcast
 name: Fullcast
-description: >-
-  Fullcast is a revenue orchestration platform for go-to-market teams that unifies sales
-  planning and execution into one continuous engine. Its products — Fullcast Plan (territory,
-  quota and headcount management with dynamic territory design and instant lead and account
-  routing), Fullcast Revenue Intelligence (AI-validated forecasting that parses buying signals),
-  and Fullcast Pay (real-time incentive and commission management) — share a single data model
-  and are increasingly delivered through agentic orchestration that automates RevOps tasks.
-  Fullcast integrates with Salesforce, Microsoft Dynamics, HubSpot, Workday, major data
-  warehouses and billing systems through a RESTful integration layer, and is SOC 2 Type 2 and
+description: Fullcast is a revenue orchestration platform for go-to-market teams that unifies sales planning
+  and execution into one continuous engine. Its products — Fullcast Plan (territory, quota and headcount
+  management with dynamic territory design and instant lead and account routing), Fullcast Revenue Intelligence
+  (AI-validated forecasting that parses buying signals), and Fullcast Pay (real-time incentive and commission
+  management) — share a single data model and are increasingly delivered through agentic orchestration
+  that automates RevOps tasks. Fullcast integrates with Salesforce, Microsoft Dynamics, HubSpot, Workday,
+  major data warehouses and billing systems through a RESTful integration layer, and is SOC 2 Type 2 and
   GDPR compliant. Backed by Cowboy Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/fullcast/refs/heads/main/apis.yml
 x-type: company
@@ -41,14 +39,13 @@ accessModel:
   - https://support.fullcast.com/docs/enable-ai-features.md
   generated: '2026-08-13'
   method: searched
-  note: >-
-    Three named product lines each priced on a stated metric, all routed to Request Pricing
-    with no published figure. No self-serve signup, no free tier, no trial. MCP access is a
-    tenant-admin toggle on an existing contract, not a developer signup.
+  note: Three named product lines each priced on a stated metric, all routed to Request Pricing with no
+    published figure. No self-serve signup, no free tier, no trial. MCP access is a tenant-admin toggle
+    on an existing contract, not a developer signup.
 image: https://www.fullcast.com/wp-content/uploads/2026/07/Fullcast-plan-to-pay-1024x576.png
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-13'
+modified: '2026-09-16'
 tags:
 - Company
 - Enterprise
@@ -78,11 +75,10 @@ tags_raw:
 - Sales Compensation
 apis:
 - name: Fullcast MCP Server
-  description: >-
-    Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory and team
-    hierarchy, coverage, targets, reporting, commissions and document operations to external AI clients
-    (Claude, ChatGPT, Agentforce, Cursor). Streamable HTTP transport, OAuth 2.1 with PKCE and dynamic
-    client registration. Enabled per tenant under Settings > Application Settings > AI & Agents.
+  description: Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory
+    and team hierarchy, coverage, targets, reporting, commissions and document operations to external
+    AI clients (Claude, ChatGPT, Agentforce, Cursor). Streamable HTTP transport, OAuth 2.1 with PKCE and
+    dynamic client registration. Enabled per tenant under Settings > Application Settings > AI & Agents.
   humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
   baseURL: https://app.fullcast.io/mcp
   tags:
@@ -99,11 +95,10 @@ apis:
   - type: WellKnown
     url: well-known/fullcast-well-known.yml
 - name: Fullcast Copy.ai Workflows API
-  description: >-
-    The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's own support
-    host as Fullcast Copy.ai. Programmatically starts GTM workflow runs, polls run status, and registers
-    webhooks for workflow lifecycle events. Authenticated with a workspace API key sent in the x-copy-ai-api-key
-    header.
+  description: The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's
+    own support host as Fullcast Copy.ai. Programmatically starts GTM workflow runs, polls run status,
+    and registers webhooks for workflow lifecycle events. Authenticated with a workspace API key sent
+    in the x-copy-ai-api-key header.
   humanURL: https://support.fullcast.com/apidocs/quick-start-guide.md
   baseURL: https://api.copy.ai/api
   tags:
@@ -238,7 +233,7 @@ common:
 - type: ToolCrosswalk
   url: mcp/fullcast-tool-crosswalk.yml
 - type: OpenAPI
-  url: openapi/fullcast-assistant-openapi-original.json
+  url: openapi/_original/fullcast-assistant-openapi-original.json
 - type: WellKnown
   url: well-known/fullcast-well-known.yml
 - type: Conventions
@@ -282,7 +277,6 @@ x-enrichment:
   status: enriched
   artifacts_added: 27
   pass: local-v1
-  note: >-
-    Contract discovery beat the round-1 "no public OpenAPI" finding. A live OpenAPI 3.1.0
-    (24 operations) was captured at the API host root, two OAuth 2.1 MCP servers were probed,
-    and five real /.well-known documents were saved.
+  note: Contract discovery beat the round-1 "no public OpenAPI" finding. A live OpenAPI 3.1.0 (24 operations)
+    was captured at the API host root, two OAuth 2.1 MCP servers were probed, and five real /.well-known
+    documents were saved.
