@@ -75,10 +75,11 @@ tags_raw:
 - Sales Compensation
 apis:
 - name: Fullcast MCP Server
-  description: Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory
-    and team hierarchy, coverage, targets, reporting, commissions and document operations to external
-    AI clients (Claude, ChatGPT, Agentforce, Cursor). Streamable HTTP transport, OAuth 2.1 with PKCE and
-    dynamic client registration. Enabled per tenant under Settings > Application Settings > AI & Agents.
+  description: >-
+    Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory and team
+    hierarchy, coverage, targets, reporting, commissions and document operations to external AI clients
+    (Claude, ChatGPT, Agentforce, Cursor). Streamable HTTP transport, OAuth 2.1 with PKCE and dynamic
+    client registration. Enabled per tenant under Settings > Application Settings > AI & Agents.
   humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
   baseURL: https://app.fullcast.io/mcp
   tags:
@@ -95,10 +96,11 @@ apis:
   - type: WellKnown
     url: well-known/fullcast-well-known.yml
 - name: Fullcast Copy.ai Workflows API
-  description: The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's
-    own support host as Fullcast Copy.ai. Programmatically starts GTM workflow runs, polls run status,
-    and registers webhooks for workflow lifecycle events. Authenticated with a workspace API key sent
-    in the x-copy-ai-api-key header.
+  description: >-
+    The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's own support
+    host as Fullcast Copy.ai. Programmatically starts GTM workflow runs, polls run status, and registers
+    webhooks for workflow lifecycle events. Authenticated with a workspace API key sent in the x-copy-ai-api-key
+    header.
   humanURL: https://support.fullcast.com/apidocs/quick-start-guide.md
   baseURL: https://api.copy.ai/api
   tags:
@@ -154,26 +156,6 @@ apis:
     url: errors/fullcast-problem-types.yml
   - type: DataModel
     url: data-model/fullcast-data-model.yml
-- aid: fullcast:fullcast-oauth-api
-  name: Fullcast OAUTH API
-  description: The oauth API from Fullcast — 5 operation(s) for oauth.
-  humanURL: https://support.fullcast.com/docs/fullcast-ai-assistant.md
-  baseURL: https://assistant.fullcast.io
-  tags:
-  - Authentication
-  tags_raw:
-  - oauth
-  properties:
-  - type: OpenAPI
-    url: openapi/fullcast-oauth-api-openapi.yml
-  - type: APIReference
-    url: https://assistant.fullcast.io/docs
-  - type: Authentication
-    url: authentication/fullcast-authentication.yml
-  - type: ErrorCatalog
-    url: errors/fullcast-problem-types.yml
-  - type: DataModel
-    url: data-model/fullcast-data-model.yml
 - aid: fullcast:fullcast-well-known-api
   name: Fullcast .well Known API
   description: The .well Known API from Fullcast — 2 operation(s) for .well known.
@@ -184,6 +166,24 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/fullcast-well-known-api-openapi.yml
+  - type: APIReference
+    url: https://assistant.fullcast.io/docs
+  - type: Authentication
+    url: authentication/fullcast-authentication.yml
+  - type: ErrorCatalog
+    url: errors/fullcast-problem-types.yml
+  - type: DataModel
+    url: data-model/fullcast-data-model.yml
+- aid: fullcast:fullcast-oauth-api
+  name: Fullcast OAUTH API
+  description: The oauth API from Fullcast — 5 operation(s) for oauth.
+  humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
+  baseURL: https://app.fullcast.io/mcp
+  tags:
+  - oauth
+  properties:
+  - type: OpenAPI
+    url: openapi/fullcast-oauth-api-openapi.yml
   - type: APIReference
     url: https://assistant.fullcast.io/docs
   - type: Authentication
