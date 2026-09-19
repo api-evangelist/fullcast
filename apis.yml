@@ -180,6 +180,8 @@ apis:
   humanURL: https://support.fullcast.com/docs/set-up-the-model-context-protocol-mcp.md
   baseURL: https://app.fullcast.io/mcp
   tags:
+  - Authentication
+  tags_raw:
   - oauth
   properties:
   - type: OpenAPI
