@@ -4,12 +4,12 @@ info:
   description: API for Fullcast Assistant
   version: 1.0.0
 tags:
-- name: oauth
+- name: OAuth
 paths:
   /oauth/register:
     post:
       tags:
-      - oauth
+      - OAuth
       summary: Register Client
       description: OAuth 2.0 Dynamic Client Registration endpoint
       operationId: register_client_oauth_register_post
@@ -35,7 +35,7 @@ paths:
   /oauth/authorize:
     get:
       tags:
-      - oauth
+      - OAuth
       summary: Authorize
       description: OAuth 2.0 Authorization endpoint
       operationId: authorize_oauth_authorize_get
@@ -98,7 +98,7 @@ paths:
   /oauth/callback:
     options:
       tags:
-      - oauth
+      - OAuth
       summary: Oauth Callback Options
       description: Handle OPTIONS preflight request for OAuth callback
       operationId: oauth_callback_options_oauth_callback_options
@@ -110,7 +110,7 @@ paths:
               schema: {}
     get:
       tags:
-      - oauth
+      - OAuth
       summary: Oauth Callback
       description: Handle OAuth callback - supports both UUID (local) and Auth0 flows
       operationId: oauth_callback_oauth_callback_get
@@ -148,7 +148,7 @@ paths:
   /oauth/token:
     post:
       tags:
-      - oauth
+      - OAuth
       summary: Token Exchange
       description: OAuth 2.0 Token endpoint
       operationId: token_exchange_oauth_token_post
@@ -174,7 +174,7 @@ paths:
   /oauth/userinfo:
     get:
       tags:
-      - oauth
+      - OAuth
       summary: Userinfo
       description: OAuth 2.0 UserInfo endpoint - retrieves session from shared cache using UUID token
       operationId: userinfo_oauth_userinfo_get
@@ -186,6 +186,134 @@ paths:
               schema: {}
 components:
   schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    TokenResponse:
+      properties:
+        access_token:
+          type: string
+          title: Access Token
+        jwe_access_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Jwe Access Token
+        token_type:
+          type: string
+          title: Token Type
+          default: Bearer
+        expires_in:
+          type: integer
+          title: Expires In
+        refresh_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Refresh Token
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - access_token
+      - expires_in
+      title: TokenResponse
+      description: OAuth 2.0 Token Response with both JWT and JWE tokens
+    ClientRegistrationResponse:
+      properties:
+        client_id:
+          type: string
+          title: Client Id
+        client_secret:
+          type: string
+          title: Client Secret
+        client_id_issued_at:
+          type: integer
+          title: Client Id Issued At
+        client_secret_expires_at:
+          type: integer
+          title: Client Secret Expires At
+          default: 0
+        redirect_uris:
+          items:
+            type: string
+          type: array
+          title: Redirect Uris
+        client_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Client Name
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - client_id
+      - client_secret
+      - client_id_issued_at
+      - redirect_uris
+      title: ClientRegistrationResponse
+      description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
+    Body_token_exchange_oauth_token_post:
+      properties:
+        grant_type:
+          type: string
+          title: Grant Type
+        code:
+          type: string
+          title: Code
+        redirect_uri:
+          type: string
+          title: Redirect Uri
+        client_id:
+          type: string
+          title: Client Id
+        client_secret:
+          type: string
+          title: Client Secret
+        code_verifier:
+          type: string
+          title: Code Verifier
+      type: object
+      required:
+      - grant_type
+      - code
+      - redirect_uri
+      - client_id
+      title: Body_token_exchange_oauth_token_post
     ClientRegistrationRequest:
       properties:
         redirect_uris:
@@ -266,134 +394,6 @@ components:
       - redirect_uris
       title: ClientRegistrationRequest
       description: OAuth 2.0 Dynamic Client Registration Request (RFC 7591)
-    ValidationError:
-      properties:
-        loc:
-          items:
-            anyOf:
-            - type: string
-            - type: integer
-          type: array
-          title: Location
-        msg:
-          type: string
-          title: Message
-        type:
-          type: string
-          title: Error Type
-      type: object
-      required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
-    TokenResponse:
-      properties:
-        access_token:
-          type: string
-          title: Access Token
-        jwe_access_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Jwe Access Token
-        token_type:
-          type: string
-          title: Token Type
-          default: Bearer
-        expires_in:
-          type: integer
-          title: Expires In
-        refresh_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Refresh Token
-        scope:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Scope
-      type: object
-      required:
-      - access_token
-      - expires_in
-      title: TokenResponse
-      description: OAuth 2.0 Token Response with both JWT and JWE tokens
-    Body_token_exchange_oauth_token_post:
-      properties:
-        grant_type:
-          type: string
-          title: Grant Type
-        code:
-          type: string
-          title: Code
-        redirect_uri:
-          type: string
-          title: Redirect Uri
-        client_id:
-          type: string
-          title: Client Id
-        client_secret:
-          type: string
-          title: Client Secret
-        code_verifier:
-          type: string
-          title: Code Verifier
-      type: object
-      required:
-      - grant_type
-      - code
-      - redirect_uri
-      - client_id
-      title: Body_token_exchange_oauth_token_post
-    ClientRegistrationResponse:
-      properties:
-        client_id:
-          type: string
-          title: Client Id
-        client_secret:
-          type: string
-          title: Client Secret
-        client_id_issued_at:
-          type: integer
-          title: Client Id Issued At
-        client_secret_expires_at:
-          type: integer
-          title: Client Secret Expires At
-          default: 0
-        redirect_uris:
-          items:
-            type: string
-          type: array
-          title: Redirect Uris
-        client_name:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Client Name
-        scope:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Scope
-      type: object
-      required:
-      - client_id
-      - client_secret
-      - client_id_issued_at
-      - redirect_uris
-      title: ClientRegistrationResponse
-      description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
   securitySchemes:
     APIKeyCookie:
       type: apiKey

@@ -1,0 +1,51 @@
+{
+  "provider": "fullcast",
+  "sources": [
+    "_original/fullcast-assistant-openapi-original.json"
+  ],
+  "outputs": [
+    "fullcast-well-known-api-openapi.yml",
+    "fullcast-copilot-api-api-openapi.yml",
+    "fullcast-mcp-info-api-openapi.yml",
+    "fullcast-oauth-api-openapi.yml"
+  ],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "fullcast-assistant-openapi-original.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "fullcast-assistant-openapi-original.json: tagged paths POST /copilot-api/v1/chat -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/chat/messages -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths POST /copilot-api/v1/chat/feedback -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths POST /copilot-api/v1/chat/stop -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths POST /copilot-api/v1/chat/session -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/chat/sessions -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/chat/session/{session_id} -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths DELETE /copilot-api/v1/chat/session/{session_id} -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/chat/sessions_archived -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/assistant -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths PUT /copilot-api/v1/assistant -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths POST /copilot-api/v1/assistant -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths DELETE /copilot-api/v1/assistant -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths PATCH /copilot-api/v1/assistant -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /copilot-api/v1/ping -> Copilot Api",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /.well-known/oauth-authorization-server -> .well Known",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /.well-known/oauth-protected-resource -> .well Known",
+    "fullcast-assistant-openapi-original.json: tagged paths GET /mcp_info -> Mcp Info",
+    "fullcast-assistant-openapi-original.json: declared missing tag: .well Known",
+    "fullcast-assistant-openapi-original.json: declared missing tag: Copilot Api",
+    "fullcast-assistant-openapi-original.json: declared missing tag: Mcp Info",
+    "fullcast-assistant-openapi-original.json: declared missing tag: oauth",
+    "superseded outputs removed: fullcast-o-auth-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 6 total)"
+  ],
+  "skipped": [
+    "fullcast-copilot-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "fullcast-mcp-info-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "fullcast-o-auth-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "fullcast-well-known-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
+}
