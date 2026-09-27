@@ -406,70 +406,6 @@ paths:
       - Copilot Api
 components:
   schemas:
-    AssistantList:
-      properties:
-        assistants:
-          items:
-            $ref: '#/components/schemas/Assistant'
-          type: array
-          title: Assistants
-          description: List of assistants
-          default: []
-      type: object
-      title: AssistantList
-    Message:
-      properties:
-        role:
-          type: string
-          title: Role
-          default: user
-        content:
-          type: string
-          title: Content
-        blocks:
-          items:
-            additionalProperties: true
-            type: object
-          type: array
-          title: Blocks
-        message_id:
-          type: string
-          title: Message Id
-        metadata:
-          anyOf:
-          - additionalProperties: true
-            type: object
-          - type: 'null'
-          title: Metadata
-        masked_content:
-          anyOf:
-          - items:
-              additionalProperties: true
-              type: object
-            type: array
-          - type: 'null'
-          title: Masked Content
-      type: object
-      required:
-      - content
-      title: Message
-    SessionResponse:
-      properties:
-        session:
-          $ref: '#/components/schemas/UserSession'
-      type: object
-      required:
-      - session
-      title: SessionResponse
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
     Metadata:
       properties:
         title:
@@ -501,30 +437,6 @@ components:
       - icon
       - prompts
       title: Metadata
-    FeedbackRequest:
-      properties:
-        message_id:
-          type: string
-          title: Message Id
-        feedback:
-          type: integer
-          title: Feedback
-        feedback_comment:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Feedback Comment
-        support_ticket:
-          anyOf:
-          - type: boolean
-          - type: 'null'
-          title: Support Ticket
-          default: false
-      type: object
-      required:
-      - message_id
-      - feedback
-      title: FeedbackRequest
     AssistantConfig:
       properties:
         provider:
@@ -551,15 +463,44 @@ components:
       - type
       - model
       title: AssistantConfig
-    StopRequest:
+    UserSession:
       properties:
-        session_id:
+        id:
           type: string
-          title: Session Id
+          title: Id
+        title:
+          type: string
+          title: Title
+          default: ''
+        assistant_id:
+          type: string
+          title: Assistant Id
+        user_id:
+          type: string
+          title: User Id
+        tenant_id:
+          type: string
+          title: Tenant Id
+        data:
+          anyOf:
+          - additionalProperties: true
+            type: object
+          - type: 'null'
+          title: Data
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        pin_flag:
+          type: boolean
+          title: Pin Flag
+          default: false
       type: object
       required:
-      - session_id
-      title: StopRequest
+      - assistant_id
+      - user_id
+      - tenant_id
+      title: UserSession
     SessionRequest:
       properties:
         session_id:
@@ -616,6 +557,37 @@ components:
           title: Module
       type: object
       title: SessionRequest
+    StopRequest:
+      properties:
+        session_id:
+          type: string
+          title: Session Id
+      type: object
+      required:
+      - session_id
+      title: StopRequest
+    AssistantDeletion:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+          description: ID of the assistant to delete
+      type: object
+      required:
+      - id
+      title: AssistantDeletion
+    AssistantList:
+      properties:
+        assistants:
+          items:
+            $ref: '#/components/schemas/Assistant'
+          type: array
+          title: Assistants
+          description: List of assistants
+          default: []
+      type: object
+      title: AssistantList
     Assistant:
       properties:
         id:
@@ -637,55 +609,85 @@ components:
       - config
       - metadata
       title: Assistant
-    AssistantDeletion:
+    Message:
       properties:
-        id:
+        role:
           type: string
-          format: uuid
-          title: Id
-          description: ID of the assistant to delete
-      type: object
-      required:
-      - id
-      title: AssistantDeletion
-    UserSession:
-      properties:
-        id:
+          title: Role
+          default: user
+        content:
           type: string
-          title: Id
-        title:
+          title: Content
+        blocks:
+          items:
+            additionalProperties: true
+            type: object
+          type: array
+          title: Blocks
+        message_id:
           type: string
-          title: Title
-          default: ''
-        assistant_id:
-          type: string
-          title: Assistant Id
-        user_id:
-          type: string
-          title: User Id
-        tenant_id:
-          type: string
-          title: Tenant Id
-        data:
+          title: Message Id
+        metadata:
           anyOf:
           - additionalProperties: true
             type: object
           - type: 'null'
-          title: Data
-        created_at:
+          title: Metadata
+        masked_content:
+          anyOf:
+          - items:
+              additionalProperties: true
+              type: object
+            type: array
+          - type: 'null'
+          title: Masked Content
+      type: object
+      required:
+      - content
+      title: Message
+    SessionResponse:
+      properties:
+        session:
+          $ref: '#/components/schemas/UserSession'
+      type: object
+      required:
+      - session
+      title: SessionResponse
+    MessageList:
+      properties:
+        messages:
+          items:
+            $ref: '#/components/schemas/Message'
+          type: array
+          title: Messages
+      type: object
+      required:
+      - messages
+      title: MessageList
+    FeedbackRequest:
+      properties:
+        message_id:
           type: string
-          format: date-time
-          title: Created At
-        pin_flag:
-          type: boolean
-          title: Pin Flag
+          title: Message Id
+        feedback:
+          type: integer
+          title: Feedback
+        feedback_comment:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Feedback Comment
+        support_ticket:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Support Ticket
           default: false
       type: object
       required:
-      - assistant_id
-      - user_id
-      - tenant_id
-      title: UserSession
+      - message_id
+      - feedback
+      title: FeedbackRequest
     ValidationError:
       properties:
         loc:
@@ -707,17 +709,6 @@ components:
       - msg
       - type
       title: ValidationError
-    MessageList:
-      properties:
-        messages:
-          items:
-            $ref: '#/components/schemas/Message'
-          type: array
-          title: Messages
-      type: object
-      required:
-      - messages
-      title: MessageList
     ChatRequest:
       properties:
         session_id:
@@ -740,6 +731,15 @@ components:
       - session_id
       - message
       title: ChatRequest
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
   securitySchemes:
     APIKeyCookie:
       type: apiKey

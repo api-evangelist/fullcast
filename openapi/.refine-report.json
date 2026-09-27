@@ -9,9 +9,7 @@
     "fullcast-mcp-info-api-openapi.yml",
     "fullcast-oauth-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 1 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -39,13 +37,12 @@
     "fullcast-assistant-openapi-original.json: declared missing tag: Copilot Api",
     "fullcast-assistant-openapi-original.json: declared missing tag: Mcp Info",
     "fullcast-assistant-openapi-original.json: declared missing tag: oauth",
-    "superseded outputs removed: fullcast-o-auth-api-openapi.yml",
-    "apis.yml register: written (+1 apis, 6 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
     "fullcast-copilot-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "fullcast-mcp-info-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "fullcast-o-auth-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "fullcast-oauth-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "fullcast-well-known-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
