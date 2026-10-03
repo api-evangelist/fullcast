@@ -186,6 +186,39 @@ paths:
               schema: {}
 components:
   schemas:
+    TokenResponse:
+      properties:
+        access_token:
+          type: string
+          title: Access Token
+        jwe_access_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Jwe Access Token
+        token_type:
+          type: string
+          title: Token Type
+          default: Bearer
+        expires_in:
+          type: integer
+          title: Expires In
+        refresh_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Refresh Token
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - access_token
+      - expires_in
+      title: TokenResponse
+      description: OAuth 2.0 Token Response with both JWT and JWE tokens
     Body_token_exchange_oauth_token_post:
       properties:
         grant_type:
@@ -213,6 +246,44 @@ components:
       - redirect_uri
       - client_id
       title: Body_token_exchange_oauth_token_post
+    ClientRegistrationResponse:
+      properties:
+        client_id:
+          type: string
+          title: Client Id
+        client_secret:
+          type: string
+          title: Client Secret
+        client_id_issued_at:
+          type: integer
+          title: Client Id Issued At
+        client_secret_expires_at:
+          type: integer
+          title: Client Secret Expires At
+          default: 0
+        redirect_uris:
+          items:
+            type: string
+          type: array
+          title: Redirect Uris
+        client_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Client Name
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
+      type: object
+      required:
+      - client_id
+      - client_secret
+      - client_id_issued_at
+      - redirect_uris
+      title: ClientRegistrationResponse
+      description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
     ClientRegistrationRequest:
       properties:
         redirect_uris:
@@ -293,39 +364,15 @@ components:
       - redirect_uris
       title: ClientRegistrationRequest
       description: OAuth 2.0 Dynamic Client Registration Request (RFC 7591)
-    TokenResponse:
+    HTTPValidationError:
       properties:
-        access_token:
-          type: string
-          title: Access Token
-        jwe_access_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Jwe Access Token
-        token_type:
-          type: string
-          title: Token Type
-          default: Bearer
-        expires_in:
-          type: integer
-          title: Expires In
-        refresh_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Refresh Token
-        scope:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Scope
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
       type: object
-      required:
-      - access_token
-      - expires_in
-      title: TokenResponse
-      description: OAuth 2.0 Token Response with both JWT and JWE tokens
+      title: HTTPValidationError
     ValidationError:
       properties:
         loc:
@@ -347,53 +394,6 @@ components:
       - msg
       - type
       title: ValidationError
-    ClientRegistrationResponse:
-      properties:
-        client_id:
-          type: string
-          title: Client Id
-        client_secret:
-          type: string
-          title: Client Secret
-        client_id_issued_at:
-          type: integer
-          title: Client Id Issued At
-        client_secret_expires_at:
-          type: integer
-          title: Client Secret Expires At
-          default: 0
-        redirect_uris:
-          items:
-            type: string
-          type: array
-          title: Redirect Uris
-        client_name:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Client Name
-        scope:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Scope
-      type: object
-      required:
-      - client_id
-      - client_secret
-      - client_id_issued_at
-      - redirect_uris
-      title: ClientRegistrationResponse
-      description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
   securitySchemes:
     APIKeyCookie:
       type: apiKey
