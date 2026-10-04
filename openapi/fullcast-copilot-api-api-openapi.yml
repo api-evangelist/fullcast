@@ -406,6 +406,120 @@ paths:
       - Copilot Api
 components:
   schemas:
+    UserSession:
+      properties:
+        id:
+          type: string
+          title: Id
+        title:
+          type: string
+          title: Title
+          default: ''
+        assistant_id:
+          type: string
+          title: Assistant Id
+        user_id:
+          type: string
+          title: User Id
+        tenant_id:
+          type: string
+          title: Tenant Id
+        data:
+          anyOf:
+          - additionalProperties: true
+            type: object
+          - type: 'null'
+          title: Data
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        pin_flag:
+          type: boolean
+          title: Pin Flag
+          default: false
+      type: object
+      required:
+      - assistant_id
+      - user_id
+      - tenant_id
+      title: UserSession
+    StopRequest:
+      properties:
+        session_id:
+          type: string
+          title: Session Id
+      type: object
+      required:
+      - session_id
+      title: StopRequest
+    FeedbackRequest:
+      properties:
+        message_id:
+          type: string
+          title: Message Id
+        feedback:
+          type: integer
+          title: Feedback
+        feedback_comment:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Feedback Comment
+        support_ticket:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Support Ticket
+          default: false
+      type: object
+      required:
+      - message_id
+      - feedback
+      title: FeedbackRequest
+    Assistant:
+      properties:
+        id:
+          type: string
+          title: Id
+        name:
+          type: string
+          title: Name
+          description: Name of the assistant
+        config:
+          $ref: '#/components/schemas/AssistantConfig'
+        metadata:
+          anyOf:
+          - $ref: '#/components/schemas/Metadata'
+          - type: 'null'
+      type: object
+      required:
+      - name
+      - config
+      - metadata
+      title: Assistant
+    ChatRequest:
+      properties:
+        session_id:
+          type: string
+          title: Session Id
+        message:
+          $ref: '#/components/schemas/Message'
+        metadata:
+          additionalProperties: true
+          type: object
+          title: Metadata
+        web_search_access:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Web Search Access
+          default: false
+      type: object
+      required:
+      - session_id
+      - message
+      title: ChatRequest
     SessionRequest:
       properties:
         session_id:
@@ -504,65 +618,46 @@ components:
       required:
       - id
       title: AssistantDeletion
-    UserSession:
+    ValidationError:
       properties:
-        id:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
           type: string
-          title: Id
-        title:
+          title: Message
+        type:
           type: string
-          title: Title
-          default: ''
-        assistant_id:
-          type: string
-          title: Assistant Id
-        user_id:
-          type: string
-          title: User Id
-        tenant_id:
-          type: string
-          title: Tenant Id
-        data:
-          anyOf:
-          - additionalProperties: true
-            type: object
-          - type: 'null'
-          title: Data
-        created_at:
-          type: string
-          format: date-time
-          title: Created At
-        pin_flag:
-          type: boolean
-          title: Pin Flag
-          default: false
+          title: Error Type
       type: object
       required:
-      - assistant_id
-      - user_id
-      - tenant_id
-      title: UserSession
-    Assistant:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    SessionResponse:
       properties:
-        id:
-          type: string
-          title: Id
-        name:
-          type: string
-          title: Name
-          description: Name of the assistant
-        config:
-          $ref: '#/components/schemas/AssistantConfig'
-        metadata:
-          anyOf:
-          - $ref: '#/components/schemas/Metadata'
-          - type: 'null'
+        session:
+          $ref: '#/components/schemas/UserSession'
       type: object
       required:
-      - name
-      - config
-      - metadata
-      title: Assistant
+      - session
+      title: SessionResponse
+    AssistantList:
+      properties:
+        assistants:
+          items:
+            $ref: '#/components/schemas/Assistant'
+          type: array
+          title: Assistants
+          description: List of assistants
+          default: []
+      type: object
+      title: AssistantList
     AssistantConfig:
       properties:
         provider:
@@ -589,47 +684,6 @@ components:
       - type
       - model
       title: AssistantConfig
-    ChatRequest:
-      properties:
-        session_id:
-          type: string
-          title: Session Id
-        message:
-          $ref: '#/components/schemas/Message'
-        metadata:
-          additionalProperties: true
-          type: object
-          title: Metadata
-        web_search_access:
-          anyOf:
-          - type: boolean
-          - type: 'null'
-          title: Web Search Access
-          default: false
-      type: object
-      required:
-      - session_id
-      - message
-      title: ChatRequest
-    AssistantList:
-      properties:
-        assistants:
-          items:
-            $ref: '#/components/schemas/Assistant'
-          type: array
-          title: Assistants
-          description: List of assistants
-          default: []
-      type: object
-      title: AssistantList
-    SessionResponse:
-      properties:
-        session:
-          $ref: '#/components/schemas/UserSession'
-      type: object
-      required:
-      - session
-      title: SessionResponse
     HTTPValidationError:
       properties:
         detail:
@@ -639,50 +693,6 @@ components:
           title: Detail
       type: object
       title: HTTPValidationError
-    FeedbackRequest:
-      properties:
-        message_id:
-          type: string
-          title: Message Id
-        feedback:
-          type: integer
-          title: Feedback
-        feedback_comment:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Feedback Comment
-        support_ticket:
-          anyOf:
-          - type: boolean
-          - type: 'null'
-          title: Support Ticket
-          default: false
-      type: object
-      required:
-      - message_id
-      - feedback
-      title: FeedbackRequest
-    MessageList:
-      properties:
-        messages:
-          items:
-            $ref: '#/components/schemas/Message'
-          type: array
-          title: Messages
-      type: object
-      required:
-      - messages
-      title: MessageList
-    StopRequest:
-      properties:
-        session_id:
-          type: string
-          title: Session Id
-      type: object
-      required:
-      - session_id
-      title: StopRequest
     Message:
       properties:
         role:
@@ -719,27 +729,17 @@ components:
       required:
       - content
       title: Message
-    ValidationError:
+    MessageList:
       properties:
-        loc:
+        messages:
           items:
-            anyOf:
-            - type: string
-            - type: integer
+            $ref: '#/components/schemas/Message'
           type: array
-          title: Location
-        msg:
-          type: string
-          title: Message
-        type:
-          type: string
-          title: Error Type
+          title: Messages
       type: object
       required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
+      - messages
+      title: MessageList
   securitySchemes:
     APIKeyCookie:
       type: apiKey

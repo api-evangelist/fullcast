@@ -186,39 +186,6 @@ paths:
               schema: {}
 components:
   schemas:
-    TokenResponse:
-      properties:
-        access_token:
-          type: string
-          title: Access Token
-        jwe_access_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Jwe Access Token
-        token_type:
-          type: string
-          title: Token Type
-          default: Bearer
-        expires_in:
-          type: integer
-          title: Expires In
-        refresh_token:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Refresh Token
-        scope:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Scope
-      type: object
-      required:
-      - access_token
-      - expires_in
-      title: TokenResponse
-      description: OAuth 2.0 Token Response with both JWT and JWE tokens
     Body_token_exchange_oauth_token_post:
       properties:
         grant_type:
@@ -246,6 +213,27 @@ components:
       - redirect_uri
       - client_id
       title: Body_token_exchange_oauth_token_post
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
     ClientRegistrationResponse:
       properties:
         client_id:
@@ -284,6 +272,15 @@ components:
       - redirect_uris
       title: ClientRegistrationResponse
       description: OAuth 2.0 Dynamic Client Registration Response (RFC 7591)
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
     ClientRegistrationRequest:
       properties:
         redirect_uris:
@@ -364,36 +361,39 @@ components:
       - redirect_uris
       title: ClientRegistrationRequest
       description: OAuth 2.0 Dynamic Client Registration Request (RFC 7591)
-    HTTPValidationError:
+    TokenResponse:
       properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
-    ValidationError:
-      properties:
-        loc:
-          items:
-            anyOf:
-            - type: string
-            - type: integer
-          type: array
-          title: Location
-        msg:
+        access_token:
           type: string
-          title: Message
-        type:
+          title: Access Token
+        jwe_access_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Jwe Access Token
+        token_type:
           type: string
-          title: Error Type
+          title: Token Type
+          default: Bearer
+        expires_in:
+          type: integer
+          title: Expires In
+        refresh_token:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Refresh Token
+        scope:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Scope
       type: object
       required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
+      - access_token
+      - expires_in
+      title: TokenResponse
+      description: OAuth 2.0 Token Response with both JWT and JWE tokens
   securitySchemes:
     APIKeyCookie:
       type: apiKey
