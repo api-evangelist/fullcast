@@ -406,6 +406,190 @@ paths:
       - Copilot Api
 components:
   schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    Assistant:
+      properties:
+        id:
+          type: string
+          title: Id
+        name:
+          type: string
+          title: Name
+          description: Name of the assistant
+        config:
+          $ref: '#/components/schemas/AssistantConfig'
+        metadata:
+          anyOf:
+          - $ref: '#/components/schemas/Metadata'
+          - type: 'null'
+      type: object
+      required:
+      - name
+      - config
+      - metadata
+      title: Assistant
+    Message:
+      properties:
+        role:
+          type: string
+          title: Role
+          default: user
+        content:
+          type: string
+          title: Content
+        blocks:
+          items:
+            additionalProperties: true
+            type: object
+          type: array
+          title: Blocks
+        message_id:
+          type: string
+          title: Message Id
+        metadata:
+          anyOf:
+          - additionalProperties: true
+            type: object
+          - type: 'null'
+          title: Metadata
+        masked_content:
+          anyOf:
+          - items:
+              additionalProperties: true
+              type: object
+            type: array
+          - type: 'null'
+          title: Masked Content
+      type: object
+      required:
+      - content
+      title: Message
+    ChatRequest:
+      properties:
+        session_id:
+          type: string
+          title: Session Id
+        message:
+          $ref: '#/components/schemas/Message'
+        metadata:
+          additionalProperties: true
+          type: object
+          title: Metadata
+        web_search_access:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Web Search Access
+          default: false
+      type: object
+      required:
+      - session_id
+      - message
+      title: ChatRequest
+    AssistantList:
+      properties:
+        assistants:
+          items:
+            $ref: '#/components/schemas/Assistant'
+          type: array
+          title: Assistants
+          description: List of assistants
+          default: []
+      type: object
+      title: AssistantList
+    AssistantConfig:
+      properties:
+        provider:
+          type: string
+          title: Provider
+          description: Provider of the assistant
+        type:
+          type: string
+          title: Type
+          description: type of the assistant
+        model:
+          type: string
+          title: Model
+          description: Model used by the assistant
+        table_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Table Name
+          description: Table name for the assistant
+      type: object
+      required:
+      - provider
+      - type
+      - model
+      title: AssistantConfig
+    Metadata:
+      properties:
+        title:
+          type: string
+          title: Title
+        description:
+          type: string
+          title: Description
+        icon:
+          type: string
+          title: Icon
+        prompts:
+          anyOf:
+          - items:
+              type: string
+            type: array
+          - type: 'null'
+          title: Prompts
+        num_history_messages:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Num History Messages
+          default: 0
+      type: object
+      required:
+      - title
+      - description
+      - icon
+      - prompts
+      title: Metadata
+    SessionResponse:
+      properties:
+        session:
+          $ref: '#/components/schemas/UserSession'
+      type: object
+      required:
+      - session
+      title: SessionResponse
+    StopRequest:
+      properties:
+        session_id:
+          type: string
+          title: Session Id
+      type: object
+      required:
+      - session_id
+      title: StopRequest
+    MessageList:
+      properties:
+        messages:
+          items:
+            $ref: '#/components/schemas/Message'
+          type: array
+          title: Messages
+      type: object
+      required:
+      - messages
+      title: MessageList
     UserSession:
       properties:
         id:
@@ -444,15 +628,38 @@ components:
       - user_id
       - tenant_id
       title: UserSession
-    StopRequest:
+    ValidationError:
       properties:
-        session_id:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
           type: string
-          title: Session Id
+          title: Message
+        type:
+          type: string
+          title: Error Type
       type: object
       required:
-      - session_id
-      title: StopRequest
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    AssistantDeletion:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+          description: ID of the assistant to delete
+      type: object
+      required:
+      - id
+      title: AssistantDeletion
     FeedbackRequest:
       properties:
         message_id:
@@ -477,49 +684,6 @@ components:
       - message_id
       - feedback
       title: FeedbackRequest
-    Assistant:
-      properties:
-        id:
-          type: string
-          title: Id
-        name:
-          type: string
-          title: Name
-          description: Name of the assistant
-        config:
-          $ref: '#/components/schemas/AssistantConfig'
-        metadata:
-          anyOf:
-          - $ref: '#/components/schemas/Metadata'
-          - type: 'null'
-      type: object
-      required:
-      - name
-      - config
-      - metadata
-      title: Assistant
-    ChatRequest:
-      properties:
-        session_id:
-          type: string
-          title: Session Id
-        message:
-          $ref: '#/components/schemas/Message'
-        metadata:
-          additionalProperties: true
-          type: object
-          title: Metadata
-        web_search_access:
-          anyOf:
-          - type: boolean
-          - type: 'null'
-          title: Web Search Access
-          default: false
-      type: object
-      required:
-      - session_id
-      - message
-      title: ChatRequest
     SessionRequest:
       properties:
         session_id:
@@ -576,170 +740,6 @@ components:
           title: Module
       type: object
       title: SessionRequest
-    Metadata:
-      properties:
-        title:
-          type: string
-          title: Title
-        description:
-          type: string
-          title: Description
-        icon:
-          type: string
-          title: Icon
-        prompts:
-          anyOf:
-          - items:
-              type: string
-            type: array
-          - type: 'null'
-          title: Prompts
-        num_history_messages:
-          anyOf:
-          - type: integer
-          - type: 'null'
-          title: Num History Messages
-          default: 0
-      type: object
-      required:
-      - title
-      - description
-      - icon
-      - prompts
-      title: Metadata
-    AssistantDeletion:
-      properties:
-        id:
-          type: string
-          format: uuid
-          title: Id
-          description: ID of the assistant to delete
-      type: object
-      required:
-      - id
-      title: AssistantDeletion
-    ValidationError:
-      properties:
-        loc:
-          items:
-            anyOf:
-            - type: string
-            - type: integer
-          type: array
-          title: Location
-        msg:
-          type: string
-          title: Message
-        type:
-          type: string
-          title: Error Type
-      type: object
-      required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
-    SessionResponse:
-      properties:
-        session:
-          $ref: '#/components/schemas/UserSession'
-      type: object
-      required:
-      - session
-      title: SessionResponse
-    AssistantList:
-      properties:
-        assistants:
-          items:
-            $ref: '#/components/schemas/Assistant'
-          type: array
-          title: Assistants
-          description: List of assistants
-          default: []
-      type: object
-      title: AssistantList
-    AssistantConfig:
-      properties:
-        provider:
-          type: string
-          title: Provider
-          description: Provider of the assistant
-        type:
-          type: string
-          title: Type
-          description: type of the assistant
-        model:
-          type: string
-          title: Model
-          description: Model used by the assistant
-        table_name:
-          anyOf:
-          - type: string
-          - type: 'null'
-          title: Table Name
-          description: Table name for the assistant
-      type: object
-      required:
-      - provider
-      - type
-      - model
-      title: AssistantConfig
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
-    Message:
-      properties:
-        role:
-          type: string
-          title: Role
-          default: user
-        content:
-          type: string
-          title: Content
-        blocks:
-          items:
-            additionalProperties: true
-            type: object
-          type: array
-          title: Blocks
-        message_id:
-          type: string
-          title: Message Id
-        metadata:
-          anyOf:
-          - additionalProperties: true
-            type: object
-          - type: 'null'
-          title: Metadata
-        masked_content:
-          anyOf:
-          - items:
-              additionalProperties: true
-              type: object
-            type: array
-          - type: 'null'
-          title: Masked Content
-      type: object
-      required:
-      - content
-      title: Message
-    MessageList:
-      properties:
-        messages:
-          items:
-            $ref: '#/components/schemas/Message'
-          type: array
-          title: Messages
-      type: object
-      required:
-      - messages
-      title: MessageList
   securitySchemes:
     APIKeyCookie:
       type: apiKey
