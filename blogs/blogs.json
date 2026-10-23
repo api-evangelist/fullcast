@@ -5,23 +5,17 @@
       "source": "https://www.fullcast.com/feed/",
       "feed_url": "https://www.fullcast.com/feed/",
       "title": "",
-      "saved": 9,
+      "saved": 0,
       "method": "feed"
     },
     {
       "source": "https://www.fullcast.com/content-type/blog-post/",
-      "feed_url": "https://www.fullcast.com/feed/",
+      "feed_url": "https://www.fullcast.com/content-type/blog-post/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
-    },
-    {
-      "source": "https://support.fullcast.com/docs/log-in-to-fullcast-for-the-first-time.md",
-      "feed_url": "",
-      "saved": 0,
-      "skipped": "community-shaped; a vendor feed already saved this run (roadmap#239)"
+      "method": "none"
     }
   ],
-  "post_count": 9,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 17,
+  "fetched": "2026-10-17T14:53:57Z"
 }
