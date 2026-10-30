@@ -64,6 +64,139 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fullcast is a company surfaced as a portfolio company of cowboy-ventures and added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment pipeline.
+Fullcast is a revenue orchestration platform for go-to-market teams that unifies sales planning and execution into one continuous engine. Its products — Fullcast Plan (territory, quota and headcount management with dynamic territory design and instant lead and account routing), Fullcast Revenue Intelligence (AI-validated forecasting that parses buying signals), and Fullcast Pay (real-time incentive and commission management) — share a single data model and are increasingly delivered through agentic orchestration that automates RevOps tasks. Fullcast integrates with Salesforce, Microsoft Dynamics, HubSpot, Workday, major data warehouses and billing systems through a RESTful integration layer, and is SOC 2 Type 2 and GDPR compliant. Backed by Cowboy Ventures.
 
-Backed by: cowboy-ventures — https://www.fullcast.com
+**Areas:** Company · Enterprise · Revenue Operations · Sales Planning · Territory Management · Go-To-Market · Incentive Compensation · Forecasting · Lead Routing · MCP · AI Agents · Sales Compensation
+
+## Fullcast on APIs.io
+
+Everything profiled for Fullcast is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fullcast/](https://apis.io/providers/fullcast/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [Fullcast MCP Server](https://apis.io/apis/fullcast/fullcast-mcp-server/) — Fullcast's remote Model Context Protocol server, exposing go-to-market planning, territory and team hierarchy, coverage, targets, reporting, commissions and…
+- [Fullcast Copy.ai Workflows API](https://apis.io/apis/fullcast/fullcast-copyai-workflows-api/) — The Copy.ai Workflows API, acquired by Fullcast in October 2025 and documented on Fullcast's own support host as Fullcast Copy.ai. Programmatically starts…
+- [Fullcast Copilot API](https://apis.io/apis/fullcast/fullcast-copilot-api-api/) — The Copilot Api API from Fullcast — 10 operation(s) for copilot api.
+- [Fullcast Mcp Info API](https://apis.io/apis/fullcast/fullcast-mcp-info-api/) — The Mcp Info API from Fullcast — 1 operation(s) for mcp info.
+- [Fullcast .well Known API](https://apis.io/apis/fullcast/fullcast-well-known-api/) — The .well Known API from Fullcast — 2 operation(s) for .well known.
+- [Fullcast OAUTH API](https://apis.io/apis/fullcast/fullcast-oauth-api/) — The oauth API from Fullcast — 5 operation(s) for oauth.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Fullcast Copy Ai Webhooks](https://apis.io/asyncapis/fullcast/fullcast-copy-ai-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [fullcast-mcp.yml](https://apis.io/servers/fullcast/fullcast-mcp-yml/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Fullcast Assistant Overlay](https://apis.io/overlays/fullcast/fullcast-assistant-overlay/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Fullcast Authentication](https://apis.io/security/fullcast/fullcast-authentication/)
+- [Fullcast Domain Security](https://apis.io/security/fullcast/fullcast-domain-security/)
+- [Fullcast Trust Center](https://apis.io/security/fullcast/fullcast-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Fullcast Scopes](https://apis.io/scopes/fullcast/fullcast-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Fullcast Plans Pricing](https://apis.io/plans/fullcast/fullcast-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Fullcast Rate Limits](https://apis.io/rate-limits/fullcast/fullcast-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.fullcast.com)
+- [Documentation](https://support.fullcast.com)
+- [Getting started](https://support.fullcast.com/docs/log-in-to-fullcast-for-the-first-time.md)
+- [API reference](https://assistant.fullcast.io/docs)
+- [Pricing](https://www.fullcast.com/plans-and-pricing-2/)
+- [Support](https://support.fullcast.com)
+- [Blog](https://www.fullcast.com/content-type/blog-post/)
+- [Compliance](https://www.fullcast.com/security/)
+- [Terms of service](https://www.fullcast.com/others/terms-of-service/)
+- [Privacy policy](https://www.fullcast.com/others/privacy-policy/)
+- [GitHub](https://github.com/copy-ai)
+- [Status](https://status.fullcast.io)
+
+## API Evangelist rating
+
+**Kin Score 50.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 51.3 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 63.7 |
+| Access clarity | 46.1 |
+
+**Agent readiness 54.8** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 26.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fullcast/](https://apis.io/providers/fullcast/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fullcast: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fullcast/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
